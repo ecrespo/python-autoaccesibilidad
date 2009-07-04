@@ -20,6 +20,7 @@ from commands import getstatusoutput
 
 def conf_escritorio():
     usuarios = usuarios.get_users()
+    su.ejecutar("cp -R ./conf/.* /etc/skel/")
     for usuario in usuarios:
         su.ejecutar("cp -R ./conf/.*  /home/%s/" %usuario)
         r = getstatusoutput("sudo -u %s gconftool-2 --set --type string /apps/metacity/keybinding_commands/command_1 \"orca\"" %usuario)
