@@ -1,0 +1,29 @@
+Origin: Paquetes Ernesto
+Label: Paquetes Ernesto
+Suite: unstable
+Codename: sid
+Date: Sun, 21 Jun 2009 01:18:31 +0000
+Architectures: i386
+Components: main
+Description: Paquetes elaborados por Ernesto Crespo
+MD5Sum:
+ 848e78e7efa06357a0efad75bf0dcdff 1930 main/binary-i386/Packages
+ f3997861c3c445f91cba95dfb13d630e 962 main/binary-i386/Packages.gz
+ 0cae683bd9d5c2610d6138e3c14d42cc 154 main/binary-i386/Release
+ 43d99b9ac0fd986ec69e35b63b4be96c 1225 main/source/Sources
+ 4f8913ca2214f3392d6001fc7d204626 675 main/source/Sources.gz
+ 8d790fc330b25ca39057f247d71ecc28 156 main/source/Release
+SHA1:
+ 31b3ec8df94846c8db84d7cdd411f774d45baab1 1930 main/binary-i386/Packages
+ 194b03f1215840d43493d7c44e26847488bd14f4 962 main/binary-i386/Packages.gz
+ 17b20ece9e19e1178d61de9153740eb2345a1427 154 main/binary-i386/Release
+ 9831a440fa7fe5f65839bd7b7e7852fc6568aaf6 1225 main/source/Sources
+ 0f8820e18cf22a662e5281c7195631eab46c14bb 675 main/source/Sources.gz
+ 6ce229cc780f4fe233ca172caa554ddbea7b2e4a 156 main/source/Release
+SHA256:
+ bcca68db81efc731a48bc2f329746acec0bcd03226658704f0a2275aef2cbc03 1930 main/binary-i386/Packages
+ 30deb97287d631ea453f941976b9180d99055eb7d1edbc3eb2f9adf38f276ff4 962 main/binary-i386/Packages.gz
+ 85293382876cd2a8c547ffb2adc9a4492ca079bd80084c87c88efe38287f9dbc 154 main/binary-i386/Release
+ 646d97fcfaaca4e935dcf5c0c00ef590f374603f4ac884ba4bd9671b944e00e2 1225 main/source/Sources
+ 41dfbc42e43705aefb6f9e2b587549b28d1be60b7779f312d80e0d8410bdc3f6 675 main/source/Sources.gz
+ 89f8de88f0ac2955a2b29ad11fc3a7977e2cb396949e9848c8b493c9e424be04 156 main/source/Release
