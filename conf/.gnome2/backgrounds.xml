@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+  <wallpaper deleted="false">
+    <name>Flujo</name>
+    <filename>/usr/share/pixmaps/backgrounds/gnome/abstract/Flow.png</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#41415b5b6969</pcolor>
+    <scolor>#6666baba0000</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Gotas de lluvia</name>
+    <filename>/usr/share/pixmaps/backgrounds/gnome/nature/RainDrops.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#6666baba0000</pcolor>
+    <scolor>#6666baba0000</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Madera</name>
+    <filename>/usr/share/pixmaps/backgrounds/gnome/nature/Wood.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#6666baba0000</pcolor>
+    <scolor>#6666baba0000</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Agua</name>
+    <filename>/usr/share/pixmaps/backgrounds/gnome/nature/Aqua.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#6666baba0000</pcolor>
+    <scolor>#6666baba0000</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>12003375.jpg</name>
+    <filename>/home/ernesto/Escritorio/12003375.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#6666baba0000</pcolor>
+    <scolor>#6666baba0000</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Sin tapiz</name>
+    <filename>(none)</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#6666baba0000</pcolor>
+    <scolor>#6666baba0000</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Dos alas</name>
+    <filename>/usr/share/pixmaps/backgrounds/gnome/nature/TwoWings.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#6666baba0000</pcolor>
+    <scolor>#6666baba0000</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Flor amarilla</name>
+    <filename>/usr/share/pixmaps/backgrounds/gnome/nature/YellowFlower.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#6666baba0000</pcolor>
+    <scolor>#6666baba0000</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Seda</name>
+    <filename>/usr/share/pixmaps/backgrounds/gnome/abstract/Silk.png</filename>
+    <options>zoom</options>
+    <shade_type>horizontal-gradient</shade_type>
+    <pcolor>#ffff92920e0e</pcolor>
+    <scolor>#eaeabcbc1212</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Ondas</name>
+    <filename>/usr/share/pixmaps/backgrounds/gnome/abstract/Waves.png</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#11116666aaaa</pcolor>
+    <scolor>#6666baba0000</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Flor fresca</name>
+    <filename>/usr/share/pixmaps/backgrounds/gnome/nature/FreshFlower.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#6666baba0000</pcolor>
+    <scolor>#6666baba0000</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Mariquita</name>
+    <filename>/usr/share/pixmaps/backgrounds/gnome/nature/LadyBird.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#6666baba0000</pcolor>
+    <scolor>#6666baba0000</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Duna</name>
+    <filename>/usr/share/pixmaps/backgrounds/gnome/nature/Dune.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#6666baba0000</pcolor>
+    <scolor>#6666baba0000</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Cortinas</name>
+    <filename>/usr/share/pixmaps/backgrounds/gnome/nature/Blinds.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#6666baba0000</pcolor>
+    <scolor>#6666baba0000</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Jard&#xED;n</name>
+    <filename>/usr/share/pixmaps/backgrounds/gnome/nature/Garden.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#6666baba0000</pcolor>
+    <scolor>#6666baba0000</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>El&#xE1;stico</name>
+    <filename>/usr/share/pixmaps/backgrounds/gnome/abstract/Spring.png</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#6666baba0000</pcolor>
+    <scolor>#6666baba0000</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Pradera verde</name>
+    <filename>/usr/share/pixmaps/backgrounds/gnome/nature/GreenMeadow.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#6666baba0000</pcolor>
+    <scolor>#6666baba0000</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Debian Lenny</name>
+    <filename>/usr/share/images/desktop-base/desktop-background</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#6666baba0000</pcolor>
+    <scolor>#6666baba0000</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Gulp</name>
+    <filename>/usr/share/pixmaps/backgrounds/gnome/abstract/Gulp.png</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#3a3a59599090</pcolor>
+    <scolor>#6666baba0000</scolor>
+  </wallpaper>
+</wallpapers>

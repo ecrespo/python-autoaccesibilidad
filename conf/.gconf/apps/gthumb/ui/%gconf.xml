@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="image_pane_visible" mtime="1246304629" type="bool" value="false"/>
+	<entry name="comment_pane_size" mtime="1246304629" type="int" value="449"/>
+	<entry name="sidebar_content_size" mtime="1246304629" type="int" value="190"/>
+	<entry name="sidebar_size" mtime="1246304629" type="int" value="255"/>
+	<entry name="filterbar_visible" mtime="1246304436" type="bool" value="true"/>
+</gconf>

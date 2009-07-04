@@ -1,0 +1,737 @@
+var subnet_mask = new Array(0, 128, 192, 224, 240, 248, 252, 254, 255);
+var msg = new Array("The IP address is an invalid address.",
+	"The Lan IP address can not be zero.",
+	"Lan IP address",
+	"The Subnet Mask address is an invalid address.",
+	"The Subnet Mask address can not be zero.",
+	"Subnet Mask address",
+	"The Gateway address is an invalid address.",
+	"The Gateway address can not be zero.",
+	"Gateway address",
+	"The Lan IP address and the Gateway address are not in the same domain.",
+	"The Start IP address is an invalid address.",
+	"The Start IP address can not be zero.",
+	"Start IP address",
+	"The Lan IP address and the Start IP address are not in the same domain.",
+	"The End IP address is an invalid address.",
+	"The End IP address can not be zero.",
+	"End IP address",
+	"The Lan IP address and the End IP address are not in the same domain.",
+	"The DNS Server address is an invalid address.",
+	"The DNS Server address can not be zero.",
+	"DNS Server address",
+	"SSID can not be empty.",
+	"The Encryption can not be disable when the Authentication Type is in the Shared Key mode.",
+	"The length of PSK Key must be at least 8 characters.",
+	"The Confirmed Passphrase does not match the Passphrase.",
+	"The verfiy password does not match the password.",
+	"The selected wep key can not be empty.",
+	"The wep key can not be empty.",
+	"Quit setup wizard and discard settings?",
+	"The legal characters of MAC must be 0~9, A~F, or a~f.",	
+	"The Ending IP address must be greater than the Starting IP address.",
+	"The Secondary DNS address is an invalid address.",
+	"The Secondary DNS address can not be zero.",
+	"Secondary DNS address",
+	"The confirm password does not match the new password in the Administrator section.",
+	"The confirm password does not match the new password in the User section.",
+	"Please enter another Server Name.",
+	"Please enter another Host Name",
+	"Please enter another User Name",
+	"Please enter another Password",
+	"Restore To Factory Default Settings?",
+	"Are you sure to reboot the router?",
+	"Load Settings from file?",
+	"Please select a file to upload.",
+	"Only admin account can download the settings.",
+	"Please enter either a host name or an ip address.",
+	"Please enter another SMTP Server or IP address",
+	"Please enter another email address.",
+	"Are you sure that you want to delete this server?",
+	"Are you sure that you want to delete this application?",
+	"Are you sure that you want to delete this filter?",
+	"Are you sure that you want to delete this routing?",
+	"Are you sure that you want to delete this MAC address?",
+	"Are you sure that you want to delete this keyword?",
+	"Are you sure that you want to delete this domain?",
+	"Are you sure that you want to delete this entry?",
+	"Are you sure that you want to delete this Static DHCP address?",
+	"Please enter another name.",
+	"Please enter another trigger port number.",
+	"Please enter another public port number.",
+	"Please enter another private port number.",
+	"Please enter a private IP address.",
+	"Please enter another port number.",
+	"Please select a keyword to delete.",
+	"This keyword is already existing in the list of Keyword table.",
+	"Please enter another keyword.",
+	"Unable to add more keyword.",
+	"Please select a blocked domain to delete.",
+	"Please select a permitted domain to delete.",
+	"This domain is already existing in the list of Blocked Domain.",
+	"Please enter another blocked domain.",
+	"Unable to add more blocked domain.",
+	"This domain is already existing in the list of Permitted Domain.",
+	"Please enter another permitted domain.",
+	"Unable to add more permitted domain.",
+	"Please choose a firmware to upgrade.",
+	"Please enter another domain.",
+	"Unable to add more control domains.",
+	"Please select a Control Domain to delete.",
+	"Please enter at least one control domain.",
+	"The Radius Server 1 IP address is an invalid address.",
+	"The Radius Server 1 IP address can not be zero.",
+	"Radius Server 1 IP address",
+	"The Radius Server 2 IP address is an invalid address.",
+	"The Radius Server 2 IP address can not be zero.",
+	"Radius Server 2 IP address",
+	"The Static DHCP IP address is invalid.(IP Range: 1~254)",
+	"Please enter another Static DHCP IP address.",
+	"Please enter another Static DHCP name.",
+	"The Server IP address is an invalid address.",
+	"The Server IP address can not be zero.",
+	"Server IP address",
+	"The Verify password does not match the password.",
+	"The Source Start IP address is an invalid address.",
+	"The Source Start IP address can not be zero.",
+	"Source Start IP address",
+	"The Source End IP address is an invalid address.",
+	"The Source End IP address can not be zero.",
+	"Source End IP address",
+	"The Destination Start IP address is an invalid address.",
+	"The Destination Start IP address can not be zero.",
+	"Destination Start IP address",
+	"The Destination End IP address is an invalid address.",
+	"The Destination End IP address can not be zero.",
+	"Destination End IP address",
+	"The length of Passphrase is over 63 characters.");
+var INVALID_IP_ADDRESS = 0;
+var ZERO_IP_ADDRESS = 1;
+var IP_ADDRESS_DESC = 2;
+var INVALID_MASK_ADDRESS = 3;
+var ZERO_MASK_ADDRESS = 4;
+var MASK_ADDRESS_DESC = 5;
+var INVALID_GATEWAY_ADDRESS = 6;
+var ZERO_GATEWAY_ADDRESS = 7;
+var GATEWAY_ADDRESS_DESC = 8;
+var NOT_SAME_DOMAIN = 9;
+var INVALID_START_IP = 10;
+var ZERO_START_IP = 11;
+var START_IP_DESC = 12;
+var START_INVALID_DOMAIN = 13;
+var INVALID_END_IP = 14;
+var ZERO_END_IP = 15;
+var END_IP_DESC = 16;
+var END_INVALID_DOMAIN = 17;
+var INVALID_DNS_ADDRESS = 18;
+var ZERO_DNS_ADDRESS = 19;
+var DNS_ADDRESS_DESC = 20;
+var SSID_EMPTY_ERROR = 21;
+var AUTH_TYPE_ERROR = 22;
+var PSK_LENGTH_ERROR = 23;
+var PSK_MATCH_ERROR = 24;
+var MATCH_PWD_ERROR = 25;
+var WEP_KEY_EMPTY = 26;
+var WIZARD_KEY_EMPTY = 27;
+var QUIT_WIZARD = 28;
+var MAC_ADDRESS_ERROR = 29;
+var IP_RANGE_ERROR = 30;
+var INVALID_SEC_DNS_ADDRESS = 31;
+var ZERO_SEC_DNS_ADDRESS = 32;
+var SEC_DNS_ADDRESS_DESC = 33;
+var ADMIN_PASS_ERROR = 34;
+var USER_PASS_ERROR = 35;
+var DDNS_SERVER_ERROR = 36;
+var DDNS_HOST_ERROR = 37;
+var DDNS_USER_ERROR = 38;
+var DDNS_PASS_ERROR = 39;
+var RESTORE_DEFAULT = 40;
+var REBOOT_ROUTER = 41;
+var LOAD_SETTING = 42;
+var LOAD_FILE_ERROR = 43;
+var DOWNLOAD_SETTING_ERROR = 44;
+var PING_IP_ERROR = 45;
+var SMTP_SERVER_ERROR = 46;
+var EMAIL_ADDRESS_ERROR = 47;
+var DEL_SERVER_MSG = 48;
+var DEL_APPLICATION_MSG = 49;
+var DEL_FILTER_MSG = 50;
+var DEL_ROUTE_MSG = 51;
+var DEL_MAC_MSG = 52;
+var DEL_KEYWORD_MSG = 53;
+var DEL_DOMAIN_MSG = 54;
+var DEL_ENTRY_MSG = 55;
+var DEL_STATIC_DHCP_MSG = 56;
+var NAME_ERROR = 57;
+var TRIGGER_PORT_ERROR = 58;
+var PUBLIC_PORT_ERROR = 59;
+var PRIVATE_PORT_ERROR = 60;
+var PRIVATE_IP_ERROR = 61;
+var PORT_ERROR = 62;
+var DEL_KEYWORD_ERROR = 63;
+var SAME_KEYWORD_ERROR = 64;
+var KEYWORD_ERROR = 65;
+var ADD_KEYWORD_ERROR = 66;
+var DEL_BLOCK_DOMAIN_ERROR = 67;
+var DEL_PERMIT_DOMAIN_ERROR = 68;
+var SAME_BLOCK_DOMAIN = 69;
+var BLOCK_DOMAIN_ERROR = 70;
+var ADD_BLOCK_DOMAIN_ERROR = 71;
+var SAME_PERMIT_DOMAIN = 72;
+var PERMIT_DOMAIN_ERROR = 73;
+var ADD_PERMIT_DOMAIN_ERROR = 74;
+var FIRMWARE_UPGRADE_ERROR = 75;
+var DOMAIN_ERROR = 76;
+var ADD_CONTROL_DOMAIN_ERROR = 77;
+var DEL_CONTROL_DOMAIN_ERROR = 78;
+var CONTROL_DOMAIN_ERROR = 79;
+var INVALID_RADIUS_SERVER1_IP = 80;
+var ZERO_RADIUS_SERVER1_IP = 81;
+var RADIUS_SERVER1_IP_DESC = 82;
+var INVALID_RADIUS_SERVER2_IP = 83;
+var ZERO_RADIUS_SERVER2_IP = 84;
+var RADIUS_SERVER2_IP_DESC = 85;
+var INVALID_STATIC_DHCP_IP = 86;
+var ZERO_STATIC_DHCP_IP = 87;
+var STATIC_DHCP_NAME = 88;
+var INVALID_SERVER_IP = 89;
+var ZERO_SERVER_IP = 90;
+var SERVER_IP_DESC = 91;
+var MATCH_WIZARD_PWD_ERROR = 92;
+var INVALID_SOURCE_START_IP = 93;
+var ZERO_SOURCE_START_IP = 94;
+var SOURCE_START_IP_DESC = 95;
+var INVALID_SOURCE_END_IP = 96;
+var ZERO_SOURCE_END_IP = 97;
+var SOURCE_END_IP_DESC = 98;
+var INVALID_DEST_START_IP = 99;
+var ZERO_DEST_START_IP = 100;
+var DEST_START_IP_DESC = 101;
+var INVALID_DEST_END_IP = 102;
+var ZERO_DEST_END_IP = 103;
+var DEST_END_IP_DESC = 104;
+var PSK_OVER_LEN = 105;
+var SelRowBC
+function GetSchedule(f, r, i){
+ if (r[i]=="0")
+ f.schd[0].checked = true
+ else
+ f.schd[1].checked = true
+ f.hour1.selectedIndex = r[i+1]
+ f.min1.selectedIndex = r[i+2]
+ f.am1.selectedIndex = r[i+3]
+ f.hour2.selectedIndex = r[i+4]
+ f.min2.selectedIndex = r[i+5]
+ f.am2.selectedIndex = r[i+6]
+ f.day1.selectedIndex = r[i+7]
+ f.day2.selectedIndex = r[i+8]
+}
+function addr_obj(addr, desc, allow_zero, e_msg1, e_msg2, e_msg3, is_mask){	
+	this.addr = addr;
+	this.desc = msg[desc];
+	this.allow_zero = allow_zero;	
+	this.e_msg1 = msg[e_msg1];
+	this.e_msg2 = msg[e_msg2];	
+	
+	if (e_msg3 != -1){
+	this.e_msg3 = msg[e_msg3];	
+	}
+	this.is_mask = is_mask;	
+}
+function varible_obj(var_value, desc, min, max, is_even){	
+	this.var_value = var_value;
+	this.desc = desc;
+	this.min = min;
+	this.max = max;	
+	this.is_even = is_even;	
+}
+function raidus_obj(ip, port, secret, number){	
+	this.ip = ip;
+	this.port = port;
+	this.secret = secret;
+	this.number = number;	
+}
+function ip4_obj(ip, min_range, max_range, e_msg1, e_msg2){	
+	this.ip = ip;	
+	this.min_range = min_range;
+	this.max_range = max_range;	
+	this.e_msg1 = msg[e_msg1];
+	this.e_msg2 = msg[e_msg2];	
+}
+function check_ip4(ip4){
+	var temp_ip = (ip4.ip).split(" ");
+	
+	if (ip4.ip == ""){
+	alert(ip4.e_msg1);
+	return false;
+	}else if (isNaN(ip4.ip) || temp_ip.length > 1 || parseInt(ip4.ip) < ip4.min_range || parseInt(ip4.ip) > ip4.max_range){
+	alert(ip4.e_msg2);
+	return false;
+	}
+	return true;
+}
+function check_hex(data){	
+	data = data.toUpperCase();
+	
+	if (!(data >= 'A' && data <= 'F') && !(data >= '0' && data <= '9')){	
+	return false;
+	}	
+	return true;
+}
+function check_port(port){
+ var temp_port = port.split(" ");
+ 
+ if (isNaN(port) || port == "" || temp_port.length > 1 
+ || (parseInt(port) < 1 || parseInt(port) > 65534)){
+ return false;
+ }
+ return true;
+}
+function check_mac(mac){
+ var temp_mac = mac.split("-");
+ var error = true;
+ 
+ if (temp_mac.length == 6){
+	for (var i = 0; i < 6; i++){ 
+	var temp_str = temp_mac[i];
+	
+	if (temp_str == ""){
+	error = false;
+	}else{ 
+	if (!check_hex(temp_str.substring(0,1)) || !check_hex(temp_str.substring(1))){
+	error = false;
+	}
+	}
+	
+	if (!error){
+	break;
+	}
+	}
+	}else{
+	error = false;
+	}
+ return error;
+}
+function change_color(table_name, row){
+ var obj = get_by_id(table_name);
+ for (var i = 1; i < obj.rows.length; i++){
+ if (row == i){
+ obj.rows[i].style.backgroundColor = "#FFFF00";
+ }else{
+ obj.rows[i].style.backgroundColor = "#FFFFFF";
+ }
+ } 
+}
+function set_server(is_enable){
+	var enable = get_by_name("enable");
+	
+ if (is_enable == "1"){
+ enable[0].checked = true;
+ }else{
+ enable[1].checked = true;
+ }
+}
+function set_protocol(which_value, obj){
+ for (var i = 0; i < 3; i++){
+ if (which_value == obj.options[i].value){
+ obj.selectedIndex = i;
+ break;
+ }
+ }
+}
+function get_by_id(id){
+	with(document){
+	return getElementById(id);
+	}
+}
+function get_by_name(name){
+	with(document){
+	return getElementsByName(name);
+	}
+}
+function check_domain(ip, mask, gateway){
+	var temp_ip = ip.addr;
+	var temp_mask = mask.addr;
+	var temp_gateway = gateway.addr;
+	var is_same = true;
+	
+	if (temp_gateway[0] == 0 && temp_gateway[1] == 0 && temp_gateway[2] == 0
+	&& temp_gateway[3] == 0){
+	if (gateway.allow_zero){
+	return is_same;
+	}
+	}
+	
+	for (var i = 0; i < temp_ip.length - 1; i++){
+	if ((temp_ip[i] & temp_mask[i]) != (temp_gateway[i] & temp_mask[i])){
+	alert(gateway.e_msg3);
+	is_same = false;	// when not in the same subnet mask, return false
+	break;
+	}
+	}
+	return is_same;
+}
+function check_lan_setting(ip, mask, gateway){
+	var temp_ip_obj = new addr_obj(ip.split("."), IP_ADDRESS_DESC, false, INVALID_IP_ADDRESS, ZERO_IP_ADDRESS, -1, false);
+	var temp_mask_obj = new addr_obj(mask.split("."), MASK_ADDRESS_DESC, false, INVALID_MASK_ADDRESS, ZERO_MASK_ADDRESS, -1, true);
+	var temp_gateway_obj = new addr_obj(gateway.split("."), GATEWAY_ADDRESS_DESC, false, INVALID_GATEWAY_ADDRESS, ZERO_GATEWAY_ADDRESS, NOT_SAME_DOMAIN, false);
+	
+	if (!check_address(temp_ip_obj)){	// when ip is invalid
+	return false;
+	}else if (!check_address(temp_mask_obj)){	// when subnet mask is invalid
+	return false;	
+	}else if (!check_mask(temp_mask_obj)){	// when subnet mask is not in the subnet mask range
+	return false; 
+	}else if (!check_address(temp_gateway_obj)){	// when gateway is invalid
+	return false;	
+	}else if (!check_domain(temp_ip_obj, temp_mask_obj, temp_gateway_obj)){	// check if the ip and the gateway are in the same subnet mask or not	
+	return false;
+	}
+	return true;
+}
+function check_ip_mask(ip, mask){
+	var temp_ip_obj = new addr_obj(ip.split("."), IP_ADDRESS_DESC, false, INVALID_IP_ADDRESS, ZERO_IP_ADDRESS, -1, false);
+	var temp_mask_obj = new addr_obj(mask.split("."), MASK_ADDRESS_DESC, false, INVALID_MASK_ADDRESS, ZERO_MASK_ADDRESS, -1, true);
+	
+	if (!check_address(temp_ip_obj)){	// when ip is invalid
+	return false;
+	}else if (!check_address(temp_mask_obj)){	// when subnet mask is invalid
+	return false;	
+	}else if (!check_mask(temp_mask_obj)){	// when subnet mask is not in the subnet mask range
+	return false; 
+	}
+	return true;
+}
+function check_pwd(pwd1, pwd2){
+	if (get_by_id(pwd1).value != get_by_id(pwd2).value){
+	alert(msg[MATCH_PWD_ERROR]);
+	return false;
+	}	
+	return true;
+}
+function check_ssid(id){
+	if (get_by_id(id).value == ""){
+	alert(msg[SSID_EMPTY_ERROR]);
+	return false;
+	}
+	return true; 
+}
+function check_radius(radius){
+	
+	if (!check_address(radius.ip)){
+	return false;
+	}else if (!check_port(radius.port)){
+ alert("The port of Radius Server " + radius.number + " is invalid.");
+ return false;
+ }else if (radius.secret == ""){
+ alert("The Shared Secret of Radius Server " + radius.number + " can not be empty.");
+ return false; 
+	}
+	return true;
+}
+function get_seq(index){
+	var seq;
+	
+	switch(index){
+	case 0:
+	seq = "1st";
+	break;
+	case 1:
+	seq = "2nd";
+	break;
+	case 2:
+	seq = "3rd";
+	break;
+	case 3:
+	seq = "4th";
+	break;
+	}
+	return seq;
+}
+function check_ip_range(order, my_obj){
+	var which_ip = (my_obj.addr[order]).split(" ");	
+	var start, end;
+	
+	if ((order != 0 && order != 3) || my_obj.is_mask){
+	start = 0;
+	end = 255;
+	}else{
+	start = 1;
+	end = 254;	
+	}
+	
+	if (isNaN(which_ip) || which_ip == "" || which_ip.length > 1){
+	alert("The " + get_seq(order) + " address of " + my_obj.desc + " must be an integer.");
+	return false;
+	}else if (parseInt(which_ip) < start || parseInt(which_ip) > end){
+	alert("The " + get_seq(order) + " range of " + my_obj.desc + " must be between " + start + " to " + end + ".");
+	return false;
+	}	
+	return true;
+}
+function is_valid_ip(my_obj){
+	var count_zero = 0;
+	var ip = my_obj.addr;
+	
+	for(var i = 0; i < ip.length; i++){
+	if (ip[i] == "0"){
+	count_zero++;
+	}	
+	}
+	
+	if (!my_obj.allow_zero && count_zero == 4){
+	alert(my_obj.e_msg2);
+	return false;
+	}else{
+	if (count_zero != 4){
+	for(var i = 0; i < ip.length; i++){
+	if (!check_ip_range(i, my_obj)){
+	return false;
+	}	
+	}
+	}
+	}
+	return true;	
+}
+function check_address(my_obj){
+	if (my_obj.addr.length == 4){
+	if (!is_valid_ip(my_obj)){
+	return false;
+	}else{
+	return true;
+	}
+	}else{
+	alert(my_obj.e_msg1);
+	return false;
+	}
+}
+	
+function check_mask(my_mask){
+	var temp_mask = my_mask.addr;	
+	var in_range = false;
+	var error;
+	
+	for (var i = 0; i < temp_mask.length; i++){	
+	var mask = parseInt(temp_mask[i]);
+	
+	for (var j = 0; j < subnet_mask.length; j++){
+	if (mask == subnet_mask[j]){	
+	in_range = true;
+	break;
+	}else{	
+	in_range = false;
+	}
+	}
+	
+	if (!in_range){	// when not in the subnet mask range
+	error = "The " + get_seq(i) + " range of " 
+	+ my_mask.desc + " must be ";
+	for (var j = 0; j < subnet_mask.length; j++){
+	error += subnet_mask[j];
+	if (j < subnet_mask.length - 1){
+	error += ", ";
+	}
+	}
+	alert(error);
+	return false;
+	}
+	
+	if (i != 0 && mask != 0){ // when not the 1st range and the value is not 0
+	if (parseInt(temp_mask[i-1]) != 255){ // check the previous value is 255 or not
+	alert(my_mask.e_msg1);
+	return false;
+	}	
+	}	
+	}
+	return true;
+}
+function check_port(port){
+ var temp_port = port.split(" ");
+ 
+ if (isNaN(port) || port == "" || temp_port.length > 1 
+ || (parseInt(port) < 1 || parseInt(port) > 65534)){
+ return false;
+ }
+ return true;
+}
+function check_key(){ 
+	var length = get_length();	
+	var wep_def_key = get_by_name("defkey");
+	var wep_key_type = get_by_id("wepKeyType").value;
+	var key_len_msg;
+	
+	for (var i = 1; i < 5; i++){	
+	var key = get_by_id("key" + i).value;
+	
+	if (wep_def_key[i-1].checked){
+	if (key == ''){
+	alert(msg[WIZARD_KEY_EMPTY]);
+	return false;
+	}
+	}
+	
+	//key_len_msg = get_key_len_msg(i);
+	
+	if (key != ''){
+	if (key.length < length){
+	alert("The length of Key" + i + " must be " + length + " characters.");
+	return false;
+	}else{
+	if (wep_key_type == "0"){	// check the key is hex or not
+	for (var j = 0; j < key.length; j++){
+	if (!check_hex(key.substring(j, j+1))){
+	alert("Key"+ i +" is wrong, the legal characters are 0~9, A~F, or a~f.");
+	return false;
+	}
+	}
+	}
+	}
+	}
+	}
+	return true;
+}
+function get_length(){
+	var wep_key_len = parseInt(get_by_id("wep_Len").value);
+	var length;
+	
+	switch(wep_key_len){
+	case 1 :
+	length = 5;
+	break;
+	case 2 :
+	length = 13;
+	break;
+	default :
+	length = 5;
+	break;
+	}	
+	
+	if (get_by_id("wepKeyType").value == "0"){
+	length *= 2;
+	}
+	return length;
+}
+function GetProto(f, p, n){
+ var i
+ if (p=="6")
+ i=0
+ else if (p=="17")
+ i=1
+ else
+ i=2
+	eval("f."+n+".selectedIndex="+i)
+}
+function SelectRow(tn,row){
+ if (SelRow != row){
+ var bar = document.getElementById(tn)
+ if (SelRow >= 0)
+ bar.rows[SelRow].style.backgroundColor = SelRowBC
+ if (row >= 0){
+ SelRowBC = bar.rows[row].style.backgroundColor
+ bar.rows[row].style.backgroundColor = "#FFFF00"
+ }
+ SelRow = row;
+ }
+}
+function NewRow(f,tn){
+	f.editRow.value = "-1"
+	SelectRow(tn,-1)
+}
+function LastRow(fn,tn){
+	var f = document.getElementById(fn)
+	var i = parseInt(f.editRow.value)
+	if (i>=1){
+	SelectRow(tn,i)
+	}
+}
+function EnableRow(f, e){
+	if (e == "1")
+	f.enable[0].checked = true
+	else
+	f.enable[1].checked = true
+}
+function set_mac(mac){
+	var temp_mac = mac.split("-");
+	for (var i = 0; i < 6; i++){
+	var obj = get_by_id("mac" + (i+1));
+	obj.value = temp_mac[i];
+	}
+}
+function ShowWizard(name){
+	window.open(name,"Wizard","width=450,height=320")
+}
+function ShowReservedIP(num){
+	document.all.reserved_index.value = num;
+	document.forms[0].submit();
+}
+function ReleaseReservedIP(num){
+	document.all.reserved_index.value = num+10000;
+	document.forms[0].submit();
+}
+function ExitWizard(){
+ if (confirm("Quit Setup Wizard and discard settings ?"))
+ window.close()
+}
+function ExitReserved(){
+ if (confirm("Quit and discard settings ?"))
+ window.close()
+}
+function ChgPage(i){
+ var p
+	if (i==0) p="h_wan_dhcp.html"
+	if (i==1) p="h_wan_fix.html"
+	if (i==2) p="h_wan_poe.html"
+	if (i==3) p="h_wan_pptp.html"
+	if (i==4) p="h_wan_bigpond.html"
+	if (i==5)
+	{
+	if (others == "bigpond")
+	p="h_wan_bigpond.html"
+	else
+	p="h_wan_pptp.html"
+	}
+	window.location.href=p
+}
+function ChgFilter(i){
+ var p
+	if (i==0) p="adv_filters.html"
+	if (i==1) p="adv_filters_mac.html"
+	if (i==2) p="adv_filters_url.html"
+	if (i==3) p="adv_filters_domain.html"
+	window.location.href=p
+}
+function send_submit(which_form){
+	get_by_id(which_form).submit();
+}
+function DelRow(f,r)
+{
+ EditRow(r)
+ if (confirm("Are your sure you want to delete this entry?")){
+ f.delrow.value="1"
+ f.submit()
+ }
+}
+function selWL(F){
+	F.submit();
+}
+function check_varible(obj){	
+	var temp_obj = (obj.var_value).split(" ");
+	
+	if (temp_obj == ""){
+	alert(obj.desc + " can not be empty.");	
+	return false;
+	}else if (temp_obj.length > 1){
+	alert("Please enter another " + obj.desc + " value.");
+	return false;
+	}else if (isNaN(obj.var_value)){
+	alert(obj.desc + " must be an integer.");
+	return false;
+	}else if (parseInt(obj.var_value) < obj.min || parseInt(obj.var_value) > obj.max){
+	alert("The range of " + obj.desc + " is " + obj.min + " ~ " + obj.max + ".");
+	return false;
+	}else if (obj.is_even && (parseInt(obj.var_value) % 2 != 0)){
+	alert(obj.desc + " is even number only.");
+	return false;
+	}
+	return true;
+}

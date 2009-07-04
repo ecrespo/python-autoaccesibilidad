@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="recents" mtime="1245419336" type="list" ltype="string">
+		<li type="string">
+			<stringvalue>/apps/compiz/general/allscreens/options/hide_skip_taskbar_windows</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>/apps/compiz/general/allscreens/options/click_to_focus</stringvalue>
+		</li>
+	</entry>
+</gconf>

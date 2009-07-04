@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="timestamp" mtime="1246666999" type="string">
+		<stringvalue>1246666999</stringvalue>
+	</entry>
+	<entry name="type" mtime="1246666999" type="string">
+		<stringvalue>802-11-wireless</stringvalue>
+	</entry>
+	<entry name="uuid" mtime="1246666999" type="string">
+		<stringvalue>fc14e191-5542-446c-b728-12d4b5338835</stringvalue>
+	</entry>
+	<entry name="id" mtime="1246666999" type="string">
+		<stringvalue>Auto debianitas</stringvalue>
+	</entry>
+	<entry name="name" mtime="1246666999" type="string">
+		<stringvalue>connection</stringvalue>
+	</entry>
+</gconf>

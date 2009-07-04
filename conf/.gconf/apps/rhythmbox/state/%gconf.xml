@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="window_maximized" mtime="1246216567" type="bool" value="true"/>
+	<entry name="add_dir" mtime="1244922796" type="string">
+		<stringvalue>file:///home/ernesto/videos/mp3</stringvalue>
+	</entry>
+	<entry name="window_y_position" mtime="1244922785" type="int" value="25"/>
+	<entry name="window_x_position" mtime="1244922785" type="int" value="0"/>
+	<entry name="window_height" mtime="1244922785" type="int" value="550"/>
+	<entry name="window_width" mtime="1244922785" type="int" value="800"/>
+	<entry name="window_visible" mtime="1246216567" type="bool" value="true"/>
+	<entry name="sourcelist_height" mtime="1246216567" type="int" value="300"/>
+	<entry name="paned_position" mtime="1246216567" type="int" value="160"/>
+	<entry name="volume" mtime="1246216564" type="float" value="1"/>
+</gconf>

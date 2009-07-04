@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="first_time_flag" mtime="1244922785" type="bool" value="true"/>
+	<entry name="library_locations" mtime="1244922783" type="list" ltype="string">
+		<li type="string">
+			<stringvalue>file:///home/ernesto/M%C3%BAsica</stringvalue>
+		</li>
+	</entry>
+</gconf>

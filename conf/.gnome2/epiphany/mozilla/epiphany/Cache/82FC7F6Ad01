@@ -1,0 +1,382 @@
+<HTML>
+<HEAD>
+<title>DWL-G730</title>
+<META HTTP-EQUIV=Content-Type CONTENT="text/html; charset=iso-8859-1">
+<script language="JavaScript" src="public.js"></script>
+<script language="JavaScript">
+	var SelRow = -1
+	rDat = new Array()
+	rDat[1] = "0,Virtual Server FTP,0.0.0.0,6,21,21,0,1,0,0,1,0,0,0,0"
+rDat[2] = "0,Virtual Server HTTP,0.0.0.0,6,80,80,0,1,0,0,1,0,0,0,0"
+rDat[3] = "0,Virtual Server HTTPS,0.0.0.0,6,443,443,0,1,0,0,1,0,0,0,0"
+rDat[4] = "0,Virtual Server DNS,0.0.0.0,17,53,53,0,1,0,0,1,0,0,0,0"
+rDat[5] = "0,Virtual Server SMTP,0.0.0.0,6,25,25,0,1,0,0,1,0,0,0,0"
+rDat[6] = "0,Virtual Server POP3,0.0.0.0,6,110,110,0,1,0,0,1,0,0,0,0"
+rDat[7] = "0,Virtual Server Telnet,0.0.0.0,6,23,23,0,1,0,0,1,0,0,0,0"
+rDat[8] = "0,IPSec,0.0.0.0,17,500,500,0,1,0,0,1,0,0,0,0"
+rDat[9] = "0,PPTP,0.0.0.0,6,1723,1723,0,1,0,0,1,0,0,0,0"
+rDat[10] = "0,NetMeeting,0.0.0.0,6,1720,1720,0,1,0,0,1,0,0,0,0"
+rDat[11] = "0,DCS-1000,0.0.0.0,6,80,80,0,1,0,0,1,0,0,0,0"
+rDat[12] = "0,DCS-2000/DCS-5300,0.0.0.0,6,800,800,0,1,0,0,1,0,0,0,0"
+rDat[13] = "0,i2eye,0.0.0.0,6,1720,1720,0,1,0,0,1,0,0,0,0"
+rDat[14] = "0,DCS-3120,0.0.0.0,17,3120,3120,0,1,0,0,1,0,0,0,0"
+
+	function EditRow(row){
+	var f = document.getElementById("frmVS")
+	
+	f.editRow.value = row
+	var r = rDat[row].split(",")
+	EnableRow(f, r[0])
+	f.name.value = r[1]
+	f.ip.value = r[2]
+	GetProto(f, r[3], "protocol")
+	f.priPort.value = r[4]
+	f.pubPort.value = r[5]
+	GetSchedule(f, r, 6)
+	SelectRow("tabVS",row)
+	}
+	
+	function send_request(){
+	var ip = get_by_id("ip").value;
+ var temp_ip_obj = new addr_obj(ip.split("."), IP_ADDRESS_DESC, false, INVALID_IP_ADDRESS, ZERO_IP_ADDRESS, -1, false);
+ 
+ if (get_by_id("name").value == ""){
+ alert(msg[NAME_ERROR]);
+ }else if (!check_address(temp_ip_obj)){
+ return;
+ }else if (!check_port(get_by_id("priPort").value)){
+ alert(msg[PRIVATE_PORT_ERROR]);
+ }else if (!check_port(get_by_id("pubPort").value)){
+ alert(msg[PUBLIC_PORT_ERROR]);
+ }else{
+ send_submit("frmVS");
+ }
+	}
+</script>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF leftmargin=0 topmargin=0 onload="LastRow('frmVS','tabVS')">
+<table width=75% border=0 cellspacing=0 cellpadding=0 align=center>
+<tr>
+<td>
+<div align=center><img src=home_01.jpg width=765 height=95 usemap=#Map2 border=0></div>
+</td>
+</tr>
+<tr>
+<td>
+ <table width=765 border=0 cellpadding=0 cellspacing=0 align=center>
+ <tr> 
+ <td rowspan=9 width=20 background=down_01.gif>&nbsp;</td>
+ <td rowspan=2 width=133><img src=down_02.jpg width=133 height=75></td>
+ <td rowspan=2 width=25 background=down_03.jpg>&nbsp;</td>
+ <td width=21><img src=advhtml_04.jpg width=21 height=49></td>
+ <td width=522><img src=advhtml_05.jpg width=522 height=49 usemap=#MapMap border=0></td>
+ <td width=19><img src=down_06.jpg width=19 height=49></td>
+ <td width=25 background=down_11.gif>&nbsp;</td>
+ </tr>
+ <tr> 
+ <td width=21 background=down_14.gif>&nbsp;</td>
+ <td rowspan=8 width=522 valign=top> 
+ <form id="frmVS" name="frmVS" action=vs.cgi method=post>
+ <table width=100% border=0 cellspacing=2 cellpadding=0 height=30>
+ <tr> 
+ <td colspan=4 height="20"><font face=Arial color=#8bacb1 size=2><b>Virtual 
+ Server </b></font> 
+ <input type="hidden" name="editRow" value="-1">
+ <input type="hidden" name="delrow" value="0">
+ </td>
+ </tr>
+ <tr valign="top"> 
+ <td colspan=4 height="30"><font size="2" face="Arial">Virtual 
+ Server is used to allow Internet users access to LAN services.</font></td>
+ </tr>
+ <tr> 
+ <td width=18%> 
+ <div align=right><font face=Arial size=2>&nbsp;</font></div>
+ </td>
+ <td height=11 colspan=3><font size=2 face=Arial> 
+ <input type=radio id=enable name=enable value=1>
+ Enabled</font> <font size=2 face=Arial> 
+ <input type=radio id=enable name=enable value=0>
+ Disabled</font> <font size=2 face=Arial> </font></td>
+ </tr>
+ <tr> 
+ <td width=18%> 
+ <div align=left><font face=Arial size=2>Name</font></div>
+ </td>
+ <td height=12 colspan=3><font size=2 face=Arial> 
+ <input type=text id=name name=name size=32 maxlength=31 value="">
+ <input type=reset value=Clear onClick="NewRow(this.form,'tabVS')">
+ </font></td>
+ </tr>
+ <tr> 
+ <td width=18%> 
+ <div align=left><font face=Arial size=2>Private IP&nbsp;</font></div>
+ </td>
+ <td height=25 colspan=3><font size=2 face=Arial> 
+ <input type=text id=ip name=ip size=15 maxlength=15 value="">
+ </font></td>
+ </tr>
+ <tr> 
+ <td width=18%> 
+ <div align=left><font face=Arial size=2>Protocol Type&nbsp;</font></div>
+ </td>
+ <td height=25 colspan=3><font size=2 face=Arial> 
+ <select name=protocol size=1>
+ <option value=6>TCP</option>
+ <option value=17>UDP</option>
+ <option value=0>Both</option>
+ </select>
+ </font></td>
+ </tr>
+ <tr> 
+ <td width=18% height=2> 
+ <div align=left><font face=Arial size=2>Private Port&nbsp;</font></div>
+ </td>
+ <td height=25 colspan=3><font size=2 face=Arial> 
+ <input type=text id=priPort name=priPort size=5 maxlength=5 value="">
+ </font></td>
+ </tr>
+ <tr> 
+ <td width=18% height=28> 
+ <div align=left><font face=Arial size=2>Public Port&nbsp;</font></div>
+ </td>
+ <td height=25 colspan=3> 
+ <p><font size=2 face=Arial> 
+ <input type=text id=pubPort name=pubPort size=5 maxlength=5 value="">
+ </font></p>
+ </td>
+ </tr>
+ <tr> 
+ <td width=18%> 
+ <div align=left><font face=Arial size=2>Schedule&nbsp;</font></div>
+ </td>
+ <td height=25 colspan=3><font size=2 face=Arial> 
+ <input type=radio name=schd value=0>
+ Always</font></td>
+ </tr>
+ <tr> 
+ <td width=18%>&nbsp;</td>
+ <td width=12% height=25><font size=2 face=Arial> 
+ <input type=radio name=schd value=1>
+ From</font></td>
+ <td colspan=2><font face=Arial size=2>time 
+ <select size=1 name=hour1>
+ <option value=0>00</option>
+ <option value=1>01</option>
+ <option value=2>02</option>
+ <option value=3>03</option>
+ <option value=4>04</option>
+ <option value=5>05</option>
+ <option value=6>06</option>
+ <option value=7>07</option>
+ <option value=8>08</option>
+ <option value=9>09</option>
+ <option value=10>10</option>
+ <option value=11>11</option>
+ </select>
+ : 
+ <select size=1 name=min1>
+ <option value=0>00</option>
+ <option value=5>05</option>
+ <option value=10>10</option>
+ <option value=15>15</option>
+ <option value=20>20</option>
+ <option value=25>25</option>
+ <option value=30>30</option>
+ <option value=35>35</option>
+ <option value=40>40</option>
+ <option value=45>45</option>
+ <option value=50>50</option>
+ <option value=55>55</option>
+ </select>
+ <select size=1 name=am1>
+ <option value=0>AM</option>
+ <option value=1>PM</option>
+ </select>
+ to 
+ <select size=1 name=hour2>
+ <option value=0>00</option>
+ <option value=1>01</option>
+ <option value=2>02</option>
+ <option value=3>03</option>
+ <option value=4>04</option>
+ <option value=5>05</option>
+ <option value=6>06</option>
+ <option value=7>07</option>
+ <option value=8>08</option>
+ <option value=9>09</option>
+ <option value=10>10</option>
+ <option value=11>11</option>
+ </select>
+ : 
+ <select size=1 name=min2>
+ <option value=0>00</option>
+ <option value=5>05</option>
+ <option value=10>10</option>
+ <option value=15>15</option>
+ <option value=20>20</option>
+ <option value=25>25</option>
+ <option value=30>30</option>
+ <option value=35>35</option>
+ <option value=40>40</option>
+ <option value=45>45</option>
+ <option value=50>50</option>
+ <option value=55>55</option>
+ </select>
+ <select size=1 name=am2>
+ <option value=0>AM</option>
+ <option value=1>PM</option>
+ </select>
+ </font></td>
+ </tr>
+ <tr> 
+ <td width=18% height=25>&nbsp;</td>
+ <td height=25 width=12%>&nbsp;</td>
+ <td height=25 colspan=2><font face=Arial size=2>day 
+ <select size=1 name=day1>
+ <option value=0>Sun</option>
+ <option value=1>Mon</option>
+ <option value=2>Tue</option>
+ <option value=3>Wed</option>
+ <option value=4>Thu</option>
+ <option value=5>Fri</option>
+ <option value=6>Sat</option>
+ </select>
+ to 
+ <select size=1 name=day2>
+ <option value=0>Sun</option>
+ <option value=1>Mon</option>
+ <option value=2>Tue</option>
+ <option value=3>Wed</option>
+ <option value=4>Thu</option>
+ <option value=5>Fri</option>
+ <option value=6>Sat</option>
+ </select>
+ </font></td>
+ </tr>
+ <tr> 
+ <td colspan=4>&nbsp;</td>
+ </tr>
+ <tr> 
+ <td colspan=3 valign=bottom><font face=Arial color=#8bacb1 size=2><b>Virtual 
+ Servers List</b></font></td>
+ <td width=28%> 
+ <table width=40% border=0 cellspacing=0 cellpadding=0 align=right>
+ <tr> 
+ <td><font size=2 face=Arial><a href="javascript:send_request()"><img src=apply_p.jpg width=51 height=52 border=0></a></font></td>
+ <td><font size=2 face=Arial><a href="adv_virtual.html"><img src=cancel_p.jpg width=51 height=52 border=0></a></font></td>
+ <td><font size=2 face=Arial><a href=help_adv.html#05 target=_blank><img src=help_p.jpg width=36 height=52 border=0></a></font></td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+ </table>
+ <table width=100% border=0 id=tabVS cellpadding=0 cellspacing=0>
+ <tr bgcolor=#B7DCFB> 
+ <td>&nbsp;</td>
+ <td><font face=Arial size=2 color=#333333>Name</font></td>
+ <td><font face=Arial size=2 color=#333333>Private IP</font></td>
+ <td><font face=Arial size=2 color=#333333>Protocol</font></td>
+ <td><font face=Arial size=2 color=#333333>Schedule</font></td>
+ <td>&nbsp;</td>
+ </tr>
+ <tr><td><font face="Arial" size="2"><input type="checkbox" name="enable1"  disabled></font></td><td><font face="Arial" size="2">Virtual Server FTP</font></td><td><font face="Arial" size="2">0.0.0.0</font></td><td><font face="Arial" size="2">TCP 21/21</font></td><td><font face="Arial" size="2">always</font></td><td><img src="edit.gif" width="15" height="17" border="0" alt="edit" onclick="EditRow(1)"><img src="delet.gif" width="15" height="18" border="0" alt="delete" onClick="DelRow(document.forms[0],1)"></td></tr>
+<tr><td><font face="Arial" size="2"><input type="checkbox" name="enable2"  disabled></font></td><td><font face="Arial" size="2">Virtual Server HTTP</font></td><td><font face="Arial" size="2">0.0.0.0</font></td><td><font face="Arial" size="2">TCP 80/80</font></td><td><font face="Arial" size="2">always</font></td><td><img src="edit.gif" width="15" height="17" border="0" alt="edit" onclick="EditRow(2)"><img src="delet.gif" width="15" height="18" border="0" alt="delete" onClick="DelRow(document.forms[0],2)"></td></tr>
+<tr><td><font face="Arial" size="2"><input type="checkbox" name="enable3"  disabled></font></td><td><font face="Arial" size="2">Virtual Server HTTPS</font></td><td><font face="Arial" size="2">0.0.0.0</font></td><td><font face="Arial" size="2">TCP 443/443</font></td><td><font face="Arial" size="2">always</font></td><td><img src="edit.gif" width="15" height="17" border="0" alt="edit" onclick="EditRow(3)"><img src="delet.gif" width="15" height="18" border="0" alt="delete" onClick="DelRow(document.forms[0],3)"></td></tr>
+<tr><td><font face="Arial" size="2"><input type="checkbox" name="enable4"  disabled></font></td><td><font face="Arial" size="2">Virtual Server DNS</font></td><td><font face="Arial" size="2">0.0.0.0</font></td><td><font face="Arial" size="2">UDP 53/53</font></td><td><font face="Arial" size="2">always</font></td><td><img src="edit.gif" width="15" height="17" border="0" alt="edit" onclick="EditRow(4)"><img src="delet.gif" width="15" height="18" border="0" alt="delete" onClick="DelRow(document.forms[0],4)"></td></tr>
+<tr><td><font face="Arial" size="2"><input type="checkbox" name="enable5"  disabled></font></td><td><font face="Arial" size="2">Virtual Server SMTP</font></td><td><font face="Arial" size="2">0.0.0.0</font></td><td><font face="Arial" size="2">TCP 25/25</font></td><td><font face="Arial" size="2">always</font></td><td><img src="edit.gif" width="15" height="17" border="0" alt="edit" onclick="EditRow(5)"><img src="delet.gif" width="15" height="18" border="0" alt="delete" onClick="DelRow(document.forms[0],5)"></td></tr>
+<tr><td><font face="Arial" size="2"><input type="checkbox" name="enable6"  disabled></font></td><td><font face="Arial" size="2">Virtual Server POP3</font></td><td><font face="Arial" size="2">0.0.0.0</font></td><td><font face="Arial" size="2">TCP 110/110</font></td><td><font face="Arial" size="2">always</font></td><td><img src="edit.gif" width="15" height="17" border="0" alt="edit" onclick="EditRow(6)"><img src="delet.gif" width="15" height="18" border="0" alt="delete" onClick="DelRow(document.forms[0],6)"></td></tr>
+<tr><td><font face="Arial" size="2"><input type="checkbox" name="enable7"  disabled></font></td><td><font face="Arial" size="2">Virtual Server Telnet</font></td><td><font face="Arial" size="2">0.0.0.0</font></td><td><font face="Arial" size="2">TCP 23/23</font></td><td><font face="Arial" size="2">always</font></td><td><img src="edit.gif" width="15" height="17" border="0" alt="edit" onclick="EditRow(7)"><img src="delet.gif" width="15" height="18" border="0" alt="delete" onClick="DelRow(document.forms[0],7)"></td></tr>
+<tr><td><font face="Arial" size="2"><input type="checkbox" name="enable8"  disabled></font></td><td><font face="Arial" size="2">IPSec</font></td><td><font face="Arial" size="2">0.0.0.0</font></td><td><font face="Arial" size="2">UDP 500/500</font></td><td><font face="Arial" size="2">always</font></td><td><img src="edit.gif" width="15" height="17" border="0" alt="edit" onclick="EditRow(8)"><img src="delet.gif" width="15" height="18" border="0" alt="delete" onClick="DelRow(document.forms[0],8)"></td></tr>
+<tr><td><font face="Arial" size="2"><input type="checkbox" name="enable9"  disabled></font></td><td><font face="Arial" size="2">PPTP</font></td><td><font face="Arial" size="2">0.0.0.0</font></td><td><font face="Arial" size="2">TCP 1723/1723</font></td><td><font face="Arial" size="2">always</font></td><td><img src="edit.gif" width="15" height="17" border="0" alt="edit" onclick="EditRow(9)"><img src="delet.gif" width="15" height="18" border="0" alt="delete" onClick="DelRow(document.forms[0],9)"></td></tr>
+<tr><td><font face="Arial" size="2"><input type="checkbox" name="enable10"  disabled></font></td><td><font face="Arial" size="2">NetMeeting</font></td><td><font face="Arial" size="2">0.0.0.0</font></td><td><font face="Arial" size="2">TCP 1720/1720</font></td><td><font face="Arial" size="2">always</font></td><td><img src="edit.gif" width="15" height="17" border="0" alt="edit" onclick="EditRow(10)"><img src="delet.gif" width="15" height="18" border="0" alt="delete" onClick="DelRow(document.forms[0],10)"></td></tr>
+<tr><td><font face="Arial" size="2"><input type="checkbox" name="enable11"  disabled></font></td><td><font face="Arial" size="2">DCS-1000</font></td><td><font face="Arial" size="2">0.0.0.0</font></td><td><font face="Arial" size="2">TCP 80/80</font></td><td><font face="Arial" size="2">always</font></td><td><img src="edit.gif" width="15" height="17" border="0" alt="edit" onclick="EditRow(11)"><img src="delet.gif" width="15" height="18" border="0" alt="delete" onClick="DelRow(document.forms[0],11)"></td></tr>
+<tr><td><font face="Arial" size="2"><input type="checkbox" name="enable12"  disabled></font></td><td><font face="Arial" size="2">DCS-2000/DCS-5300</font></td><td><font face="Arial" size="2">0.0.0.0</font></td><td><font face="Arial" size="2">TCP 800/800</font></td><td><font face="Arial" size="2">always</font></td><td><img src="edit.gif" width="15" height="17" border="0" alt="edit" onclick="EditRow(12)"><img src="delet.gif" width="15" height="18" border="0" alt="delete" onClick="DelRow(document.forms[0],12)"></td></tr>
+<tr><td><font face="Arial" size="2"><input type="checkbox" name="enable13"  disabled></font></td><td><font face="Arial" size="2">i2eye</font></td><td><font face="Arial" size="2">0.0.0.0</font></td><td><font face="Arial" size="2">TCP 1720/1720</font></td><td><font face="Arial" size="2">always</font></td><td><img src="edit.gif" width="15" height="17" border="0" alt="edit" onclick="EditRow(13)"><img src="delet.gif" width="15" height="18" border="0" alt="delete" onClick="DelRow(document.forms[0],13)"></td></tr>
+<tr><td><font face="Arial" size="2"><input type="checkbox" name="enable14"  disabled></font></td><td><font face="Arial" size="2">DCS-3120</font></td><td><font face="Arial" size="2">0.0.0.0</font></td><td><font face="Arial" size="2">UDP 3120/3120</font></td><td><font face="Arial" size="2">always</font></td><td><img src="edit.gif" width="15" height="17" border="0" alt="edit" onclick="EditRow(14)"><img src="delet.gif" width="15" height="18" border="0" alt="delete" onClick="DelRow(document.forms[0],14)"></td></tr>
+
+ </table>
+ </form>
+ </td>
+ <td width=19><img src=down_10.jpg width=19 height=26></td>
+ <td width=25 background=down_11.gif>&nbsp;</td>
+ </tr>
+ <tr> 
+ <td width=133 height=42 bgcolor=#CCCCCC><a href=adv_virtual.html><img src=adv_over_12.jpg width=133 height=57 border=0></a></td>
+ <td width=25 background=down_03.jpg height=42>&nbsp;</td>
+ <td width=21 background=down_14.gif height=42>&nbsp;</td>
+ <td width=19 background=down_40.gif height=42>&nbsp;</td>
+ <td width=25 background=down_11.gif height=42>&nbsp;</td>
+ </tr>
+ <tr> 
+ <td width=133 bgcolor=#CCCCCC><a href=adv_appl.html><img src=advhtml_17.jpg width=133 height=56 border=0></a> 
+ </td>
+ <td width=25 background=down_03.jpg>&nbsp;</td>
+ <td width=21 background=down_14.gif>&nbsp;</td>
+ <td width=19 background=down_40.gif>&nbsp;</td>
+ <td width=25 background=down_11.gif>&nbsp;</td>
+ </tr>
+ <tr> 
+ <td width=133 bgcolor=#CCCCCC><a href=adv_filters.html><img src=advhtml_22.jpg width=133 height=56 border=0></a> 
+ </td>
+ <td width=25 background=down_03.jpg>&nbsp;</td>
+ <td width=21 background=down_14.gif>&nbsp;</td>
+ <td width=19 background=down_40.gif>&nbsp;</td>
+ <td width=25 background=down_11.gif>&nbsp;</td>
+ </tr>
+ <tr> 
+ <td width=133 bgcolor=#CCCCCC><a href=adv_firewall.html><img src=advhtml_27.jpg width=133 height=56 border=0></a></td>
+ <td width=25 background=down_03.jpg>&nbsp;</td>
+ <td width=21 background=down_14.gif>&nbsp;</td>
+ <td width=19 background=down_40.gif>&nbsp;</td>
+ <td width=25 background=down_11.gif>&nbsp;</td>
+ </tr>
+ <tr> 
+ <td width=133 bgcolor=#CCCCCC><a href=adv_dmz.html><img src=adv_dmz.jpg width=133 height=56 border=0></a> 
+ </td>
+ <td width=25 background=down_03.jpg rowspan="2">&nbsp;</td>
+ <td width=21 background=down_14.gif rowspan="2">&nbsp;</td>
+ <td width=19 background=down_40.gif rowspan="2">&nbsp;</td>
+ <td width=25 background=down_11.gif rowspan="2">&nbsp;</td>
+ </tr>
+ <tr>
+ <td width=133 bgcolor=#CCCCCC><a href="adv_perform.html"><img src="adv_pf.jpg" width="133" height="56" border="0"></a></td>
+ </tr>
+ <tr> 
+ <td width=133 background=down_37.gif height="40"></td>
+ <td width=25 background=down_03.jpg> 
+ <p><br>
+ <br>
+ <br>
+ </p>
+ <p><br><br><br><br><br><br><br><br><br>
+ <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ </p>
+ </td>
+ <td width=21 background=down_14.gif>&nbsp;</td>
+ <td width=19 background=down_40.gif>&nbsp;</td>
+ <td width=25 background=down_11.gif>&nbsp;</td>
+ </tr>
+ <tr> 
+ <td colspan=6 rowspan=2><img src=down_43.jpg width=740 height=44></td>
+ <td width=25><img src=down_43.gif width=25 height=17></td>
+ </tr>
+ <tr> 
+ <td width=25><img src=down_44.gif width=25 height=27></td>
+ </tr>
+ </table>
+<map name=MapMap>
+<area shape=rect coords=17,16,82,44 href=h_wizard.html target=_self>
+<area shape=rect coords=109,18,205,42 href=adv_virtual.html target=_self>
+<area shape=rect coords=232,19,289,46 href=tools_admin.html target=_self>
+<area shape=rect coords=346,19,405,46 href=st_device.html target=_self>
+<area shape=rect coords=455,18,501,47 href=help_men.html>
+</map>
+</td>
+</tr>
+</table>
+<map name=Map2>
+<area shape=rect coords=13,11,153,62 href=http://www.dlink.com.tw target=_blank>
+</map>
+</BODY>
+</HTML>
