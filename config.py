@@ -9,7 +9,7 @@ Version:0.1
 License: GPLv3
 Copyright: Copyright (C) 2009  Ernesto Nadir Crespo Avila <ecrespo@debianvenezuela.org>
 Author: Ernesto Nadir Crespo Avila
-Email: ecrespo@debianvenezuela.org
+Email: ernesto@libreaccesibilidad.org
 """
 
 

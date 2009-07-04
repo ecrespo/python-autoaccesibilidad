@@ -8,13 +8,13 @@ Version:0.1
 License: GPLv3
 Copyright: Copyright (C) 2009 Proyecto Libre Accesibilidad - Distrito Socialista Tecnologico AIT PDVSA  <moderador@libreaccesibilidad.org>
 Author: Ernesto Nadir Crespo Avila
-Email: ecrespo@debianvenezuela.org
+Email: ernesto@libreaccesibilidad.org
 """
 
 from commands import getstatusoutput
 from types import *
 import string
-from  ejecutar-root import ejecutar
+import su
 
 
 class apt:
@@ -23,17 +23,17 @@ class apt:
         self.__versiones = ("testing","squeeze","sid","unstable")
 		
 	def __change_config(self):
-		ejecutar("cp /etc/apt/sources.list /etc/apt/sources.list.bak")
+		su.ejecutar("cp /etc/apt/sources.list /etc/apt/sources.list.bak")
         version = self.__search_debian_version()
         if version <> "":
             mirror = self.__url + " " + version + " main"
         else:
             return -1
-        ejecutar(" echo %s > /etc/apt/sources.list" %mirror) 
+        su.ejecutar(" echo %s > /etc/apt/sources.list" %mirror) 
         return 0
         
     def __sources_orig(self):
-        ejecutar("cp /etc/apt/sources.list.bak /etc/apt/sources.list")
+        su.ejecutar("cp /etc/apt/sources.list.bak /etc/apt/sources.list")
         
     
     def __search_debian_version(self):
@@ -53,7 +53,7 @@ class apt:
         
         
 	def __update(self):
-		ejecutar("aptitude update")
+		su.ejecutar("aptitude update")
 
 
 	def __install(self,paquetes):
@@ -61,7 +61,7 @@ class apt:
 			if string.find(paquetes,",") <> -1:
 				print "La lista de paquetes no esta separada por espacios"
 			else:
-       				r = ejecutar("aptitude install %s" %paquetes)
+       				r = su.ejecutar("aptitude install %s" %paquetes)
 				print r
 		else:
 			print "Error, no es una lista de paquetes separadas por espacio"
