@@ -7,7 +7,7 @@ Name: config
 Description: Modulo que permite copiar la configuracion a las cuentas de los usuarios en el equipo
 Version:0.1
 License: GPLv3
-Copyright: Copyright (C) 2009  Ernesto Nadir Crespo Avila <ecrespo@debianvenezuela.org>
+Copyright: Copyright (C) 2009  Ernesto Nadir Crespo Avila <moderador@libreaccesibilidad.org>
 Author: Ernesto Nadir Crespo Avila
 Email: ernesto@libreaccesibilidad.org
 """
