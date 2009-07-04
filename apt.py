@@ -6,7 +6,7 @@ Name: apt
 Description: Modulo que maneja todo sobre repositorios
 Version:0.1
 License: GPLv3
-Copyright: Copyright (C) 2009  Ernesto Nadir Crespo Avila <ecrespo@debianvenezuela.org>
+Copyright: Copyright (C) 2009 Proyecto Libre Accesibilidad - Distrito Socialista Tecnologico AIT PDVSA  <moderador@libreaccesibilidad.org>
 Author: Ernesto Nadir Crespo Avila
 Email: ecrespo@debianvenezuela.org
 """

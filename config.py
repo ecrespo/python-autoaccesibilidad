@@ -7,21 +7,21 @@ Name: config
 Description: Modulo que permite copiar la configuracion a las cuentas de los usuarios en el equipo
 Version:0.1
 License: GPLv3
-Copyright: Copyright (C) 2009  Ernesto Nadir Crespo Avila <ecrespo@debianvenezuela.org>
+Copyright: Copyright (C) 2009 Proyecto Libre Accesibilidad - Distrito Socialista Tecnologico AIT PDVSA  <moderador@libreaccesibilidad.org>
 Author: Ernesto Nadir Crespo Avila
 Email: ecrespo@debianvenezuela.org
 """
 
 
 
-import usuarios
-import ejectuar-root
+import users
+import su
 from commands import getstatusoutput
 
 def conf_escritorio():
-    usuarios = usuarios.get_users()
+    usuarios = users.get_users()
     for usuario in usuarios:
-        ejecutar-root.ejecutar("cp -R ./conf/.*  /home/%s/" %usuario)
+        su.ejecutar("cp -R ./conf/.*  /home/%s/" %usuario)
         r = getstatusoutput("sudo -u %s gconftool-2 --set --type string /apps/metacity/keybinding_commands/command_1 \"orca\"" %usuario)
         if r[0] <> 0: print "Error al colocar el acceso rapido de orca"
         r = getstatusoutput("sudo -u %s gconftool-2 --set --type string /apps/metacity/global_keybindings/run_command_1 \"<Super>o\" " %usuario)
