@@ -23,6 +23,7 @@ def conf_escritorio():
     su.ejecutar("cp -R ./conf/.* /etc/skel/")
     for usuario in usuarios:
         su.ejecutar("cp -R ./conf/.*  /home/%s/" %usuario)
+        su.ejecutar("chown -R %s.%s /home/%s/.*" %(usuario,usuario,usuario))
         r = getstatusoutput("sudo -u %s gconftool-2 --set --type string /apps/metacity/keybinding_commands/command_1 \"orca\"" %usuario)
         if r[0] <> 0: print "Error al colocar el acceso rapido de orca"
         r = getstatusoutput("sudo -u %s gconftool-2 --set --type string /apps/metacity/global_keybindings/run_command_1 \"<Super>o\" " %usuario)
@@ -51,3 +52,7 @@ def conf_escritorio():
         if r[0] <> 0: print "Error al cambiar los accesos rápidos de pidgin"
         r = getstatusoutput("sudo -u tiflo gconftool-2 --set --type string /apps/metacity/global_keybindings/run_command_7 \"<Super>p\"" %usuario)
         if r[0] <> 0: print "Error al cambiar los accesos rápidos de pidgin"
+        
+if __name__ == "__main__":
+    conf_escritorio()
+    
