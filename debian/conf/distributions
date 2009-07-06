@@ -1,0 +1,24 @@
+Origin: Paquetes accesibilidad
+Label: Paquetes accesibilidad
+Suite: unstable
+Codename: sid
+Architectures: i386 
+Components: main
+Description: Paquetes que dan accesibilidad a gnome para sid
+
+
+Origin: Paquetes accesibilidad
+Label: Paquetes accesibilidad
+Suite: testing
+Codename: squeeze
+Architectures: i386 
+Components: main
+Description: Paquetes que dan accesibilidad a gnome para squeeze
+
+Origin: Paquetes accesibilidad
+Label: Paquetes accesibilidad
+Suite: stable
+Codename: lenny
+Architectures: i386 
+Components: main
+Description: Paquetes que dan accesibilidad a gnome para lenny
