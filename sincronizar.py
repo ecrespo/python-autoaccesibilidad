@@ -11,3 +11,12 @@ Author: Ernesto Nadir Crespo Avila
 Email: ernesto@libreaccesibilidad.org
 """
 
+import su
+def actualizar():
+    su.ejecutar("rsync -avz rsync://nevado.crespo.info.ve/accesibilidad debian/")
+
+
+if __name__ == "__main__":
+    actualizar()
+
+
