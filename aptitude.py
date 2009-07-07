@@ -14,46 +14,47 @@ Email: ernesto@libreaccesibilidad.org
 from commands import getstatusoutput
 from types import *
 import string
-import su
+import privilegios
 
+import pdb
 
 class apt:
+	
 	def __init__(self):
 		self.__url = "deb http://127.0.0.1/debian"
-        self.__versiones = ("testing","squeeze","sid","unstable")
+		self.__versiones = ("testing","squeeze","sid","unstable")
 		
 	def __change_config(self):
-		su.ejecutar("cp /etc/apt/sources.list /etc/apt/sources.list.bak")
-        version = self.__search_debian_version()
-        if version <> "":
-            mirror = self.__url + " " + version + " main"
-        else:
-            return -1
-        su.ejecutar(" echo %s > /etc/apt/sources.list" %mirror) 
-        return 0
+		privilegios.ejecutar("cp /etc/apt/sources.list /etc/apt/sources.list.bak")
+		version = self.__search_debian_version()
+		if version <> "":
+			mirror = self.__url + " " + version + " main"
+		else:
+			return -1
+		su.ejecutar(" echo %s > /etc/apt/sources.list" %mirror)
+		return 0
+	
+	def __sources_orig(self):
+		privilegios.ejecutar("cp /etc/apt/sources.list.bak /etc/apt/sources.list")
         
-    def __sources_orig(self):
-        su.ejecutar("cp /etc/apt/sources.list.bak /etc/apt/sources.list")
-        
-    
-    def __search_debian_version(self):
-        lista = []
-        lineas = open("/etc/apt/sources.list").readlines()
-        for i in range(len(lineas)):
-            if string.find(lineas[i][:-1],"deb http://") <> -1 :
-                lista.append(string.splitfields(lineas[i][:-1]," "))
-        for i in range(len(lista)):
-            if lista[i][2] in versiones:
-                version = lista[i][2]
-            else:
-                version = ""
-        return version
+	def __search_debian_version(self):
+		lista = []
+		lineas = open("/etc/apt/sources.list").readlines()
+		for i in range(len(lineas)):
+			if string.find(lineas[i][:-1],"deb http://") <> -1 :
+				lista.append(string.splitfields(lineas[i][:-1]," "))
+		for i in range(len(lista)):
+			if lista[i][2] in versiones:
+				version = lista[i][2]
+			else:
+				version = ""
+		return version
     
                 
         
         
 	def __update(self):
-		su.ejecutar("aptitude update")
+		privilegios.ejecutar("aptitude update")
 
 
 	def __install(self,paquetes):
@@ -65,20 +66,23 @@ class apt:
 				print r
 		else:
 			print "Error, no es una lista de paquetes separadas por espacio"
-    
-    def main(self,paquetes):
-        if self.__change_config()  == 0:
-            self.__update()
-            self.__install(paquetes)
-            self.__sources_orig()
-            print "Fin de instalacion de paquetes"
-        else:
-            print "Problemas con el archivo sources.list"
+	
+	
+	def main(self,paquetes):
+		print "Probando el metodo main"
+		if self.__change_config()  == 0:
+			self.__update()
+			self.__install(paquetes)
+			self.__sources_orig()
+			print "Fin de instalacion de paquetes"
+		else:
+			print "Problemas con el archivo sources.list"
         
 
 
 
 
 if __name__ == "__main__":
+	print "Probando el modulo aptitude"
 	aptitude = apt
-	apt.main("accesibilidad")
+	pdb.run("apt.main(\"accesibilidad\")")
