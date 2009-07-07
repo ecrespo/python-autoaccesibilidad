@@ -18,20 +18,22 @@ import privilegios
 
 import pdb
 
-class apt:
+class Aptitude:
 	
 	def __init__(self):
 		self.__url = "deb http://127.0.0.1/debian"
 		self.__versiones = ("testing","squeeze","sid","unstable")
+
 		
 	def __change_config(self):
+		print "pasando por aca"
 		privilegios.ejecutar("cp /etc/apt/sources.list /etc/apt/sources.list.bak")
-		version = self.__search_debian_version()
-		if version <> "":
-			mirror = self.__url + " " + version + " main"
+		self.__version = self.__search_debian_version()
+		if self.__version <> "":
+			mirror = self.__url + " " + self.__version + " main"
 		else:
 			return -1
-		su.ejecutar(" echo %s > /etc/apt/sources.list" %mirror)
+		privilegios.ejecutar(" echo %s > /etc/apt/sources.list" %mirror)
 		return 0
 	
 	def __sources_orig(self):
@@ -44,11 +46,11 @@ class apt:
 			if string.find(lineas[i][:-1],"deb http://") <> -1 :
 				lista.append(string.splitfields(lineas[i][:-1]," "))
 		for i in range(len(lista)):
-			if lista[i][2] in versiones:
-				version = lista[i][2]
+			if lista[i][2] in self.__versiones:
+				self.__version = lista[i][2]
 			else:
-				version = ""
-		return version
+				self.__version = ""
+		return self.__version
     
                 
         
@@ -62,14 +64,14 @@ class apt:
 			if string.find(paquetes,",") <> -1:
 				print "La lista de paquetes no esta separada por espacios"
 			else:
-       				r = su.ejecutar("aptitude install %s" %paquetes)
+       				r = privilegios.ejecutar("aptitude install %s" %paquetes)
 				print r
 		else:
 			print "Error, no es una lista de paquetes separadas por espacio"
 	
 	
+		
 	def main(self,paquetes):
-		print "Probando el metodo main"
 		if self.__change_config()  == 0:
 			self.__update()
 			self.__install(paquetes)
@@ -83,6 +85,5 @@ class apt:
 
 
 if __name__ == "__main__":
-	print "Probando el modulo aptitude"
-	aptitude = apt
-	pdb.run("apt.main(\"accesibilidad\")")
+	aptitude = Aptitude()
+        aptitude.main("conspy git-doc")
