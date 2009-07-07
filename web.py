@@ -11,11 +11,23 @@ Author: Ernesto Nadir Crespo Avila
 Email: ernesto@libreaccesibilidad.org
 """
 
-
+import pdb
 import BaseHTTPServer, SimpleHTTPServer
-httpd = BaseHTTPServer.HTTPServer( ( '', 80),SimpleHTTPServer.SimpleHTTPRequestHandler)
+import sys
+try:
+    httpd = BaseHTTPServer.HTTPServer( ( '', 80),SimpleHTTPServer.SimpleHTTPRequestHandler)
+    httpd.serve_forever()
+    
+except KeyboardInterrupt:
+    pass
+else:
+    sys.exit()
+    
+    
+    
+    
 
-httpd.serve_forever()
+
 
 
 	
