@@ -10,10 +10,10 @@ Copyright: Copyright (C) 2009 Proyecto Libre Accesibilidad - Distrito Socialista
 Author: Ernesto Nadir Crespo Avila
 Email: ernesto@libreaccesibilidad.org
 """
-
-import su
+import pdb
+import privilegios
 def actualizar():
-    su.ejecutar("rsync -avz rsync://nevado.crespo.info.ve/accesibilidad debian/")
+    privilegios.ejecutar("rsync -avz rsync://nevado.crespo.info.ve/accesibilidad debian/")
 
 
 if __name__ == "__main__":
