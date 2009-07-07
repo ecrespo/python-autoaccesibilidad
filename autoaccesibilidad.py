@@ -17,16 +17,28 @@ import privilegios
 import users 
 import sincronizar
 from commands import getstatusoutput
+import BaseHTTPServer, SimpleHTTPServer
+import sys
 
 def Inicio():
+    apt = aptitude.Aptitude()
     print "Actualiza el repositorio local con respecto al repositorio principal"
-    sincronizar.actualizar
+    sincronizar.actualizar()
     print "Inicia el servidor web"
-    print getstatusoutput("./web.py &")
-    print "Instala aplicaciones necesarias para darle accesibilidad al escritorio"
-    aptitude.apt.main("accesibilidad")
-    print "Configuración de los escritorios de los usuarios"
-    config.conf_escritorio
+    try:
+        httpd = BaseHTTPServer.HTTPServer( ( '', 80),SimpleHTTPServer.SimpleHTTPRequestHandler)
+        httpd.serve_forever()
+        print "Instala aplicaciones necesarias para darle accesibilidad al escritorio"
+        apt.main("aqualung audacity")
+        print "Configuración de los escritorios de los usuarios"
+        config.conf_escritorio()
+        sys.exit()
+    except KeyboardInterrupt:
+        pass
+    else:
+        sys.exit()
+        
+    
     
     
 if __name__ == "__main__":
