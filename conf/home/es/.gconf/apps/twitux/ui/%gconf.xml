@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<gconf>
+        <entry name="main_window_pos_y" mtime="1246484621" type="int" value="25">
+        </entry>
+        <entry name="main_window_pos_x" mtime="1246484621" type="int" value="0">
+        </entry>
+        <entry name="main_window_width" mtime="1246484621" type="int" value="1024">
+        </entry>
+        <entry name="main_window_height" mtime="1246484621" type="int" value="695">
+        </entry>
+</gconf>

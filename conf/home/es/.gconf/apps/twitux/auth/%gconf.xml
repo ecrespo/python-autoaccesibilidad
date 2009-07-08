@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<gconf>
+        <entry name="auto_login" mtime="1246484619" type="bool" value="true">
+        </entry>
+        <entry name="user_id" mtime="1246484613" type="string">
+                <stringvalue>ecrespo@gmail.com</stringvalue>
+        </entry>
+</gconf>

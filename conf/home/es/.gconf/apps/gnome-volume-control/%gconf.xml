@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="HDAIntelAlsamixerCapturar" mtime="1246656601" type="bool" value="true"/>
+	<entry name="HDAIntelAlsamixerCD" mtime="1246656597" type="bool" value="true"/>
+	<entry name="HDAIntelAlsamixerMicrfono" mtime="1246656599" type="bool" value="false"/>
+	<entry name="HDAIntelAlsamixerPCM" mtime="1246656595" type="bool" value="true"/>
+	<entry name="HDAIntelAlsamixerMaestro" mtime="1246656595" type="bool" value="true"/>
+</gconf>

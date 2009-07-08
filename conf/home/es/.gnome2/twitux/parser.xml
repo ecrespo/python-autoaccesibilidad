@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<statuses type="array">
+<status>
+  <created_at>Wed Jul 01 21:44:04 +0000 2009</created_at>
+  <id>2426710078</id>
+  <text>Probando twitux con el lector de pantalla orca</text>
+  <source>&lt;a href=&quot;http://sourceforge.net/projects/twitux&quot;&gt;twitux&lt;/a&gt;</source>
+  <truncated>false</truncated>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <favorited>false</favorited>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <user>
+    <id>35950442</id>
+    <name>Ernesto Crespots</name>
+    <screen_name>ernestocrespo</screen_name>
+    <location></location>
+    <description></description>
+    <profile_image_url>http://static.twitter.com/images/default_profile_normal.png</profile_image_url>
+    <url></url>
+    <protected>false</protected>
+    <followers_count>22</followers_count>
+    <profile_background_color>9ae4e8</profile_background_color>
+    <profile_text_color>000000</profile_text_color>
+    <profile_link_color>0000ff</profile_link_color>
+    <profile_sidebar_fill_color>e0ff92</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>87bc44</profile_sidebar_border_color>
+    <friends_count>46</friends_count>
+    <created_at>Tue Apr 28 02:01:39 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset></utc_offset>
+    <time_zone></time_zone>
+    <profile_background_image_url>http://static.twitter.com/images/themes/theme1/bg.gif</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <statuses_count>44</statuses_count>
+    <notifications>false</notifications>
+    <verified>false</verified>
+    <following>false</following>
+  </user>
+</status>
+<status>
+  <created_at>Wed Jul 01 21:40:33 +0000 2009</created_at>
+  <id>2426662556</id>
+  <text>http://twitter.com/stasyaneon/statuses/2426611583 &quot;#python libgmail is pretty good... but converting eml source to unicode is a bad idea ...</text>
+  <source>web</source>
+  <truncated>true</truncated>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <favorited>false</favorited>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <user>
+    <id>35385856</id>
+    <name>python ism</name>
+    <screen_name>pythonism</screen_name>
+    <location></location>
+    <description>I track whoever memtions &quot;python&quot;</description>
+    <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/183869464/python_normal.png</profile_image_url>
+    <url>http://search.twitter.com/search?q=python</url>
+    <protected>false</protected>
+    <followers_count>801</followers_count>
+    <profile_background_color>9ae4e8</profile_background_color>
+    <profile_text_color>000000</profile_text_color>
+    <profile_link_color>0000ff</profile_link_color>
+    <profile_sidebar_fill_color>e0ff92</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>87bc44</profile_sidebar_border_color>
+    <friends_count>0</friends_count>
+    <created_at>Sun Apr 26 03:05:47 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-28800</utc_offset>
+    <time_zone>Pacific Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://static.twitter.com/images/themes/theme1/bg.gif</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <statuses_count>26082</statuses_count>
+    <notifications>false</notifications>
+    <verified>false</verified>
+    <following>false</following>
+  </user>
+</status>
+<status>
+  <created_at>Wed Jul 01 21:40:32 +0000 2009</created_at>
+  <id>2426662300</id>
+  <text>http://twitter.com/dermatologynyc/statuses/2426613305 "www.1800blemish.org Officials: Escaped pet python strangled Fla. child - The Asso ...</text>
+  <source>web</source>
+  <truncated>true</truncated>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <favorited>false</favorited>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <user>
+    <id>35385856</id>
+    <name>python ism</name>
+    <screen_name>pythonism</screen_name>
+    <location></location>
+    <description>I track whoever memtions "python"</description>
+    <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/183869464/python_normal.png</profile_image_url>
+    <url>http://search.twitter.com/search?q=python</url>
+    <protected>false</protected>
+    <followers_count>801</followers_count>
+    <profile_background_color>9ae4e8</profile_background_color>
+    <profile_text_color>000000</profile_text_color>
+    <profile_link_color>0000ff</profile_link_color>
+    <profile_sidebar_fill_color>e0ff92</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>87bc44</profile_sidebar_border_color>
+    <friends_count>0</friends_count>
+    <created_at>Sun Apr 26 03:05:47 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-28800</utc_offset>
+    <time_zone>Pacific Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://static.twitter.com/images/themes/theme1/bg.gif</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <statuses_count>26081</statuses_count>
+    <notifications>false</notifications>
+    <verified>false</verified>
+    <following>false</following>
+  </user>
+</status>
+<status>
+  <created_at>Wed Jul 01 21:40:30 +0000 2009</created_at>
+  <id>2426661837</id>
+  <text>http://twitter.com/stasyaneon/statuses/2426629216 &quot;Trying to download all your mails from #gmail with a script based on #python libgmail ...</text>
+  <source>web</source>
+  <truncated>true</truncated>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <favorited>false</favorited>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <user>
+    <id>35385856</id>
+    <name>python ism</name>
+    <screen_name>pythonism</screen_name>
+    <location></location>
+    <description>I track whoever memtions &quot;python&quot;</description>
+    <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/183869464/python_normal.png</profile_image_url>
+    <url>http://search.twitter.com/search?q=python</url>
+    <protected>false</protected>
+    <followers_count>801</followers_count>
+    <profile_background_color>9ae4e8</profile_background_color>
+    <profile_text_color>000000</profile_text_color>
+    <profile_link_color>0000ff</profile_link_color>
+    <profile_sidebar_fill_color>e0ff92</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>87bc44</profile_sidebar_border_color>
+    <friends_count>0</friends_count>
+    <created_at>Sun Apr 26 03:05:47 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-28800</utc_offset>
+    <time_zone>Pacific Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://static.twitter.com/images/themes/theme1/bg.gif</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <statuses_count>26080</statuses_count>
+    <notifications>false</notifications>
+    <verified>false</verified>
+    <following>false</following>
+  </user>
+</status>
+<status>
+  <created_at>Wed Jul 01 21:37:58 +0000 2009</created_at>
+  <id>2426626977</id>
+  <text>RT: (Panam&#225;) Aristides Villareal: Firefox 3.5 en Ubuntu http://tinyurl.com/mrtqw6 http://tinyurl.com/nnb2jx</text>
+  <source>&lt;a href="http://twitterfeed.com"&gt;twitterfeed&lt;/a&gt;</source>
+  <truncated>false</truncated>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <favorited>false</favorited>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <user>
+    <id>18444527</id>
+    <name>ubuntutweets</name>
+    <screen_name>ubuntutweets</screen_name>
+    <location></location>
+    <description></description>
+    <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/68871164/Ubuntu-logo_normal.png</profile_image_url>
+    <url></url>
+    <protected>false</protected>
+    <followers_count>753</followers_count>
+    <profile_background_color>9ae4e8</profile_background_color>
+    <profile_text_color>000000</profile_text_color>
+    <profile_link_color>0000ff</profile_link_color>
+    <profile_sidebar_fill_color>e0ff92</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>87bc44</profile_sidebar_border_color>
+    <friends_count>0</friends_count>
+    <created_at>Mon Dec 29 06:34:50 +0000 2008</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset></utc_offset>
+    <time_zone></time_zone>
+    <profile_background_image_url>http://static.twitter.com/images/themes/theme1/bg.gif</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <statuses_count>27828</statuses_count>
+    <notifications>false</notifications>
+    <verified>false</verified>
+    <following>false</following>
+  </user>
+</status>
+<status>
+  <created_at>Wed Jul 01 21:37:53 +0000 2009</created_at>
+  <id>2426625907</id>
+  <text>RT: (Espa&#241;a) Miguel Parada: Ubuntu y Dell http://tinyurl.com/nmdwkx http://tinyurl.com/mzpx67</text>
+  <source>&lt;a href="http://twitterfeed.com"&gt;twitterfeed&lt;/a&gt;</source>
+  <truncated>false</truncated>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <favorited>false</favorited>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <user>
+    <id>18444527</id>
+    <name>ubuntutweets</name>
+    <screen_name>ubuntutweets</screen_name>
+    <location></location>
+    <description></description>
+    <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/68871164/Ubuntu-logo_normal.png</profile_image_url>
+    <url></url>
+    <protected>false</protected>
+    <followers_count>753</followers_count>
+    <profile_background_color>9ae4e8</profile_background_color>
+    <profile_text_color>000000</profile_text_color>
+    <profile_link_color>0000ff</profile_link_color>
+    <profile_sidebar_fill_color>e0ff92</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>87bc44</profile_sidebar_border_color>
+    <friends_count>0</friends_count>
+    <created_at>Mon Dec 29 06:34:50 +0000 2008</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset></utc_offset>
+    <time_zone></time_zone>
+    <profile_background_image_url>http://static.twitter.com/images/themes/theme1/bg.gif</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <statuses_count>27827</statuses_count>
+    <notifications>false</notifications>
+    <verified>false</verified>
+    <following>false</following>
+  </user>
+</status>
+<status>
+  <created_at>Wed Jul 01 21:37:48 +0000 2009</created_at>
+  <id>2426624852</id>
+  <text>RT: Julio 4 HackLab No 11 Linea de comandos en Gnu/Linux !Ubuntu more info: http://is.gd/1kPM7 http://tinyurl.com/l8lzqg</text>
+  <source>&lt;a href=&quot;http://twitterfeed.com&quot;&gt;twitterfeed&lt;/a&gt;</source>
+  <truncated>false</truncated>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <favorited>false</favorited>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <user>
+    <id>18444527</id>
+    <name>ubuntutweets</name>
+    <screen_name>ubuntutweets</screen_name>
+    <location></location>
+    <description></description>
+    <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/68871164/Ubuntu-logo_normal.png</profile_image_url>
+    <url></url>
+    <protected>false</protected>
+    <followers_count>753</followers_count>
+    <profile_background_color>9ae4e8</profile_background_color>
+    <profile_text_color>000000</profile_text_color>
+    <profile_link_color>0000ff</profile_link_color>
+    <profile_sidebar_fill_color>e0ff92</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>87bc44</profile_sidebar_border_color>
+    <friends_count>0</friends_count>
+    <created_at>Mon Dec 29 06:34:50 +0000 2008</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset></utc_offset>
+    <time_zone></time_zone>
+    <profile_background_image_url>http://static.twitter.com/images/themes/theme1/bg.gif</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <statuses_count>27826</statuses_count>
+    <notifications>false</notifications>
+    <verified>false</verified>
+    <following>false</following>
+  </user>
+</status>
+<status>
+  <created_at>Wed Jul 01 21:37:44 +0000 2009</created_at>
+  <id>2426624056</id>
+  <text>RT: #cloud Ubuntu Enterprise Cloud Services Helps Users Build (and Support ... http://ow.ly/15GD6U http://tinyurl.com/kos62u</text>
+  <source>&lt;a href="http://twitterfeed.com"&gt;twitterfeed&lt;/a&gt;</source>
+  <truncated>false</truncated>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <favorited>false</favorited>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <user>
+    <id>18444527</id>
+    <name>ubuntutweets</name>
+    <screen_name>ubuntutweets</screen_name>
+    <location></location>
+    <description></description>
+    <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/68871164/Ubuntu-logo_normal.png</profile_image_url>
+    <url></url>
+    <protected>false</protected>
+    <followers_count>753</followers_count>
+    <profile_background_color>9ae4e8</profile_background_color>
+    <profile_text_color>000000</profile_text_color>
+    <profile_link_color>0000ff</profile_link_color>
+    <profile_sidebar_fill_color>e0ff92</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>87bc44</profile_sidebar_border_color>
+    <friends_count>0</friends_count>
+    <created_at>Mon Dec 29 06:34:50 +0000 2008</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset></utc_offset>
+    <time_zone></time_zone>
+    <profile_background_image_url>http://static.twitter.com/images/themes/theme1/bg.gif</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <statuses_count>27825</statuses_count>
+    <notifications>false</notifications>
+    <verified>false</verified>
+    <following>false</following>
+  </user>
+</status>
+<status>
+  <created_at>Wed Jul 01 21:37:39 +0000 2009</created_at>
+  <id>2426622842</id>
+  <text>RT: Hace un a&#241;o que dej&#233; ubuntu y hoy quiero volver. Me pueden dar una lista de los programas indispensables? http://tinyurl.com/m4cscw</text>
+  <source>&lt;a href=&quot;http://twitterfeed.com&quot;&gt;twitterfeed&lt;/a&gt;</source>
+  <truncated>false</truncated>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <favorited>false</favorited>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <user>
+    <id>18444527</id>
+    <name>ubuntutweets</name>
+    <screen_name>ubuntutweets</screen_name>
+    <location></location>
+    <description></description>
+    <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/68871164/Ubuntu-logo_normal.png</profile_image_url>
+    <url></url>
+    <protected>false</protected>
+    <followers_count>753</followers_count>
+    <profile_background_color>9ae4e8</profile_background_color>
+    <profile_text_color>000000</profile_text_color>
+    <profile_link_color>0000ff</profile_link_color>
+    <profile_sidebar_fill_color>e0ff92</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>87bc44</profile_sidebar_border_color>
+    <friends_count>0</friends_count>
+    <created_at>Mon Dec 29 06:34:50 +0000 2008</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset></utc_offset>
+    <time_zone></time_zone>
+    <profile_background_image_url>http://static.twitter.com/images/themes/theme1/bg.gif</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <statuses_count>27824</statuses_count>
+    <notifications>false</notifications>
+    <verified>false</verified>
+    <following>false</following>
+  </user>
+</status>
+<status>
+  <created_at>Wed Jul 01 21:31:31 +0000 2009</created_at>
+  <id>2426537039</id>
+  <text>In Pakistani Relief Camps, Charities Press Anti-U.S. View http://bit.ly/TgJnR</text>
+  <source>web</source>
+  <truncated>false</truncated>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <favorited>false</favorited>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <user>
+    <id>807095</id>
+    <name>The New York Times</name>
+    <screen_name>nytimes</screen_name>
+    <location>New York City</location>
+    <description>Where the Conversation Begins.  Home page stories from NYTimes.com, special features and more.</description>
+    <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/57465005/twitter_avatar.nyt_normal.jpg</profile_image_url>
+    <url>http://www.nytimes.com/</url>
+    <protected>false</protected>
+    <followers_count>1264084</followers_count>
+    <profile_background_color>FFFFFF</profile_background_color>
+    <profile_text_color>000000</profile_text_color>
+    <profile_link_color>004276</profile_link_color>
+    <profile_sidebar_fill_color>E7EFF8</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>323232</profile_sidebar_border_color>
+    <friends_count>168</friends_count>
+    <created_at>Fri Mar 02 20:41:42 +0000 2007</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Eastern Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://s3.amazonaws.com/twitter_production/profile_background_images/4432187/twitter_post.png</profile_background_image_url>
+    <profile_background_tile>true</profile_background_tile>
+    <statuses_count>33468</statuses_count>
+    <notifications></notifications>
+    <verified>false</verified>
+    <following></following>
+  </user>
+</status>
+<status>
+  <created_at>Wed Jul 01 21:29:59 +0000 2009</created_at>
+  <id>2426514975</id>
+  <text>http://twitter.com/hookdump/statuses/2426499125 &quot;Fucking expresiones regulares en Python, por que no funcionan?!?!? (terminando #twitter ...</text>
+  <source>web</source>
+  <truncated>true</truncated>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <favorited>false</favorited>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <user>
+    <id>35385856</id>
+    <name>python ism</name>
+    <screen_name>pythonism</screen_name>
+    <location></location>
+    <description>I track whoever memtions &quot;python&quot;</description>
+    <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/183869464/python_normal.png</profile_image_url>
+    <url>http://search.twitter.com/search?q=python</url>
+    <protected>false</protected>
+    <followers_count>801</followers_count>
+    <profile_background_color>9ae4e8</profile_background_color>
+    <profile_text_color>000000</profile_text_color>
+    <profile_link_color>0000ff</profile_link_color>
+    <profile_sidebar_fill_color>e0ff92</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>87bc44</profile_sidebar_border_color>
+    <friends_count>0</friends_count>
+    <created_at>Sun Apr 26 03:05:47 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-28800</utc_offset>
+    <time_zone>Pacific Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://static.twitter.com/images/themes/theme1/bg.gif</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <statuses_count>26079</statuses_count>
+    <notifications>false</notifications>
+    <verified>false</verified>
+    <following>false</following>
+  </user>
+</status>
+<status>
+  <created_at>Wed Jul 01 21:29:58 +0000 2009</created_at>
+  <id>2426514698</id>
+  <text>http://twitter.com/teal64/statuses/2426506348 &quot;@KimPossible40 re: python -- what a horrible story!  That poor little girl #python&quot;</text>
+  <source>web</source>
+  <truncated>false</truncated>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <favorited>false</favorited>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <user>
+    <id>35385856</id>
+    <name>python ism</name>
+    <screen_name>pythonism</screen_name>
+    <location></location>
+    <description>I track whoever memtions &quot;python&quot;</description>
+    <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/183869464/python_normal.png</profile_image_url>
+    <url>http://search.twitter.com/search?q=python</url>
+    <protected>false</protected>
+    <followers_count>801</followers_count>
+    <profile_background_color>9ae4e8</profile_background_color>
+    <profile_text_color>000000</profile_text_color>
+    <profile_link_color>0000ff</profile_link_color>
+    <profile_sidebar_fill_color>e0ff92</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>87bc44</profile_sidebar_border_color>
+    <friends_count>0</friends_count>
+    <created_at>Sun Apr 26 03:05:47 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-28800</utc_offset>
+    <time_zone>Pacific Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://static.twitter.com/images/themes/theme1/bg.gif</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <statuses_count>26078</statuses_count>
+    <notifications>false</notifications>
+    <verified>false</verified>
+    <following>false</following>
+  </user>
+</status>
+<status>
+  <created_at>Wed Jul 01 21:29:57 +0000 2009</created_at>
+  <id>2426514463</id>
+  <text>http://twitter.com/WMFLNC6/statuses/2426510401 "Local News - Pet Python Kills Toddler: http://bit.ly/LF8UG"</text>
+  <source>web</source>
+  <truncated>false</truncated>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <favorited>false</favorited>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <user>
+    <id>35385856</id>
+    <name>python ism</name>
+    <screen_name>pythonism</screen_name>
+    <location></location>
+    <description>I track whoever memtions "python"</description>
+    <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/183869464/python_normal.png</profile_image_url>
+    <url>http://search.twitter.com/search?q=python</url>
+    <protected>false</protected>
+    <followers_count>801</followers_count>
+    <profile_background_color>9ae4e8</profile_background_color>
+    <profile_text_color>000000</profile_text_color>
+    <profile_link_color>0000ff</profile_link_color>
+    <profile_sidebar_fill_color>e0ff92</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>87bc44</profile_sidebar_border_color>
+    <friends_count>0</friends_count>
+    <created_at>Sun Apr 26 03:05:47 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-28800</utc_offset>
+    <time_zone>Pacific Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://static.twitter.com/images/themes/theme1/bg.gif</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <statuses_count>26077</statuses_count>
+    <notifications>false</notifications>
+    <verified>false</verified>
+    <following>false</following>
+  </user>
+</status>
+<status>
+  <created_at>Wed Jul 01 21:19:26 +0000 2009</created_at>
+  <id>2426369911</id>
+  <text>http://twitter.com/snookonaflyrod/statuses/2426327990 "Python attacks and kills two year old girl in Fla. not a wild snake a home pet ap ...</text>
+  <source>web</source>
+  <truncated>true</truncated>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <favorited>false</favorited>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <user>
+    <id>35385856</id>
+    <name>python ism</name>
+    <screen_name>pythonism</screen_name>
+    <location></location>
+    <description>I track whoever memtions "python"</description>
+    <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/183869464/python_normal.png</profile_image_url>
+    <url>http://search.twitter.com/search?q=python</url>
+    <protected>false</protected>
+    <followers_count>801</followers_count>
+    <profile_background_color>9ae4e8</profile_background_color>
+    <profile_text_color>000000</profile_text_color>
+    <profile_link_color>0000ff</profile_link_color>
+    <profile_sidebar_fill_color>e0ff92</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>87bc44</profile_sidebar_border_color>
+    <friends_count>0</friends_count>
+    <created_at>Sun Apr 26 03:05:47 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-28800</utc_offset>
+    <time_zone>Pacific Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://static.twitter.com/images/themes/theme1/bg.gif</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <statuses_count>26076</statuses_count>
+    <notifications>false</notifications>
+    <verified>false</verified>
+    <following>false</following>
+  </user>
+</status>
+<status>
+  <created_at>Wed Jul 01 21:19:25 +0000 2009</created_at>
+  <id>2426369610</id>
+  <text>http://twitter.com/Yosef1/statuses/2426331888 &quot;Updated my Notebook summarizing Chapt. 6 of Practical Programming: Computer Science Using ...</text>
+  <source>web</source>
+  <truncated>true</truncated>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <favorited>false</favorited>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <user>
+    <id>35385856</id>
+    <name>python ism</name>
+    <screen_name>pythonism</screen_name>
+    <location></location>
+    <description>I track whoever memtions &quot;python&quot;</description>
+    <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/183869464/python_normal.png</profile_image_url>
+    <url>http://search.twitter.com/search?q=python</url>
+    <protected>false</protected>
+    <followers_count>801</followers_count>
+    <profile_background_color>9ae4e8</profile_background_color>
+    <profile_text_color>000000</profile_text_color>
+    <profile_link_color>0000ff</profile_link_color>
+    <profile_sidebar_fill_color>e0ff92</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>87bc44</profile_sidebar_border_color>
+    <friends_count>0</friends_count>
+    <created_at>Sun Apr 26 03:05:47 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-28800</utc_offset>
+    <time_zone>Pacific Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://static.twitter.com/images/themes/theme1/bg.gif</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <statuses_count>26075</statuses_count>
+    <notifications>false</notifications>
+    <verified>false</verified>
+    <following>false</following>
+  </user>
+</status>
+<status>
+  <created_at>Wed Jul 01 21:19:24 +0000 2009</created_at>
+  <id>2426369260</id>
+  <text>http://bit.ly/12p5fg
+ &quot;Is it really worth it to own a python?&quot;</text>
+  <source>web</source>
+  <truncated>false</truncated>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <favorited>false</favorited>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <user>
+    <id>35385856</id>
+    <name>python ism</name>
+    <screen_name>pythonism</screen_name>
+    <location></location>
+    <description>I track whoever memtions &quot;python&quot;</description>
+    <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/183869464/python_normal.png</profile_image_url>
+    <url>http://search.twitter.com/search?q=python</url>
+    <protected>false</protected>
+    <followers_count>801</followers_count>
+    <profile_background_color>9ae4e8</profile_background_color>
+    <profile_text_color>000000</profile_text_color>
+    <profile_link_color>0000ff</profile_link_color>
+    <profile_sidebar_fill_color>e0ff92</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>87bc44</profile_sidebar_border_color>
+    <friends_count>0</friends_count>
+    <created_at>Sun Apr 26 03:05:47 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-28800</utc_offset>
+    <time_zone>Pacific Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://static.twitter.com/images/themes/theme1/bg.gif</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <statuses_count>26074</statuses_count>
+    <notifications>false</notifications>
+    <verified>false</verified>
+    <following>false</following>
+  </user>
+</status>
+<status>
+  <created_at>Wed Jul 01 21:10:54 +0000 2009</created_at>
+  <id>2426249525</id>
+  <text>Equipment Was Repaired Days Before Train Crash http://bit.ly/KMoC6</text>
+  <source>web</source>
+  <truncated>false</truncated>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <favorited>false</favorited>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <user>
+    <id>807095</id>
+    <name>The New York Times</name>
+    <screen_name>nytimes</screen_name>
+    <location>New York City</location>
+    <description>Where the Conversation Begins.  Home page stories from NYTimes.com, special features and more.</description>
+    <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/57465005/twitter_avatar.nyt_normal.jpg</profile_image_url>
+    <url>http://www.nytimes.com/</url>
+    <protected>false</protected>
+    <followers_count>1263858</followers_count>
+    <profile_background_color>FFFFFF</profile_background_color>
+    <profile_text_color>000000</profile_text_color>
+    <profile_link_color>004276</profile_link_color>
+    <profile_sidebar_fill_color>E7EFF8</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>323232</profile_sidebar_border_color>
+    <friends_count>168</friends_count>
+    <created_at>Fri Mar 02 20:41:42 +0000 2007</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-18000</utc_offset>
+    <time_zone>Eastern Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://s3.amazonaws.com/twitter_production/profile_background_images/4432187/twitter_post.png</profile_background_image_url>
+    <profile_background_tile>true</profile_background_tile>
+    <statuses_count>33467</statuses_count>
+    <notifications>false</notifications>
+    <verified>false</verified>
+    <following>true</following>
+  </user>
+</status>
+<status>
+  <created_at>Wed Jul 01 21:08:58 +0000 2009</created_at>
+  <id>2426223030</id>
+  <text>http://twitter.com/timzero4/statuses/2426206389 &quot;Officials: Escaped pet python strangled Fla. child http://tinyurl.com/ljy47q&quot;</text>
+  <source>web</source>
+  <truncated>false</truncated>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <favorited>false</favorited>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <user>
+    <id>35385856</id>
+    <name>python ism</name>
+    <screen_name>pythonism</screen_name>
+    <location></location>
+    <description>I track whoever memtions &quot;python&quot;</description>
+    <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/183869464/python_normal.png</profile_image_url>
+    <url>http://search.twitter.com/search?q=python</url>
+    <protected>false</protected>
+    <followers_count>801</followers_count>
+    <profile_background_color>9ae4e8</profile_background_color>
+    <profile_text_color>000000</profile_text_color>
+    <profile_link_color>0000ff</profile_link_color>
+    <profile_sidebar_fill_color>e0ff92</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>87bc44</profile_sidebar_border_color>
+    <friends_count>0</friends_count>
+    <created_at>Sun Apr 26 03:05:47 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-28800</utc_offset>
+    <time_zone>Pacific Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://static.twitter.com/images/themes/theme1/bg.gif</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <statuses_count>26073</statuses_count>
+    <notifications>false</notifications>
+    <verified>false</verified>
+    <following>false</following>
+  </user>
+</status>
+<status>
+  <created_at>Wed Jul 01 21:08:55 +0000 2009</created_at>
+  <id>2426222508</id>
+  <text>http://bit.ly/AcgPi
+ "Saw a woman with a python around her neck walking out of Pet-Co. To make it better she was in overalls."</text>
+  <source>web</source>
+  <truncated>false</truncated>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <favorited>false</favorited>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <user>
+    <id>35385856</id>
+    <name>python ism</name>
+    <screen_name>pythonism</screen_name>
+    <location></location>
+    <description>I track whoever memtions "python"</description>
+    <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/183869464/python_normal.png</profile_image_url>
+    <url>http://search.twitter.com/search?q=python</url>
+    <protected>false</protected>
+    <followers_count>801</followers_count>
+    <profile_background_color>9ae4e8</profile_background_color>
+    <profile_text_color>000000</profile_text_color>
+    <profile_link_color>0000ff</profile_link_color>
+    <profile_sidebar_fill_color>e0ff92</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>87bc44</profile_sidebar_border_color>
+    <friends_count>0</friends_count>
+    <created_at>Sun Apr 26 03:05:47 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-28800</utc_offset>
+    <time_zone>Pacific Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://static.twitter.com/images/themes/theme1/bg.gif</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <statuses_count>26072</statuses_count>
+    <notifications>false</notifications>
+    <verified>false</verified>
+    <following>false</following>
+  </user>
+</status>
+<status>
+  <created_at>Wed Jul 01 21:08:53 +0000 2009</created_at>
+  <id>2426221961</id>
+  <text>http://twitter.com/Cafeb4bed/statuses/2426215067 &quot;12 foor burmese python broke out of a glass container and slithered into a girls room  ...</text>
+  <source>web</source>
+  <truncated>true</truncated>
+  <in_reply_to_status_id></in_reply_to_status_id>
+  <in_reply_to_user_id></in_reply_to_user_id>
+  <favorited>false</favorited>
+  <in_reply_to_screen_name></in_reply_to_screen_name>
+  <user>
+    <id>35385856</id>
+    <name>python ism</name>
+    <screen_name>pythonism</screen_name>
+    <location></location>
+    <description>I track whoever memtions &quot;python&quot;</description>
+    <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/183869464/python_normal.png</profile_image_url>
+    <url>http://search.twitter.com/search?q=python</url>
+    <protected>false</protected>
+    <followers_count>801</followers_count>
+    <profile_background_color>9ae4e8</profile_background_color>
+    <profile_text_color>000000</profile_text_color>
+    <profile_link_color>0000ff</profile_link_color>
+    <profile_sidebar_fill_color>e0ff92</profile_sidebar_fill_color>
+    <profile_sidebar_border_color>87bc44</profile_sidebar_border_color>
+    <friends_count>0</friends_count>
+    <created_at>Sun Apr 26 03:05:47 +0000 2009</created_at>
+    <favourites_count>0</favourites_count>
+    <utc_offset>-28800</utc_offset>
+    <time_zone>Pacific Time (US &amp; Canada)</time_zone>
+    <profile_background_image_url>http://static.twitter.com/images/themes/theme1/bg.gif</profile_background_image_url>
+    <profile_background_tile>false</profile_background_tile>
+    <statuses_count>26071</statuses_count>
+    <notifications>false</notifications>
+    <verified>false</verified>
+    <following>false</following>
+  </user>
+</status>
+</statuses>

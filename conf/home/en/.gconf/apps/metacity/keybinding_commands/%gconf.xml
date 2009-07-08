@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="command_7" mtime="1246984979" type="string">
+		<stringvalue>pidgin</stringvalue>
+	</entry>
+	<entry name="command_6" mtime="1246984979" type="string">
+		<stringvalue>ooimpress</stringvalue>
+	</entry>
+	<entry name="command_5" mtime="1246984979" type="string">
+		<stringvalue>nautilus</stringvalue>
+	</entry>
+	<entry name="command_4" mtime="1246984979" type="string">
+		<stringvalue>iceweasel</stringvalue>
+	</entry>
+	<entry name="command_3" mtime="1246984979" type="string">
+		<stringvalue>oowriter</stringvalue>
+	</entry>
+	<entry name="command_2" mtime="1246984979" type="string">
+		<stringvalue>gnome-terminal</stringvalue>
+	</entry>
+	<entry name="command_1" mtime="1246984979" type="string">
+		<stringvalue>orca</stringvalue>
+	</entry>
+</gconf>

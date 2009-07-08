@@ -1,0 +1,6 @@
+/lib/init/rw -
+/ -
+/boot -
+/dev/shm -
+/dev -
+/tmp -

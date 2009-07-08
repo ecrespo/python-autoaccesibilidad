@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gconf>
+        <entry name="we_cipher" mtime="1246637624" type="int" value="1">
+        </entry>
+        <entry name="bssids" mtime="1246283562" type="list" ltype="string">
+                <li type="string">
+                        <stringvalue>00:16:01:59:D9:12</stringvalue>
+                </li>
+        </entry>
+        <entry name="timestamp" mtime="1246484681" type="int" value="1246484681">
+        </entry>
+        <entry name="essid" mtime="1246637624" type="string">
+                <stringvalue>DSTpruebas</stringvalue>
+        </entry>
+</gconf>

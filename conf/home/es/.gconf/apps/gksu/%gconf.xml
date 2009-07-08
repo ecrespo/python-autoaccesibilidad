@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="display-no-pass-info" mtime="1245990388" type="bool" value="true"/>
+	<entry name="disable-grab" mtime="1246658727" type="bool" value="false"/>
+	<entry name="save-to-keyring" mtime="1246655785" type="bool" value="true"/>
+</gconf>

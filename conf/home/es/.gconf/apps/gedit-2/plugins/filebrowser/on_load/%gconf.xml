@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="virtual_root" mtime="1246653817" type="string">
+		<stringvalue>file:///home/tiflo</stringvalue>
+	</entry>
+	<entry name="root" mtime="1246653817" type="string">
+		<stringvalue>file:///</stringvalue>
+	</entry>
+	<entry name="tree_view" mtime="1246653817" type="bool" value="true"/>
+</gconf>

@@ -1,0 +1,93 @@
+Generated File. Do not edit.
+
+[HEADER]
+Version:0.09:$
+
+[PLUGINS]
+/usr/lib/epiphany-gecko/2.22/plugins/libdesktopfileplugin.so:$
+:$
+1231241092000:1:1:$
+Este complemento manipula los archivos «.desktop» y «.url» que contienen enlaces web.:$
+Complemento de archivo de escritorio de Epiphany:$
+3
+0:application/x-desktop:desktop link file:desktop:$
+1:text/x-uri:URL file:url:$
+2:application/x-mswinurl:URL file::$
+/usr/lib/mozilla/plugins/librhythmbox-itms-detection-plugin.so:$
+:$
+1216422573000:1:1:$
+This plug-in detects the presence of iTunes when opening iTunes Store URLs in a web page with Firefox.:$
+iTunes Application Detector:$
+1
+0:application/itunes-plugin:::$
+/usr/lib/totem/gstreamer/libtotem-narrowspace-plugin.so:$
+:$
+1224945504000:1:1:$
+The <a href="http://www.gnome.org/projects/totem/">Totem</a> 2.22.2 plugin handles video and audio streams.:$
+QuickTime Plug-in 7.2.0:$
+5
+0:video/quicktime:vídeo QuickTime:mov:$
+1:video/mp4:vídeo MPEG-4:mp4:$
+2:image/x-macpaint:imagen en mapa de bits de MacPaint:pntg:$
+3:image/x-quicktime:imagen QuickTime:pict, pict1, pict2:$
+4:video/x-m4v:vídeo MPEG-4:m4v:$
+/usr/lib/totem/gstreamer/libtotem-mully-plugin.so:$
+:$
+1224945504000:1:1:$
+DivX Web Player version 1.4.0.233:$
+DivX® Web Player:$
+1
+0:video/divx:vídeo AVI:divx:$
+/usr/lib/totem/gstreamer/libtotem-gmp-plugin.so:$
+:$
+1224945504000:1:1:$
+The <a href="http://www.gnome.org/projects/totem/">Totem</a> 2.22.2 plugin handles video and audio streams.:$
+Windows Media Player Plug-in 10 (compatible; Totem):$
+11
+0:application/x-mplayer2:vídeo AVI:avi, wma, wmv:$
+1:video/x-ms-asf-plugin:vídeo ASF:asf, wmv:$
+2:video/x-msvideo:vídeo AVI:asf, wmv:$
+3:video/x-ms-asf:vídeo ASF:asf:$
+4:video/x-ms-wmv:Vídeo de Windows Media:wmv:$
+5:video/x-wmv:Vídeo de Windows Media:wmv:$
+6:video/x-ms-wvx:lista de reproducción ASX de Microsoft:wmv:$
+7:video/x-ms-wm:vídeo ASF:wmv:$
+8:application/x-ms-wms:Vídeo de Windows Media:wms:$
+9:application/asx:lista de reproducción ASX de Microsoft:asx:$
+10:audio/x-ms-wma:Audio de Windows Media:wma:$
+/usr/lib/totem/gstreamer/libtotem-complex-plugin.so:$
+:$
+1224945504000:1:1:$
+The <a href="http://www.gnome.org/projects/totem/">Totem</a> 2.22.2 plugin handles video and audio streams.:$
+Helix DNA Plugin: RealPlayer G2 Plug-In Compatible (compatible; Totem):$
+1
+0:audio/x-pn-realaudio-plugin:documento RealAudio:rpm:$
+/usr/lib/totem/gstreamer/libtotem-basic-plugin.so:$
+:$
+1224945504000:1:1:$
+The <a href="http://www.gnome.org/projects/totem/">Totem</a> 2.22.2 plugin handles video and audio streams.:$
+Totem Web Browser Plugin 2.22.2:$
+15
+0:application/x-ogg:-:ogg:$
+1:application/ogg:Ogg multimedia file:ogg:$
+2:audio/ogg:audio Ogg:oga:$
+3:audio/x-ogg:audio Ogg:ogg:$
+4:video/ogg:vídeo Ogg:ogv:$
+5:video/x-ogg:vídeo Ogg:ogg:$
+6:application/annodex:-:anx:$
+7:audio/annodex:-:axa:$
+8:video/annodex:-:axv:$
+9:video/mpeg:vídeo MPEG:mpg, mpeg, mpe:$
+10:audio/wav:audio WAV:wav:$
+11:audio/x-wav:audio WAV:wav:$
+12:audio/mpeg:audio MP3:mp3:$
+13:application/x-nsv-vp3-mp3:vídeo NullSoft:nsv:$
+14:video/flv:vídeo Flash:flv:$
+/usr/lib/swfdec-mozilla/libswfdecmozilla.so:$
+:$
+1226097597000:1:1:$
+Shockwave Flash 9.0 r100:$
+Shockwave Flash:$
+2
+0:application/x-shockwave-flash:Adobe Flash movie:swf:$
+1:application/futuresplash:FutureSplash movie:spl:$

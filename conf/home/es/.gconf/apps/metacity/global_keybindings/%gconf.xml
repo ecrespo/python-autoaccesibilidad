@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<gconf>
+        <entry name="run_command_7" mtime="1246291306" type="string">
+                <stringvalue>&lt;Super&gt;p</stringvalue>
+        </entry>
+        <entry name="run_command_6" mtime="1246291282" type="string">
+                <stringvalue>&lt;Super&gt;i</stringvalue>
+        </entry>
+        <entry name="run_command_5" mtime="1246291254" type="string">
+                <stringvalue>&lt;Super&gt;h</stringvalue>
+        </entry>
+        <entry name="run_command_4" mtime="1246291222" type="string">
+                <stringvalue>&lt;Super&gt;n</stringvalue>
+        </entry>
+        <entry name="run_command_3" mtime="1246291198" type="string">
+                <stringvalue>&lt;Super&gt;w</stringvalue>
+        </entry>
+        <entry name="run_command_2" mtime="1246291172" type="string">
+                <stringvalue>&lt;Super&gt;t</stringvalue>
+        </entry>
+        <entry name="run_command_1" mtime="1246291148" type="string">
+                <stringvalue>&lt;Super&gt;o</stringvalue>
+        </entry>
+</gconf>

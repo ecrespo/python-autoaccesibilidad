@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<gconf>
+        <entry name="visual" mtime="1246558460" type="string">
+                <stringvalue>GOOM: what a GOOM!</stringvalue>
+        </entry>
+        <entry name="subtitle_encoding" mtime="1246558459" type="string">
+                <stringvalue>UTF-8</stringvalue>
+        </entry>
+        <entry name="brightness" mtime="1246558869" type="int" value="32639">
+        </entry>
+        <entry name="visual_quality" mtime="1246558459" type="int" value="0">
+        </entry>
+        <entry name="show_vfx" mtime="1246558459" type="bool" value="true">
+        </entry>
+        <entry name="lock_screensaver_on_audio" mtime="1246558459" type="bool" value="true">
+        </entry>
+        <entry name="audio_output_type" mtime="1246558459" type="int" value="0">
+        </entry>
+        <entry name="debug" mtime="1246558458" type="bool" value="false">
+        </entry>
+</gconf>

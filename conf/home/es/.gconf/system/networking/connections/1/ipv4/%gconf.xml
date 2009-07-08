@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="routes" mtime="1247057619" type="list" ltype="int">
+	</entry>
+	<entry name="addresses" mtime="1247057619" type="list" ltype="int">
+	</entry>
+	<entry name="dns" mtime="1247057619" type="list" ltype="int">
+	</entry>
+	<entry name="method" mtime="1247057619" type="string">
+		<stringvalue>shared</stringvalue>
+	</entry>
+	<entry name="name" mtime="1247057619" type="string">
+		<stringvalue>ipv4</stringvalue>
+	</entry>
+</gconf>

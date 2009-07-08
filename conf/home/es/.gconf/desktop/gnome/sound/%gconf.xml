@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="default_mixer_device" mtime="1246656642" type="string">
+		<stringvalue>alsamixer:hw:0</stringvalue>
+	</entry>
+</gconf>
