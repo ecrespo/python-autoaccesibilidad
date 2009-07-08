@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<gconf>
-	<entry name="always_use_browser" mtime="1245201875" type="bool" value="true"/>
-	<entry name="navigation_window_saved_maximized" mtime="1245348971" type="bool" value="true"/>
-</gconf>

@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<gconf>
-	<entry name="startup" mtime="1245544849" type="bool" value="true"/>
-	<entry name="exec" mtime="1245544849" type="string">
-		<stringvalue>orca</stringvalue>
-	</entry>
-</gconf>
