@@ -18,7 +18,13 @@ import users
 import privilegios
 from commands import getstatusoutput
 
-def conf_escritorio():
+def conf_escritorio(idioma):
+    if idioma == "spanish":
+        archivos_configuracion = "./conf/home/es/.*"
+        archivos_etc = "./conf/etc/es/*"
+    elif idioma == "english":
+        archivos_configuracion = "./conf/home/en/.*"
+        archivos_etc = "./conf/etc/en/*"
     teclas = {"orca":"<Super>o","gnome-terminal":"<Super>t","oowriter":"<Super>w","iceweasel":"<Super>n","nautilus":"<Super>h","ooimpress":"<Super>i","pidgin":"<Super>p"}
     cont = 1
     comandos = ("gconftool-2 --set --type string /apps/metacity/keybinding_commands/command_",
@@ -27,10 +33,16 @@ def conf_escritorio():
     r = getstatusoutput("echo $USER")
     privilegios.AgregarUsuarioSudo(r[1])
     usuarios = users.get_users()
-    privilegios.ejecutar("cp -R ./conf/.* /etc/skel/")
+    privilegios.ejecutar("cp -R  %s /etc/skel/" %archivos_configuracion)
+    privilegios.ejecutar("cp -R %s /etc/"  %archivos_etc)
+    usuarios.append("root")
     for usuario in usuarios:
-        privilegios.ejecutar("cp -R ./conf/.*  /home/%s/" %usuario)
-        privilegios.ejecutar("chown -R %s.%s /home/%s/.*" %(usuario,usuario,usuario))
+        if usuario == "root":
+            home = "root"
+        else:
+            home = "/home/%s" %usuario
+        privilegios.ejecutar("cp -R %s  %s" %(archivos_configuracion,home))
+        privilegios.ejecutar("chown -R %s.%s %s/.*" %(usuario,usuario,home))
         for aplicacion in aplicaciones:
             r = getstatusoutput("sudo -u %s %s%s \"%s\"  " %(usuario,comandos[0],cont,aplicacion))
             s = getstatusoutput("sudo -u %s %s%s \"%s\"" %(usuario,comandos[1],cont,teclas[aplicacion]))
