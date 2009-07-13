@@ -18,6 +18,8 @@ import gksu2 as gksu
 import gobject
 import getpass
 from commands import getstatusoutput
+
+
 def ask_pass_func(context, prompt):
     try:
         return getpass.getpass("Enter root password: ")
@@ -33,9 +35,7 @@ def ejecutar(comando):
     ctx.set_command(comando)
     gksu.su_full(ctx, ask_pass=ask_pass_func)
     
-def AgregarUsuarioSudo(usuario):
-        ejecutar("echo \"%s ALL=(ALL) ALL\" >>  /etc/sudoers " %usuario)
-    
+
 
     
     
