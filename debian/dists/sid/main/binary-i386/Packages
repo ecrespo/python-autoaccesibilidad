@@ -1,3 +1,22 @@
+Package: accerciser
+Version: 1.4.0-2
+Architecture: all
+Maintainer: Mario Lang <mlang@debian.org>
+Installed-Size: 4084
+Depends: gconf2 (>= 2.10.1-2), python, python-support (>= 0.7.1), python-pyatspi (>= 1.23.4), python-gtk2 (>= 2.10), python-glade2, python-gnome2 (>= 2.12), python-gnome2-desktop, ipython
+Priority: extra
+Section: gnome
+Filename: pool/main/a/accerciser/accerciser_1.4.0-2_all.deb
+Size: 1613190
+SHA256: a5fab60a0e248398becdd2341e17a37866537d89c65538554245fa67d087ad5b
+SHA1: 16fd5f4230a8fd884dbd7f5e940e27dbfd15eb82
+MD5sum: 619fbb59cbdf3f3fab12d94a0620bee4
+Description: an interactive Python accessibility explorer for the GNOME desktop
+ It uses AT-SPI to inspect and control widgets, allowing you to check if
+ an application is providing correct information to assistive technologies
+ and automated test frameworks. Accerciser has a simple plugin framework which
+ you can use to create custom views of accessibility information.
+
 Package: accesibilidad
 Version: 1.3
 Architecture: all
@@ -14,4 +33,3826 @@ MD5sum: 5ad01c4ee41bdd6bc9726b6cf3b15156
 Description: Metapaquete para la instalacion de aplicaciones de accesibilidad
  Metapaquete para la instalacion de aplicaciones de accesibilidad para personas
  con discapacidad
+
+Package: accessibility-en
+Version: 1.0
+Architecture: all
+Maintainer: Ernesto Nadir Crespo Avila <ecrespo@debianvenezuela.org>
+Installed-Size: 12
+Depends: sphinx2-bin, tesseract-ocr, tesseract-ocr-eng, gok, mousetweaks, wayv, dasher, dasher-data, gnome-accessibility-themes, gnome-mag, gnome-orca, accerciser, yasr, brltty, brltty-flite, brltty-x11, dots, liblouisxml-bin, liblouis-bin, libgnome-speech7, libgail-gnome-module, python-pyatspi, python-gtk2, python-glade2, python-gnome2, python-brlapi, libatspi-dev, at-spi, libcolorblind-dev, libcolorblind0, openoffice.org-gnome, openoffice.org-gtk
+Priority: optional
+Section: misc
+Filename: pool/main/a/accessibility-en/accessibility-en_1.0_all.deb
+Size: 2528
+SHA256: c03774673668f957ea32ed28ada9c1dc4363c1b090ac65d93a83762833e5f292
+SHA1: 591c92be2810a901e3c3bf96bf2041235f26e5e9
+MD5sum: 434ab9df5ebb4ff2c7ebae40dde06329
+Description: Metapaquete para la instalacion de aplicaciones de accesibilidad
+ Metapaquete para la instalacion de aplicaciones de accesibilidad para personas
+ con discapacidad
+
+Package: accessibility-es
+Version: 1.0
+Architecture: all
+Maintainer: Ernesto Nadir Crespo Avila <ecrespo@debianvenezuela.org>
+Installed-Size: 12
+Depends: sphinx2-bin, tesseract-ocr, tesseract-ocr-spa, gok, mousetweaks, wayv, dasher, dasher-data, mozilla-mozgest, gnome-accessibility-themes, gnome-mag, gnome-orca, accerciser, yasr, brltty, brltty-flite, brltty-x11, dots, liblouisxml-bin, liblouis-bin, libgnome-speech7, libgail-gnome-module, python-pyatspi, python-gtk2, python-glade2, python-gnome2, python-brlapi, libatspi-dev, at-spi, libcolorblind-dev, libcolorblind0, openoffice.org-gnome, openoffice.org-gtk
+Priority: optional
+Section: misc
+Filename: pool/main/a/accessibility-es/accessibility-es_1.0_all.deb
+Size: 2542
+SHA256: e5270bfaf201991633ebad9c7266f7008b3b2e1b681b15b90e44f01c5b9cd67c
+SHA1: 974c95dd1abbf9590640572146ad809d99950091
+MD5sum: 4e47262415122c84de7b619bdb7625ee
+Description: Metapaquete para la instalacion de aplicaciones de accesibilidad
+ Metapaquete para la instalacion de aplicaciones de accesibilidad para personas
+ con discapacidad
+
+Package: antiword
+Version: 0.37-6
+Architecture: i386
+Maintainer: Erik Schanze <eriks@debian.org>
+Installed-Size: 772
+Depends: libc6 (>= 2.3)
+Homepage: http://www.winfield.demon.nl/
+Priority: optional
+Section: text
+Filename: pool/main/a/antiword/antiword_0.37-6_i386.deb
+Size: 150904
+SHA256: 4224fd99f18bc1dbb049e36c2a04c496103979cbea49240667c3883c67f36a32
+SHA1: 109bec73f6eca7011bea9e2a1773e78eab5b64c7
+MD5sum: de65a1a959f4bac6ff08464130900104
+Description: Converts MS Word files to text, PS and PDF
+ Antiword is a free MS Word reader.
+ .
+ It converts the binary files from MS Word 6, 7, 97 and 2000 to text,
+ Postscript and PDF.
+
+Package: at-spi
+Version: 1.26.0-1
+Architecture: i386
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 1580
+Depends: libatk1.0-0 (>= 1.20.0), libatspi1.0-0 (>= 1.26.0), libbonobo2-0 (>= 2.15.0), libc6 (>= 2.3.6-6~), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.4.0), libfreetype6 (>= 2.2.1), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.10.0), liborbit2 (>= 1:2.14.10), libpango1.0-0 (>= 1.14.0), libx11-6, libxtst6, zlib1g (>= 1:1.1.4)
+Replaces: libatspi-dev (<< 1.6.0-2)
+Priority: optional
+Section: gnome
+Filename: pool/main/a/at-spi/at-spi_1.26.0-1_i386.deb
+Size: 221872
+SHA256: b50c056f953e71be265c1d65753aad4b925df22023f962aee1db3c5258493b18
+SHA1: ed4c9dbca8c37fc46a69978216e5dc3266fa0000
+MD5sum: b44f916f10168504396afe45483c19ee
+Description: Assistive Technology Service Provider Interface
+ Providing accessibility means removing barriers that prevent people
+ with disabilities from participating in substantial life activities,
+ including the use of services, products, and information.
+ Assistive access means that system infrastructure allows add-on
+ assistive software to transparently provide specialized input and
+ output capabilities.
+ .
+ This package contains the core components of GNOME Accessibility.
+ if you need to use Assistive technology, install it.
+
+Package: binutils
+Version: 2.19.1-1
+Architecture: i386
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 8400
+Depends: libc6 (>= 2.7-1), zlib1g (>= 1:1.1.4)
+Suggests: binutils-doc (>= 2.19.1-1)
+Conflicts: elf-binutils, gas, modutils (<< 2.4.19-1)
+Provides: elf-binutils
+Priority: optional
+Section: devel
+Filename: pool/main/b/binutils/binutils_2.19.1-1_i386.deb
+Size: 2860190
+SHA256: bd28bfc5579153c7a8c6c8491ee5e6da147bc79390830514b9dd6bc80526e1b6
+SHA1: 2d7b85fec1dc848effc9d751b73af2774abfda2d
+MD5sum: cafbedbd194cfb7d0c54f6b8d20ea03c
+Description: The GNU assembler, linker and binary utilities
+ The programs in this package are used to assemble, link and manipulate
+ binary and object files.  They may be used in conjunction with a compiler
+ and various libraries to build programs.
+
+Package: brltty
+Version: 3.10~r3724-1.1
+Architecture: i386
+Maintainer: Mario Lang <mlang@debian.org>
+Installed-Size: 5940
+Depends: libbrlapi0.5, libc6 (>= 2.3.6-6~), libgpm2 (>= 1.20.4), libicu40 (>= 4.0-1), libncurses5 (>= 5.6+20071006-3)
+Suggests: libbrlapi-dev, festival, brltty-flite, brltty-x11
+Replaces: libbrlapi1 (<< 3.7.2-7.1)
+Priority: extra
+Section: admin
+Filename: pool/main/b/brltty/brltty_3.10~r3724-1.1_i386.deb
+Size: 1223604
+SHA256: 6ac232ac7222449ee3564fbd10084e3ffaef40e72d365d4c12b3f75eb949d878
+SHA1: 1cce3db0fbaadb6213e6b9c3ace5f2cb0a7997d2
+MD5sum: 7bc7b9edc2b18f8b01838983edc51aa3
+Description: Access software for a blind person using a braille display
+ BRLTTY is a daemon which provides access to the console (text mode)
+ for a blind person using a braille display.  It drives the braille
+ display and provides complete screen review functionality.
+ The following display models are supported:
+  * Alva (ABT3xx/Delphi)
+  * Baum
+  * BrailleLite (18/40)
+  * BrailleNote (18/32)
+  * EcoBraille displays
+  * EuroBraille displays
+  * Freedom Scientific (Focus and PacMate)
+  * HandyTech (all models)
+  * LogText 32
+  * MDV braille displays
+  * Papenmeier
+  * Tieman Voyager 44/70 (USB), CombiBraille, MiniBraille and MultiBraille
+  * Tivomatic (Albatross)
+  * TSI (PowerBraille/Navigator)
+  * Videobraille
+  * VisioBraille
+ .
+ BRLTTY also provides a client/server based infrastructure for applications
+ wishing to utilize a Braille display.  The daemon process listens for incoming
+ TCP/IP connections on a certain port.  A shared object library for clients is
+ provided in the package libbrlapi0.5.  A static library, header files and
+ documentation is provided in package libbrlapi-dev.  Bindings to other
+ programming languages can be found in cl-brlapi (Lisp), libbrlapi-java (Java)
+ and python-brlapi (Python).
+
+Package: brltty-flite
+Source: brltty
+Version: 3.10~r3724-1.1
+Architecture: i386
+Maintainer: Mario Lang <mlang@debian.org>
+Installed-Size: 92
+Depends: libc6 (>= 2.1.3), libflite1, brltty (= 3.10~r3724-1.1)
+Priority: extra
+Section: admin
+Filename: pool/main/b/brltty/brltty-flite_3.10~r3724-1.1_i386.deb
+Size: 49656
+SHA256: a90fd1ce564cd07c7393376cd0f9148f3564d26f56e1350bed21c0be046f6bba
+SHA1: 072ef84a0caa214e5869e53bd92ba06c6e8d0f99
+MD5sum: c272e53f11fb9a09d9d5d603365888db
+Description: Access software for a blind person using a braille display
+ BRLTTY is a daemon which provides access to the Linux console (text mode)
+ for a blind person using a braille display.  It drives the braille
+ display and provides complete screen review functionality.
+ .
+ This package contains an optional speech driver for the Festival Lite
+ speech synthesis engine.
+
+Package: brltty-x11
+Source: brltty
+Version: 3.10~r3724-1.1
+Architecture: i386
+Maintainer: Mario Lang <mlang@debian.org>
+Installed-Size: 220
+Depends: libatk1.0-0 (>= 1.20.0), libatspi1.0-0 (>= 1.24.1), libbonobo2-0 (>= 2.15.0), libbrlapi0.5, libc6 (>= 2.3.6-6~), libglib2.0-0 (>= 2.12.0), libgpm2 (>= 1.20.4), libice6 (>= 1:1.0.0), libicu40 (>= 4.0-1), liborbit2 (>= 1:2.14.10), libsm6, libx11-6, libxaw7, libxext6, libxt6, libxtst6, brltty (= 3.10~r3724-1.1)
+Priority: extra
+Section: admin
+Filename: pool/main/b/brltty/brltty-x11_3.10~r3724-1.1_i386.deb
+Size: 93394
+SHA256: 860657a2d5619bb024e747f9744dfb9620feb70cac76fa739e4d6abdf1441c6d
+SHA1: 0502b0c0b40dcb683ad0ae563115fe34ac8cff14
+MD5sum: 957408393ccf5918f3ba1710f1757e0d
+Description: Access software for a blind person using a braille display
+ BRLTTY is a daemon which provides access to the Linux console (text mode)
+ for a blind person using a braille display.  It drives the braille
+ display and provides complete screen review functionality.
+ .
+ This package contains optional drivers which require X11 or GNOME.
+
+Package: build-essential
+Version: 11.4
+Architecture: i386
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 48
+Depends: libc6-dev | libc-dev, g++ (>= 4:4.3.1), make, dpkg-dev (>= 1.13.5)
+Priority: optional
+Section: devel
+Filename: pool/main/b/build-essential/build-essential_11.4_i386.deb
+Size: 7118
+SHA256: a0cc14664274f1eddf9772813a111e5f373c174e38113782417e2f31b088e0cd
+SHA1: 611adce9798375c74de053e51efee77947e19812
+MD5sum: 00f22c0a20f5cf2e30e31afa2eaee16e
+Description: Informational list of build-essential packages
+ If you do not plan to build Debian packages, you don't need this
+ package.  Starting with dpkg (>= 1.14.18) this package is required
+ for building Debian packages.
+ .
+ This package contains an informational list of packages which are
+ considered essential for building Debian packages.  This package also
+ depends on the packages on that list, to make it easy to have the
+ build-essential packages installed.
+ .
+ If you have this package installed, you only need to install whatever
+ a package specifies as its build-time dependencies to build the
+ package.  Conversely, if you are determining what your package needs
+ to build-depend on, you can always leave out the packages this
+ package depends on.
+ .
+ This package is NOT the definition of what packages are
+ build-essential; the real definition is in the Debian Policy Manual.
+ This package contains merely an informational list, which is all
+ most people need.   However, if this package and the manual disagree,
+ the manual is correct.
+
+Package: dasher
+Version: 4.10.1-1
+Architecture: i386
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 932
+Depends: libart-2.0-2 (>= 2.3.18), libatk1.0-0 (>= 1.20.0), libatspi1.0-0 (>= 1.26.0), libbonobo2-0 (>= 2.15.0), libbonoboui2-0 (>= 2.15.1), libc6 (>= 2.3.6-6~), libcairo2 (>= 1.2.4), libexpat1 (>= 1.95.8), libfontconfig1 (>= 2.4.0), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.1.1), libgconf2-4 (>= 2.23.2), libglade2-0 (>= 1:2.6.1), libglib2.0-0 (>= 2.16.0), libgnome-speech7, libgnome2-0 (>= 2.17.3), libgnomecanvas2-0 (>= 2.11.1), libgnomeui-0 (>= 2.22.0), libgnomevfs2-0 (>= 1:2.17.90), libgtk2.0-0 (>= 2.8.0), libice6 (>= 1:1.0.0), liborbit2 (>= 1:2.14.10), libpango1.0-0 (>= 1.14.0), libpopt0 (>= 1.14), libsm6, libstdc++6 (>= 4.2.1), libx11-6, libxml2 (>= 2.6.27), libxtst6, at-spi, dasher-data (>= 4.10), dasher-data (<< 4.11)
+Priority: optional
+Section: x11
+Filename: pool/main/d/dasher/dasher_4.10.1-1_i386.deb
+Size: 365342
+SHA256: 744aecea932b0eec296f21276c43b562f4599034371327cc049a58dc33c0d0e0
+SHA1: 8cad88a1fa850d4bd839b813ce09251bd2c2fb3a
+MD5sum: 12bdf9cd8e1ac12ff1610afa229fcc38
+Description: A graphical predictive text input system
+ Dasher is an information-efficient text-entry interface, driven by natural
+ continuous pointing gestures. Dasher is a competitive text-entry system
+ wherever a full-size keyboard cannot be used - for example,
+ .
+  * on a palmtop computer
+  * on a wearable computer
+  * when operating a computer one-handed, by joystick, touchscreen, trackball,
+  or mouse
+  * when operating a computer with zero hands (i.e., by head-mouse or by
+  eyetracker).
+ .
+ The eyetracking version of Dasher allows an experienced user to write text
+ as fast as normal handwriting - 25 words per minute; using a mouse,
+ experienced users can write at 39 words per minute.
+ .
+ Dasher uses a more advanced prediction algorithm than the T9(tm) system
+ often used in mobile phones, making it sensitive to surrounding context.
+
+Package: dasher-data
+Source: dasher
+Version: 4.10.1-1
+Architecture: all
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 22938
+Depends: gconf2 (>= 2.10.1-2)
+Recommends: dasher
+Conflicts: dasher (<< 4.9.0)
+Priority: optional
+Section: x11
+Filename: pool/main/d/dasher/dasher-data_4.10.1-1_all.deb
+Size: 9019472
+SHA256: 04ca227e9e64eed4c3f37d781aaeec1d4c93091cdaafdadf300f40a5f2e361ee
+SHA1: 3a650a22f48e7443f8270aa1198310176bf2da5d
+MD5sum: 87c32042dc739a8ec2da493c45e98752
+Description: Data files for dasher
+ Dasher is an information-efficient text-entry interface, driven by natural
+ continuous pointing gestures. Dasher is a competitive text-entry system
+ wherever a full-size keyboard cannot be used .
+ .
+ This package contains various arch-independent data files for dasher:
+  * alphabet descriptions for all languages
+  * letter colours settings
+  * training files in all languages
+
+Package: debhelper
+Version: 7.2.14
+Architecture: all
+Maintainer: Joey Hess <joeyh@debian.org>
+Installed-Size: 1344
+Depends: perl (>= 5.6.0-16), file (>= 3.23), dpkg-dev (>= 1.14.19), html2text, binutils, po-debconf, man-db (>= 2.5.1-1)
+Suggests: dh-make
+Conflicts: dpkg-cross (<< 1.18), python-central (<< 0.5.6), python-support (<< 0.5.3)
+Homepage: http://kitenet.net/~joey/code/debhelper/
+Priority: optional
+Section: devel
+Filename: pool/main/d/debhelper/debhelper_7.2.14_all.deb
+Size: 546808
+SHA256: 4405b1916138fc89b936e76ff688d642a1491a933d1215650fb3921b420cc477
+SHA1: 71af3dac5b66e5d4d686408f844068ee2f8eb2bf
+MD5sum: b81bf87f72a4c52ae8d82c48e29f799b
+Description: helper programs for debian/rules
+ A collection of programs that can be used in a debian/rules file to
+ automate common tasks related to building debian packages. Programs
+ are included to install various files into your package, compress
+ files, fix file permissions, integrate your package with the debian
+ menu system, debconf, doc-base, etc. Most debian packages use debhelper
+ as part of their build process.
+
+Package: dots
+Version: 0.0.20090222-1
+Architecture: all
+Maintainer: Debian Accessibility Team <debian-accessibility@lists.debian.org>
+Installed-Size: 172
+Depends: antiword, liblouisxml-bin, python, python-support (>= 0.90.0), python-gobject, python-gnomeprint, python-gtksourceview
+Priority: extra
+Section: gnome
+Filename: pool/main/d/dots/dots_0.0.20090222-1_all.deb
+Size: 11994
+SHA256: cc7b60fbf5406c41cc95c1a23a92a91c7585386d04dffe9a52b5313ebd430af6
+SHA1: 872d66d81842894cf5a43558c74dc7776e6f8aa8
+MD5sum: a7625546d7aa18c3587fbe62e4485f39
+Description: A braille typesetting program for GNOME
+ Dots is a user interface for liblouisxml, a braille translation engine
+ that can translate XML and MS Word documents into transcribed braille.
+
+Package: dpkg-dev
+Source: dpkg
+Version: 1.15.2
+Architecture: all
+Origin: debian
+Bugs: debbugs://bugs.debian.org
+Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org>
+Installed-Size: 1804
+Depends: dpkg (>= 1.14.6), perl5, perl-modules, bzip2, lzma, patch (>= 2.2-1), make, binutils, libtimedate-perl
+Recommends: gcc | c-compiler, build-essential, gnupg, gpgv
+Suggests: debian-keyring, debian-maintainers
+Conflicts: devscripts (<< 2.10.26), dpkg-cross (<< 2.0.0)
+Replaces: manpages-pl (<= 20051117-1)
+Homepage: http://wiki.debian.org/Teams/Dpkg
+Priority: optional
+Section: utils
+Filename: pool/main/d/dpkg/dpkg-dev_1.15.2_all.deb
+Size: 634046
+SHA256: efeb03051d2743ce98270356d6ea6801a5225c0c2300d483faf45f70f7dd2517
+SHA1: 3b59244a1a06438b9b5573ceebac043fc994309b
+MD5sum: f91fd1971b67a9f727673b5f56c5def5
+Description: Debian package development tools
+ This package provides the development tools (including dpkg-source)
+ required to unpack, build and upload Debian source packages.
+ .
+ Most Debian source packages will require additional tools to build;
+ for example, most packages need make and the C compiler gcc.
+
+Package: eflite
+Version: 0.4.1-1
+Architecture: i386
+Depends: libc6 (>= 2.3.6-6), libflite1
+Suggests: emacspeak, yasr
+Installed-Size: 112
+Maintainer: Mario Lang <mlang@debian.org>
+Priority: extra
+Section: sound
+Filename: pool/main/e/eflite/eflite_0.4.1-1_i386.deb
+Size: 21032
+SHA256: 6f337bf728172399c8518c623cc7feacb47453f42355a307f20fb39f416b09ab
+SHA1: 533977a2aa8a2ba56cca0d0fa022322e4d5edcc3
+MD5sum: 57717a6850a23f39bda4e39a5eba8327
+Description: Festival-Lite based emacspeak speech server
+ EFlite is a speech server for Emacspeak and other screen readers that
+ allows them to interface with Festival Lite, a free text-to-speech
+ engine developed at the CMU Speech Center as an off-shoot of Festival.
+
+Package: espeak
+Version: 1.40.02-2
+Architecture: i386
+Maintainer: Mario Lang <mlang@debian.org>
+Installed-Size: 244
+Depends: libc6 (>= 2.1), libespeak1 (>= 1.40.02), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)
+Homepage: http://espeak.sourceforge.net/
+Priority: optional
+Section: sound
+Filename: pool/main/e/espeak/espeak_1.40.02-2_i386.deb
+Size: 67402
+SHA256: 6e3ff92ad8b0d61afb02712bb42255141eb3b86f2613da0902869d87c1a7ee3c
+SHA1: b2d1f4b6b08a3183ac9316ce62845ff2c1624133
+MD5sum: a19bf6c6fd1523c02a670e5af29a92ab
+Description: A multi-lingual software speech synthesizer
+ eSpeak is a software speech synthesizer for English, and some other
+ languages.
+ .
+ eSpeak produces good quality English speech. It uses a different synthesis
+ method from other open source text to speech (TTS) engines, and sounds quite
+ different. It's perhaps not as natural or "smooth", but some find the
+ articulation clearer and easier to listen to for long periods.
+ .
+ It can run as a command line program to speak text from a file or from stdin.
+ .
+ It works well as a "Talker" with the KDE text to speech system (KTTS), as an
+ alternative to Festival for example. As such, it can speak text which has been
+ selected into the clipboard, or directly from the Konquerer browser or the Kate
+ editor.
+ .
+   * Includes different Voices, whose characteristics can be altered.
+   * Can produce speech output as a WAV file.
+   * Can translate text to phoneme codes, so it could be adapted as a front end
+     for another speech synthesis engine.
+   * Potential for other languages. Rudimentary (and probably humourous)
+     attempts at German and Esperanto are included.
+   * Compact size. The program and its data total about 350 kbytes.
+   * Written in C++.
+
+Package: espeak-data
+Source: espeak
+Version: 1.40.02-2
+Architecture: i386
+Maintainer: Mario Lang <mlang@debian.org>
+Installed-Size: 1540
+Recommends: espeak (= 1.40.02-2)
+Homepage: http://espeak.sourceforge.net/
+Priority: optional
+Section: sound
+Filename: pool/main/e/espeak/espeak-data_1.40.02-2_i386.deb
+Size: 499370
+SHA256: 249ba0d502e50e04bdbee7134372d682ddffe23d5d20c74e7dd23b836143483c
+SHA1: 86594509e010afe36842849d9f0389abb375e724
+MD5sum: 072755c34f6e802f2933cfe0e9f73a83
+Description: A multi-lingual software speech synthesizer: speech data files
+ eSpeak is a software speech synthesizer for English, and some other
+ languages. This package contains necessary synthesizer data files needed
+ for the espeak program, and the shared library.
+
+Package: festival
+Version: 1.96~beta-8
+Architecture: i386
+Maintainer: Kartik Mistry <kartik@debian.org>
+Installed-Size: 2556
+Depends: libaudiofile0 (>= 0.2.3-4), libc6 (>= 2.1.3), libesd-alsa0 (>= 0.2.35) | libesd0 (>= 0.2.35), libestools1.2 (>= 1:1.2.96~beta-2), libgcc1 (>= 1:4.1.1), libncurses5 (>= 5.6+20071006-3), libstdc++6 (>= 4.2.1), sgml-base (>= 1.17), adduser (>= 3.105), lsb-base (>= 3.0-10), sysv-rc (>= 2.86.ds1) | file-rc
+Recommends: festvox-kallpc16k | festival-voice
+Suggests: festival-gaim, pidgin-festival, festival-freebsoft-utils
+Conflicts: festlex-cmu (<< 1.4.0-3), festlex-oald (<< 1.4.0-2), festlex-poslex (<< 1.4.0-3), festvox-don (<< 1.4.0-3), festvox-ellpc11k (<< 1.4.0-1), festvox-kdlpc16k (<< 1.4.0-4), festvox-kdlpc8k (<< 1.4.0-5), festvox-rablpc16k (<< 1.4.0-2), festvox-rablpc8k (<< 1.4.0-2)
+Homepage: http://www.cstr.ed.ac.uk/projects/festival/
+Priority: optional
+Section: sound
+Filename: pool/main/f/festival/festival_1.96~beta-8_i386.deb
+Size: 890136
+SHA256: 649f6db6200a6362bfdf5fe3c4e10d8dc9f402a005904de951aaee62a58d9065
+SHA1: d3c3dabfa8fbdfad2027390bb3c67bcc0cc332d4
+MD5sum: d080acf5eeb27c30830f5dbc1c01d082
+Description: General multi-lingual speech synthesis system
+ Festival offers a full text to speech system with various APIs, as well an
+ environment for development and research of speech synthesis techniques. It
+ includes a Scheme-based command interpreter.
+ .
+ Besides research into speech synthesis, festival is useful as a stand-alone
+ speech synthesis program. It is capable of producing clearly understandable
+ speech from text.
+
+Package: festlex-cmu
+Version: 1.4.0-6
+Architecture: all
+Depends: festival (>= 1.4.3-9)
+Installed-Size: 5981
+Maintainer: Matthias Urlichs <smurf@debian.org>
+Priority: optional
+Section: sound
+Filename: pool/main/f/festlex-cmu/festlex-cmu_1.4.0-6_all.deb
+Size: 881238
+SHA256: f528bcdd17b93830d81fae4afe5917cd3004082a3fdccb182ee9fe9ac2308d6c
+SHA1: 22604b0d4419a857bd12c3f9bb6a5847035a5b30
+MD5sum: a4faa0cc3b83903c21f4c8bf37e8fb48
+Description: CMU dictionary for Festival
+ This is the CMU dictionary in Festival form.
+ It is required for American English voices.
+
+Package: festlex-poslex
+Version: 1.4.0-5
+Architecture: all
+Depends: festival (>= 1.4.3-9)
+Installed-Size: 1348
+Maintainer: Matthias Urlichs <smurf@debian.org>
+Priority: optional
+Section: sound
+Filename: pool/main/f/festlex-poslex/festlex-poslex_1.4.0-5_all.deb
+Size: 234354
+SHA256: c71327e9c9481131cc7bfba397ce17feb56d8e5adf16ea9966f14916a6050ced
+SHA1: fb7cdbea44e62fed7efcf66ddc74342fd95ca886
+MD5sum: 16aa060222d7751ad0b4d70327d0c11d
+Description: Part of speech lexicons and ngram from English
+ This package is required by all British and American English voices in
+ the Festival speech synthesis system.
+
+Package: festvox-kallpc16k
+Version: 1.4.0-5
+Architecture: all
+Depends: festival (>= 1.4.3-9), festlex-poslex (>= 1.3.0), festlex-cmu (>= 1.3.0)
+Conflicts: festvox-kallpc8k
+Replaces: festvox-kallpc8k
+Provides: festival-voice
+Installed-Size: 6058
+Maintainer: Matthias Urlichs <smurf@debian.org>
+Priority: extra
+Section: sound
+Filename: pool/main/f/festvox-kallpc16k/festvox-kallpc16k_1.4.0-5_all.deb
+Size: 4095496
+SHA256: c121f9dec74eb8587c633ea01bfae8cc427d20b64898534ed0e3d89f423b197f
+SHA1: a6fafd1788441f8df5070218d259acf6d75de3a0
+MD5sum: 6262dcc623dfd616740d69f520f5765a
+Description: American English male speaker for festival, 16khz sample rate
+ This is a diphone database for festival that uses 16k samples for high
+ quality sound output. This is a large database (6 MB), and festival will
+ convert text to speech more slowly using it, so you might want to install
+ festvox-kallpc8k instead if you have low disk space or a slow computer.
+ .
+ The voice contained in this database is an American English male speaker.
+ A different American English voice can be found in the festvox-kdlpc16k
+ package if you dislike this one.
+
+Package: g++
+Source: gcc-defaults (1.87)
+Version: 4:4.3.3-9
+Architecture: i386
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 40
+Depends: cpp (>= 4:4.3.3-9), gcc (>= 4:4.3.3-9), g++-4.3 (>= 4.3.3-2), gcc-4.3 (>= 4.3.3-2)
+Suggests: g++-multilib
+Provides: c++-compiler
+Priority: optional
+Section: devel
+Filename: pool/main/g/gcc-defaults/g++_4.3.3-9_i386.deb
+Size: 1364
+SHA256: 8f2b30a8e3fedfaf1cd25a6533ecd60577c6c6cd66c0d9b9f521cfdd79dfbb34
+SHA1: 48868c6f9d1db54eab5cc1e151b3d3cc38eab4aa
+MD5sum: 518cce9b654684decf3a50e86c5d4f77
+Description: The GNU C++ compiler
+ This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
+ .
+ This is a dependency package providing the default GNU C++ compiler.
+
+Package: g++-4.3
+Source: gcc-4.3
+Version: 4.3.3-10
+Architecture: i386
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 9372
+Depends: gcc-4.3-base (= 4.3.3-10), gcc-4.3 (= 4.3.3-10), libstdc++6-4.3-dev (= 4.3.3-10), libc6 (>= 2.3), libgmp3c2, libmpfr1ldbl
+Suggests: g++-4.3-multilib, gcc-4.3-doc (>= 4.3.3-1), libstdc++6-4.3-dbg
+Provides: c++-compiler, c++abi2-dev
+Priority: optional
+Section: devel
+Filename: pool/main/g/gcc-4.3/g++-4.3_4.3.3-10_i386.deb
+Size: 4497652
+SHA256: 7bff80deb1de4aa1e90fa50796983949c90663b1ef3c5bd0f8f6dc8600f818c6
+SHA1: d69904cf897369d6c91d172ef6b5aa0672cebfa0
+MD5sum: df6b1bd0875c0aca92d0befb7c82e60c
+Description: The GNU C++ compiler
+ This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
+
+Package: gcc
+Source: gcc-defaults (1.87)
+Version: 4:4.3.3-9
+Architecture: i386
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 64
+Depends: cpp (>= 4:4.3.3-9), gcc-4.3 (>= 4.3.3-2)
+Recommends: libc6-dev | libc-dev
+Suggests: gcc-multilib, make, manpages-dev, autoconf, automake1.9, libtool, flex, bison, gdb, gcc-doc
+Conflicts: gcc-doc (<< 1:2.95.3)
+Provides: c-compiler
+Priority: optional
+Section: devel
+Filename: pool/main/g/gcc-defaults/gcc_4.3.3-9_i386.deb
+Size: 5004
+SHA256: 0a2f2a35a6a1906fe3439e18bfe597511b234000395cbbe81986fa5d8980ef8c
+SHA1: 8aeb75f6f475dd8792204ece69aff35e18caba14
+MD5sum: 1e84e2fa26c564cb518e0ea308904cad
+Description: The GNU C compiler
+ This is the GNU C compiler, a fairly portable optimizing compiler for C.
+ .
+ This is a dependency package providing the default GNU C compiler.
+
+Package: gcc-4.3
+Version: 4.3.3-10
+Architecture: i386
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 4492
+Depends: gcc-4.3-base (= 4.3.3-10), cpp-4.3 (= 4.3.3-10), binutils (>= 2.19.1), libgcc1 (>= 1:4.3.3-10), libc6 (>= 2.3)
+Recommends: libc6-dev (>= 2.5)
+Suggests: gcc-4.3-multilib, libmudflap0-4.3-dev (>= 4.3.3-10), gcc-4.3-doc (>= 4.3.3-1), gcc-4.3-locales (>= 4.3.3-1), libgcc1-dbg, libgomp1-dbg, libmudflap0-dbg
+Provides: c-compiler
+Priority: optional
+Section: devel
+Filename: pool/main/g/gcc-4.3/gcc-4.3_4.3.3-10_i386.deb
+Size: 2743356
+SHA256: c9415793b1c6ef59268d49ea186bf1eb4864481884353c50425853b865f8bc6c
+SHA1: c313b45f32771278852d88374aeaba34d45105b4
+MD5sum: 59a55d1bdcc2bca32ce1a404310d2aa8
+Description: The GNU C compiler
+ This is the GNU C compiler, a fairly portable optimizing compiler for C.
+
+Package: gettext
+Version: 0.17-6
+Architecture: i386
+Maintainer: Santiago Vila <sanvila@debian.org>
+Installed-Size: 6944
+Depends: libc6 (>= 2.7-1), libcroco3 (>= 0.6.1), libglib2.0-0 (>= 2.12.0), libgomp1 (>= 4.2.1), libncurses5 (>= 5.6+20071006-3), gettext-base
+Recommends: curl | wget | lynx
+Suggests: cvs, gettext-doc
+Replaces: gettext-base (<= 0.14.4-1)
+Provides: libasprintf-dev, libgettextpo-dev, libgettextpo0
+Priority: optional
+Section: devel
+Filename: pool/main/g/gettext/gettext_0.17-6_i386.deb
+Size: 2599612
+SHA256: 211f2aeb8325eb590ad9e7ad2fff7dd1cbbff65c068f3a76756fec7185b7fc51
+SHA1: eeccb32764d7f299b46f174b800ccf0b8b64afeb
+MD5sum: 26f974ba3a12cf605dc8bcde46d97eeb
+Description: GNU Internationalization utilities
+ Interesting for authors or maintainers of other packages or programs
+ which they want to see internationalized.
+
+Package: global
+Version: 5.7.1-1
+Architecture: i386
+Maintainer: Ron Lee <ron@debian.org>
+Installed-Size: 1048
+Depends: libc6 (>= 2.7-1)
+Suggests: lynx | www-browser, doxygen (>= 1.4.3), apache | httpd, id-utils
+Priority: optional
+Section: devel
+Filename: pool/main/g/global/global_5.7.1-1_i386.deb
+Size: 479898
+SHA256: 20763d8fc059842082e1e3affb5bcddc18477b48d9cbe6f9eeddded2deb7733d
+SHA1: 899787f89ace09814e582a9308f256539b2e4ac2
+MD5sum: 73c55b76c8f4b77f5d42a2550670d357
+Description: Source code search and browse tools
+ GNU GLOBAL is a source code tag system that works the same way across
+ diverse environments. Currently, it supports the following:
+ .
+   o command line, and the 'globash' query subshell.
+   o vim plugin, and support for other vi clones.
+   o less
+   o emacs
+   o web browser
+ .
+ Supported languages are C, C++, yacc and Java.
+ You can locate a specified function in the source files and move
+ there easily. It is especially useful for hacking large projects
+ containing many subdirectories, many '#ifdef' and many main()
+ functions, like X or kernel source.
+ .
+ This package include the htmake(1) extension which allows GLOBAL's
+ hypertext search function to be implemented from a single central
+ cgi script.
+ .
+ Doxygen now supports using global as its source browser, with the
+ USE_HTAGS option.
+
+Package: gnome-accessibility-themes
+Source: gnome-themes
+Version: 2.26.2-1
+Architecture: all
+Maintainer: Josselin Mouette <joss@debian.org>
+Installed-Size: 5172
+Depends: gtk2-engines (>= 1:2.15.3), librsvg2-common
+Priority: optional
+Section: gnome
+Filename: pool/main/g/gnome-themes/gnome-accessibility-themes_2.26.2-1_all.deb
+Size: 1385292
+SHA256: 6e28a3c42463fa9fdd14ff1db4ae8fa7d67c9c92f71646f5309f00e06e2b3f76
+SHA1: 9186fabc97d009140d1ad6334256fd339ad565d3
+MD5sum: 28a3e0bf5819341f9c25abc70f50f8f6
+Description: accessibility themes for the GNOME desktop
+ This package contains some high accessibility themes for the GNOME
+ desktop environment, designed for the visually impaired.
+ .
+ A total of 7 themes are provided, providing combinations of high, low
+ or inversed contrast, as well as enlarged text and icons.
+
+Package: gnome-mag
+Source: gnome-mag (1:0.15.4-1)
+Version: 1:0.15.4-1+b2
+Architecture: i386
+Maintainer: Daniel Ruoso <daniel@ruoso.com>
+Installed-Size: 1968
+Depends: gconf2 (>= 2.10.1-2), libatk1.0-0 (>= 1.20.0), libatspi1.0-0 (>= 1.26.0), libbonobo2-0 (>= 2.15.0), libc6 (>= 2.3.6-6~), libcairo2 (>= 1.2.4), libcolorblind0, libfontconfig1 (>= 2.4.0), libfreetype6 (>= 2.2.1), libglib2.0-0 (>= 2.16.0), libgnome-desktop-2-11, libgnome-mag2 (>= 1:0.15.0), libgtk2.0-0 (>= 2.8.0), libice6 (>= 1:1.0.0), liborbit2 (>= 1:2.14.10), libpango1.0-0 (>= 1.14.0), libsm6, libstartup-notification0 (>= 0.10), libx11-6, libxcomposite1 (>= 1:0.3-1), libxdamage1 (>= 1:1.1), libxext6, libxfixes3 (>= 1:4.0.1), libxrender1, python (<< 2.6), python (>= 2.5), python-support (>= 0.90.0), python-gnome2, python-gnomeapplet
+Priority: optional
+Section: x11
+Filename: pool/main/g/gnome-mag/gnome-mag_0.15.4-1+b2_i386.deb
+Size: 231340
+SHA256: 71c565bb890ec759e1ebaf7ece7ff1503cac34d4b36a6a9084868780af26edc4
+SHA1: 6a19422baebaa9479d29a6b82a02738e6aa86e5a
+MD5sum: 5ba468573b18c55c716f305c44466485
+Description: a screen magnifier for the GNOME desktop
+ This package includes a screen magnifier, which allows you to zoom in
+ on portions of the desktop.  It is expressly designed for users with
+ low vision who wish to use the GNOME desktop.
+
+Package: gnome-orca
+Version: 2.26.2-2
+Architecture: all
+Maintainer: Mario Lang <mlang@debian.org>
+Installed-Size: 8112
+Depends: python (>= 2.4), python-support (>= 0.90.0), libgnome-speech7 (>= 0.4.11), libgail-gnome-module, python-pyatspi (>= 1.22.0), python-gtk2 (>= 2.10), python-glade2, python-gnome2 (>= 2.6.2), python-brlapi
+Recommends: gnome-mag (>= 0.12.5), wget
+Conflicts: gnome-orca-common (<< 2.20.1-2)
+Replaces: gnome-orca-common (<< 2.20.1-2)
+Homepage: http://live.gnome.org/Orca
+Priority: optional
+Section: gnome
+Filename: pool/main/g/gnome-orca/gnome-orca_2.26.2-2_all.deb
+Size: 2122816
+SHA256: 5d9d60b3554f3197f2341ddb5effe06217359d0708bc3b7249899ef519e8978a
+SHA1: 55d88de07f7631a9f7b2efb0b9fb4417adbbbcd7
+MD5sum: 5e884541ae29c7b986e1c92be456c7fa
+Description: Scriptable screen reader
+ A flexible, extensible, and powerful assistive technology that
+ provides end-user access to applications and toolkits that support the
+ AT-SPI (e.g., the GNOME desktop). With early input from and continued
+ engagement with its end users, Orca has been designed and implemented
+ by the Sun Microsystems, Inc., Accessibility Program Office.
+ .
+ Orca defines a set of default behaviors (reactions to application events) and
+ key bindings (reaction to user key presses). These default behaviors and key
+ bindings can be overwritten on a per-application basis. Orca creates a script
+ object for each running application, which merges both the default behaviors
+ and key bindings, and the application specific ones. Orca provides the
+ infrastructure to activate and deactivate scripts, as well as a host of
+ services accessible from within the scripts.
+ .
+ Note: gnome-orca works without gnome-mag, you just need it for magnification.
+Python-Version: 2.4, 2.5, 2.6
+
+Package: gok
+Version: 2.24.0-2
+Architecture: i386
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 13344
+Depends: libatk1.0-0 (>= 1.20.0), libatspi1.0-0 (>= 1.24.1), libbonobo2-0 (>= 2.15.0), libc6 (>= 2.3.6-6~), libesd-alsa0 (>= 0.2.35) | libesd0 (>= 0.2.35), libgconf2-4 (>= 2.23.2), libglade2-0 (>= 1:2.6.1), libglib2.0-0 (>= 2.16.0), libgnome-speech7, libgnome2-0 (>= 2.17.3), libgnomeui-0 (>= 2.22.0), libgtk2.0-0 (>= 2.14.0), liborbit2 (>= 1:2.14.10), libpango1.0-0 (>= 1.22.0), libusb-0.1-4 (>= 2:0.1.12), libwnck22 (>= 2.22.0), libx11-6, libxi6, libxml2 (>= 2.6.27), gconf2 (>= 2.10.1-2), at-spi
+Suggests: gok-doc
+Priority: optional
+Section: gnome
+Filename: pool/main/g/gok/gok_2.24.0-2_i386.deb
+Size: 1752106
+SHA256: a42db50d17301ecd30a454cb716fc7b61078da177265e6c68e207c11fdf3bf1b
+SHA1: c91fcb1bfce6b46ec3741d6e9f3e891281f681da
+MD5sum: 2e205f026b5681ad47d40fd605092902
+Description: GNOME Onscreen Keyboard
+ GOK is the GNOME Onscreen Keyboard, a dynamic onscreen keyboard for
+ UNIX and UNIX-like operating systems. It features Direct Selection,
+ Dwell Selection, Automatic Scanning and Inverse Scanning access methods
+ and includes word completion.
+ .
+ GOK includes an alphanumeric keyboard and a keyboard for launching
+ applications. The keyboards are specified in XML enabling existing
+ keyboards to be modified and new keyboards to be created. The access
+ methods are also specified in XML providing the ability to modify
+ existing access methods and create new ones.
+
+Package: html2text
+Version: 1.3.2a-14
+Architecture: i386
+Maintainer: Eugene V. Lyubimkin <jackyf.devel@gmail.com>
+Installed-Size: 288
+Depends: libc6 (>= 2.1.3), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.2.1)
+Suggests: curl | wget
+Homepage: http://www.mbayer.de/html2text/
+Priority: optional
+Section: web
+Filename: pool/main/h/html2text/html2text_1.3.2a-14_i386.deb
+Size: 98226
+SHA256: 77468c21fa1292bfaced89893e95edcb905fe69deed1a3cdd5ce676fcbb0e24c
+SHA1: 6a7cf1070774a68c78df886738a3bdd990722562
+MD5sum: 6d1ded1a6941d2e3a2a99bd56a147a90
+Description: advanced HTML to text converter
+ html2text is a converter from HTML to plain text.
+ .
+ html2text reads HTML documents supplied in the command line (or from standard
+ input), converts each of them into a stream of plain text characters and
+ writes output to the file or the terminal.
+ .
+ Debian version also can recognize encoding of documents, do on-fly
+ input and output recoding.
+ .
+ html2text was written because the author wasn't happy with the
+ output of "lynx -dump" and so he wrote something better.
+
+Package: intltool-debian
+Version: 0.35.0+20060710.1
+Architecture: all
+Depends: perl, gettext
+Installed-Size: 112
+Maintainer: Nicolas FRANCOIS (Nekral) <nicolas.francois@centraliens.net>
+Priority: optional
+Section: devel
+Filename: pool/main/i/intltool-debian/intltool-debian_0.35.0+20060710.1_all.deb
+Size: 30782
+SHA256: 121b13900d598f737acd9461575e36d93eead49c61a95ab04273fb68e1ecc60a
+SHA1: e8bcb45ceae9ebcdedd855a637b1d97857c23a3e
+MD5sum: 505291f7124f988e5adb6c4fa0303bae
+Description: Help i18n of RFC822 compliant config files
+ Intltool is a bunch of scripts written by the GNOME project to
+ internationalize many different file formats.  This package is
+ a slightly modified version which adds support for RFC822
+ compliant config files, e.g. Debconf templates files.
+
+Package: ipython
+Version: 0.9.1-3
+Architecture: all
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Installed-Size: 6308
+Depends: python, python-support (>= 0.7.1), python-pexpect
+Recommends: python-wxgtk2.8, global, python-openssl (>= 0.6), python (>= 2.5) | python-ctypes, python-foolscap, python-zope-interface, python-twisted-core
+Suggests: python-profiler, python-numpy, python-matplotlib, libjs-jquery, python-gobject, python-gtk2, python-qt3 | python-qt4
+Conflicts: ipython-common, python2.3-ipython, python2.4-ipython
+Replaces: ipython-common, python2.3-ipython, python2.4-ipython
+Homepage: http://ipython.scipy.org/
+Priority: optional
+Section: python
+Filename: pool/main/i/ipython/ipython_0.9.1-3_all.deb
+Size: 2604392
+SHA256: 4d8b4ddb2e80d06d285cf4fa377f22b89e5d87cdb1ce6391a0209ece05c20b5a
+SHA1: 07a91874f4a3f0c0ee96fb47ca777dcccf9d44de
+MD5sum: f3b538f506878faf0adf9daefe7bcd52
+Description: enhanced interactive Python shell
+ IPython can be used as a replacement for the standard Python shell,
+ or it can be used as a complete working environment for scientific
+ computing (like Matlab or Mathematica) when paired with the standard
+ Python scientific and numerical tools. It supports dynamic object
+ introspections, numbered input/output prompts, a macro system,
+ session logging, session restoring, complete system shell access,
+ verbose and colored traceback reports, auto-parentheses, auto-quoting,
+ and is embeddable in other Python programs.
+
+Package: libatk1.0-dev
+Source: atk1.0
+Version: 1.26.0-1
+Architecture: i386
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 476
+Depends: libatk1.0-0 (= 1.26.0-1), pkg-config, libglib2.0-dev (>= 2.4.1-2)
+Conflicts: libatk-dev, libatk0-dev
+Replaces: libatk-dev, libatk0-dev
+Homepage: http://www.gtk.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/a/atk1.0/libatk1.0-dev_1.26.0-1_i386.deb
+Size: 116958
+SHA256: d73f638c917f59bb2325296be8f0846c8947d6fe6ce3868bbd22eb83fce53c91
+SHA1: cc74619978c0024f0fe37ae666b8b76732055441
+MD5sum: 5453ca8c0b6b6adee1f2cc4a6d261707
+Description: Development files for the ATK accessibility toolkit
+ ATK is a toolkit providing accessibility interfaces for applications or
+ other toolkits. By implementing these interfaces, those other toolkits or
+ applications can be used with tools such as screen readers, magnifiers, and
+ other alternative input devices.
+ .
+ These are the development files for ATK, needed for compilation of
+ programs or toolkits which use it.
+
+Package: libatspi-dev
+Source: at-spi
+Version: 1.26.0-1
+Architecture: i386
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 840
+Depends: libatspi1.0-0 (= 1.26.0-1), libbonobo2-dev, libgtk2.0-dev (>= 2.10.0), libgail-dev (>= 1.9.0), libxml2-dev, libxtst-dev, libsm-dev, libice-dev, libx11-dev, pkg-config
+Suggests: at-spi-doc
+Priority: optional
+Section: libdevel
+Filename: pool/main/a/at-spi/libatspi-dev_1.26.0-1_i386.deb
+Size: 162698
+SHA256: 9de9a98a1c2a777a86977feca35fcf54d10456254e37a401e41357665f0f5c98
+SHA1: 0b1b886a500d7afad22a46caa13fd50f810c5bc9
+MD5sum: c3576cdee8e05808e04ad1019c0f6bb9
+Description: Development files of at-spi for GNOME Accessibility
+ at-spi is the "Assistive Technology Service Provider Interface".
+ .
+ Accessibility is enabling people with disabilities to participate in
+ substantial life activities that include work and the use of
+ services, products and information.
+ .
+ This package contains the development files for at-spi.
+
+Package: libatspi1.0-0
+Source: at-spi
+Version: 1.26.0-1
+Architecture: i386
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 576
+Depends: libatk1.0-0 (>= 1.20.0), libbonobo2-0 (>= 2.15.0), libc6 (>= 2.3.6-6~), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.4.0), libfreetype6 (>= 2.2.1), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.10.0), liborbit2 (>= 1:2.14.10), libpango1.0-0 (>= 1.14.0), libx11-6, zlib1g (>= 1:1.1.4)
+Conflicts: libatspi0
+Priority: optional
+Section: libs
+Filename: pool/main/a/at-spi/libatspi1.0-0_1.26.0-1_i386.deb
+Size: 222692
+SHA256: 5a4e6c078a3297679da71d7525005c9016fcf5c1c387fd8a72787e170176b5d0
+SHA1: eee0955fcd66750b56bfff9379e92cb082208a38
+MD5sum: 2f1316ccf65d469d5e714e92eb3a7b56
+Description: C binding libraries of at-spi for GNOME Accessibility
+ at-spi is the "Assistive Technology Service Provider Interface".
+ .
+ Accessibility is enabling people with disabilities to participate in
+ substantial life activities that include work and the use of
+ services, products, and information.
+ .
+ This package contains the C binding libraries for at-spi.
+
+Package: libaudio2
+Source: nas
+Version: 1.9.2-1
+Architecture: i386
+Maintainer: Steve McIntyre <93sam@debian.org>
+Installed-Size: 188
+Depends: libc6 (>= 2.3), libxau6, libxt6
+Suggests: nas
+Conflicts: nas-lib
+Replaces: nas-lib
+Provides: nas-lib
+Priority: optional
+Section: libs
+Filename: pool/main/n/nas/libaudio2_1.9.2-1_i386.deb
+Size: 80248
+SHA256: e64df39740479a3d60c17174f33cafb10204a03f9d63fe96e74c8226a4fa777e
+SHA1: c5ab2b75261e532e7a8eb7f461c0b2c8840062a3
+MD5sum: c4d68886371d6ee516a235c360b131fc
+Description: Network Audio System - shared libraries
+ The Network Audio System (NAS) was developed by NCD for playing,
+ recording, and manipulating audio data over a network. Like the X
+ Window System, it uses the client/server model to separate
+ applications from the specific drivers that control audio input and
+ output devices.
+ .
+ This package contains the NAS library (libaudio), needed for both remote
+ and local output.
+
+Package: libbonobo2-dev
+Source: libbonobo
+Version: 2.24.1-1
+Architecture: i386
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 3164
+Depends: libbonobo2-0 (= 2.24.1-1), libglib2.0-dev (>= 2.8.0), liborbit2-dev (>= 1:2.12.4), libpopt-dev
+Conflicts: libbonobo-activation-dev (<< 1:2.4)
+Replaces: libbonobo-activation-dev (<< 1:2.4), libbonobo2-common (<< 2.20.3-1)
+Priority: optional
+Section: libdevel
+Filename: pool/main/libb/libbonobo/libbonobo2-dev_2.24.1-1_i386.deb
+Size: 668216
+SHA256: 894c953a60b6bdd95cc6df4c11d2c292afb3e48bd7491c48433a7aefc9f29f63
+SHA1: 4bb0341e52569a2572744a17d0cb9ee73da55527
+MD5sum: 2f513c4c3bf33789d409cc979dc027e1
+Description: Bonobo CORBA interfaces library -- development files
+ Bonobo is a set of language and system independent CORBA interfaces
+ for creating reusable components, controls and creating compound
+ documents.
+ .
+ The Bonobo distribution includes a Gtk+ based implementation of the
+ Bonobo interfaces, enabling developers to create reusable
+ components and applications that can be used to form more complex
+ documents.
+ .
+ This package contains the headers and development libraries needed to
+ build applications using Bonobo.
+
+Package: libbrlapi0.5
+Source: brltty
+Version: 3.10~r3724-1.1
+Architecture: i386
+Maintainer: Mario Lang <mlang@debian.org>
+Installed-Size: 128
+Depends: libc6 (>= 2.3.6-6~), libicu40 (>= 4.0-1)
+Priority: extra
+Section: libs
+Filename: pool/main/b/brltty/libbrlapi0.5_3.10~r3724-1.1_i386.deb
+Size: 62920
+SHA256: 9f0c2195db1a36d0d1dc1357a7fa0ebc888dd7a7bacf34d6624d412dd135d762
+SHA1: c340d150ac876d26bd91e4089e6c89410f306fac
+MD5sum: c54e4b94e7f1b92f3eee3614a59ac38d
+Description: braille display access via BRLTTY - shared library
+ This package contains the shared library necessary to run programs which
+ need to communicate with a braille display.
+
+Package: libc6-dev
+Source: eglibc
+Version: 2.9-12
+Architecture: i386
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 18632
+Depends: libc6 (= 2.9-12), linux-libc-dev
+Recommends: gcc | c-compiler
+Suggests: glibc-doc, manpages-dev
+Conflicts: libstdc++2.10-dev (<< 1:2.95.2-15), gcc-2.95 (<< 1:2.95.3-9), binutils (<< 2.17cvs20070426-1), libc-dev
+Replaces: man-db (<= 2.3.10-41), gettext (<= 0.10.26-1), ppp (<= 2.2.0f-24), libgdbmg1-dev (<= 1.7.3-24)
+Provides: libc-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/e/eglibc/libc6-dev_2.9-12_i386.deb
+Size: 4821690
+SHA256: 9a65f53592f4c8a8f8d3ccd87508d53c688426ffd65a240d1ad78608faf81346
+SHA1: 4016a8a64fae6545d387666bd766a5e1100bbadb
+MD5sum: 6eac45de2f3a43c358f84002f53c7dff
+Description: GNU C Library: Development Libraries and Header Files
+ Contains the symlinks, headers, and object files needed to compile
+ and link programs which use the standard C library.
+
+Package: libcairo2-dev
+Source: cairo (1.8.6-2)
+Version: 1.8.6-2+b1
+Architecture: i386
+Maintainer: Dave Beckett <dajobe@debian.org>
+Installed-Size: 1240
+Depends: libcairo2 (= 1.8.6-2+b1), libfontconfig1-dev, libfreetype6-dev (>= 2.1.10), libxrender-dev (>= 0.6.0), libpng12-dev, libdirectfb-dev (>= 0.9.25), libsm-dev, libpixman-1-dev (>= 0.12.0), libxcb1-dev, libxcb-render0-dev, libxcb-render-util0-dev
+Suggests: libcairo2-doc
+Conflicts: libcairo-dev, libcairo-directfb2-dev (<< 1.8.2-2), libcairo0.5.1-dev, libcairo0.6.0-dev, libcairo0.9.0-dev
+Replaces: libcairo0.5.1-dev, libcairo0.6.0-dev, libcairo0.9.0-dev
+Provides: libcairo-dev
+Homepage: http://cairographics.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/c/cairo/libcairo2-dev_1.8.6-2+b1_i386.deb
+Size: 579430
+SHA256: 403e2f571e9099fbcb6342dec4dcbca85662c754a4dec316b06f370fd3800509
+SHA1: 7b0486fb071a7272d8c32d028f33e0736ab8db8f
+MD5sum: dff4002b30eae65ffa4a90fb8cc9cee8
+Description: Development files for the Cairo 2D graphics library
+ Cairo is a multi-platform library providing anti-aliased
+ vector-based rendering for multiple target backends.
+ .
+ This package contains the development libraries, header files needed by
+ programs that want to compile with Cairo.
+
+Package: libcolorblind-dev
+Version: 0.0.1-1
+Architecture: i386
+Depends: libcolorblind0 (= 0.0.1-1)
+Installed-Size: 64
+Maintainer: Daniel Ruoso <daniel@ruoso.com>
+Source: colorblind
+Priority: extra
+Section: libs
+Filename: pool/main/c/colorblind/libcolorblind-dev_0.0.1-1_i386.deb
+Size: 3452
+SHA256: ee666acc8f6b352980983d2f34f8c71e7af36df1dcfc13f0b9febec517007ddf
+SHA1: a236ff46d1df3dc4e352aa342a88787b67357937
+MD5sum: 3eed74f27c0e9336fcba626c16ca36a3
+Description: Pixel Filter for colorblind accessibility - headers
+ This library provides an unified way to recalculate colors
+ in order to present alternative views on images for colorblind
+ people.
+ .
+ This package contains the library headers.
+
+Package: libcolorblind0
+Version: 0.0.1-1
+Architecture: i386
+Depends: libc6 (>= 2.3.6-6)
+Installed-Size: 72
+Maintainer: Daniel Ruoso <daniel@ruoso.com>
+Source: colorblind
+Priority: extra
+Section: libs
+Filename: pool/main/c/colorblind/libcolorblind0_0.0.1-1_i386.deb
+Size: 5416
+SHA256: c6eb0de3fdc338055e33b1f13fc3dab8ea679f135aaad919c254a5e3a61e4c49
+SHA1: 3e86d310f5029f468071c6d534349e00b6dcfa68
+MD5sum: c586bd0e34c157053cf058e278696f8b
+Description: Pixel Filter for colorblind accessibility
+ This library provides an unified way to recalculate colors
+ in order to present alternative views on images for colorblind
+ people.
+ .
+ This package contains the library files.
+
+Package: libdirectfb-dev
+Source: directfb
+Version: 1.2.7-2
+Architecture: i386
+Maintainer: Debian DirectFB Team <pkg-directfb-devel@lists.alioth.debian.org>
+Installed-Size: 3336
+Depends: libdirectfb-1.2-0 (= 1.2.7-2), libc6 (>= 2.3.6-6~), libpng12-0 (>= 1.2.13-4), libdirectfb-extra, libfreetype6-dev, libjpeg62-dev, libpng12-dev, zlib1g-dev (>= 1:1.1.3), libmpeg3-dev, x11proto-core-dev, libx11-dev, libxext-dev, libsysfs-dev
+Homepage: http://www.directfb.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/d/directfb/libdirectfb-dev_1.2.7-2_i386.deb
+Size: 846340
+SHA256: 1608a20cb0ac47161f46b3c169aca74b45ccdd60017785bd5910dbe3c772801c
+SHA1: 431b9838c05c0259a94903da937f5bf8f0187103
+MD5sum: 1978380b3eb4f81ca7345f92d674cbd0
+Description: direct frame buffer graphics library - development files
+ DirectFB is a graphics library which was designed with embedded systems
+ in mind. It offers maximum hardware accelerated performance at a minimum
+ of resource usage and overhead.
+ .
+ This package contains the files needed to compile and link programs
+ which use DirectFB.
+
+Package: libdirectfb-extra
+Source: directfb
+Version: 1.2.7-2
+Architecture: i386
+Maintainer: Debian DirectFB Team <pkg-directfb-devel@lists.alioth.debian.org>
+Installed-Size: 120
+Depends: libdirectfb-1.2-0 (= 1.2.7-2), libc6 (>= 2.3.6-6~), libfreetype6 (>= 2.3.5), libjpeg62, libpng12-0 (>= 1.2.13-4), libx11-6, libxext6, zlib1g (>= 1:1.1.4)
+Homepage: http://www.directfb.org/
+Priority: optional
+Section: libs
+Filename: pool/main/d/directfb/libdirectfb-extra_1.2.7-2_i386.deb
+Size: 32518
+SHA256: a718d01f74c92d091ea7c654e03fb826f80590678fea93233b5f42bad02e38de
+SHA1: 14fc33dd6f58f28c0426eedd46c57cd82f48a325
+MD5sum: f025c28f3f87113e9a4541ac518fd45c
+Description: direct frame buffer graphics - extra providers
+ DirectFB is a graphics library which was designed with embedded systems
+ in mind. It offers maximum hardware accelerated performance at a minimum
+ of resource usage and overhead.
+ .
+ This packages contains the following providers:
+ .
+   * image PNG
+   * image JPEG
+   * font FreeType
+   * system X11
+
+Package: libdotconf1.0
+Version: 1.0.13-2
+Architecture: i386
+Depends: libc6 (>= 2.3.6-6)
+Installed-Size: 76
+Maintainer: Shane Wegner <shane@debian.org>
+Source: dotconf
+Priority: optional
+Section: libs
+Filename: pool/main/d/dotconf/libdotconf1.0_1.0.13-2_i386.deb
+Size: 16752
+SHA256: 1b97a8688d037ad794457d78acfdbe0eaa3a9c022b7213fd55a30aa89c4bd759
+SHA1: 0a8c11c756be55c4e1d5867f8e3e6199118779db
+MD5sum: e58a039e9f3e4e858369e3d11d623fbd
+Description: Configuration file parser library - runtime files
+ dot.conf is a simple-to-use and powerful configuration-file parser
+ library written in C. The configuration files created for dot.conf
+ look very similar to those used by the Apache Webserver. Even
+ Container-Directives known from httpd.conf can easily be used in the
+ exact same manner as for Apache-Modules. It supports various types of
+ arguments, dynamically loadable modules that create their own
+ configuration options on-the-fly, a here-documents feature to pass
+ very long ARG_STR data to your app, and on-the-fly inclusion of
+ additional config files.
+
+Package: libespeak1
+Source: espeak
+Version: 1.40.02-2
+Architecture: i386
+Maintainer: Mario Lang <mlang@debian.org>
+Installed-Size: 248
+Depends: libc6 (>= 2.3.6-6~), libgcc1 (>= 1:4.1.1), libportaudio2, libstdc++6 (>= 4.1.1), espeak-data (= 1.40.02-2)
+Homepage: http://espeak.sourceforge.net/
+Priority: optional
+Section: libs
+Filename: pool/main/e/espeak/libespeak1_1.40.02-2_i386.deb
+Size: 111148
+SHA256: a1acac9eda3360f998a7bd1fc4a0a4c5d3fef4d568420986ef17a957a5bff2f3
+SHA1: 2d17ec4727c8d6f2a2e42724a64935cba4115507
+MD5sum: 08a275fdcab73630382bdc173018299e
+Description: A multi-lingual software speech synthesizer: shared library
+ eSpeak is a software speech synthesizer for English, and some other
+ languages. This package contains the espeak program in a shared library.
+
+Package: libestools1.2
+Source: speech-tools
+Version: 1:1.2.96~beta-4
+Architecture: i386
+Maintainer: Kartik Mistry <kartik@debian.org>
+Installed-Size: 3812
+Depends: libc6 (>= 2.3), libgcc1 (>= 1:4.1.1)
+Conflicts: libestools1.2c102, speech-tools1
+Replaces: libestools1.2c102, speech-tools1
+Homepage: http://festvox.org/packed/festival/
+Priority: optional
+Section: libs
+Filename: pool/main/s/speech-tools/libestools1.2_1.2.96~beta-4_i386.deb
+Size: 1335258
+SHA256: 1dd822e76711145b6877a785c298a69d4402548d565a684ed790420e7fd6cb95
+SHA1: 5f9b090a3fa67f63fb53949b442c45482dad98de
+MD5sum: 4df679370adfc4a66e9bf194a52ee0e9
+Description: Edinburgh Speech Tools Library
+ A library for use in speech software, such as the festival speech synthesis
+ system.
+
+Package: libexpat1-dev
+Source: expat
+Version: 2.0.1-4
+Architecture: i386
+Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+Installed-Size: 684
+Depends: libexpat1 (= 2.0.1-4), libc6-dev | libc-dev
+Conflicts: libexpat-dev
+Provides: libexpat-dev
+Homepage: http://expat.sourceforge.net
+Priority: optional
+Section: libdevel
+Filename: pool/main/e/expat/libexpat1-dev_2.0.1-4_i386.deb
+Size: 209728
+SHA256: b7f70cdbdd2956a778285d04c3860d5764e1d13c0bc58802035b1c1f51584742
+SHA1: 2c3541ed3f9e43857eac7db461f2747abd00cc7c
+MD5sum: 2e57e5f7d6a9bb7e448152df6de4da3b
+Description: XML parsing C library - development kit
+ This package contains the header file and development libraries of
+ expat, the C library for parsing XML.  Expat is a stream oriented XML
+ parser.  This means that you register handlers with the parser prior
+ to starting the parse.  These handlers are called when the parser
+ discovers the associated structures in the document being parsed.  A
+ start tag is an example of the kind of structures for which you may
+ register handlers.
+
+Package: libflite1
+Source: flite
+Version: 1.2-release-2.4
+Architecture: i386
+Maintainer: Mario Lang <mlang@debian.org>
+Installed-Size: 13700
+Depends: libc6 (>= 2.7-1)
+Priority: extra
+Section: libs
+Filename: pool/main/f/flite/libflite1_1.2-release-2.4_i386.deb
+Size: 8159804
+SHA256: 2f79f70c63ddb8f8542fa5c4fc8499bd8159d11aaed5b6bb2ac42711e9c242b7
+SHA1: b293058b9b429ed449fbdf2cfa6c1704e118b342
+MD5sum: e86e1735b50e79eb5124e5ab930cbaa4
+Description: a small run-time speech synthesis engine - shared libraries
+ This package contains the shared library objects of Festival Lite
+
+Package: libfontconfig1-dev
+Source: fontconfig
+Version: 2.6.0-3
+Architecture: i386
+Maintainer: Keith Packard <keithp@debian.org>
+Installed-Size: 2224
+Depends: libfontconfig1 (= 2.6.0-3), libexpat1-dev, libfreetype6-dev (>= 2.1.7), pkg-config
+Provides: libfontconfig-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/f/fontconfig/libfontconfig1-dev_2.6.0-3_i386.deb
+Size: 715978
+SHA256: 0231e07d2d8217078c29055b34a0c7df30b4a357476462a397d670de7ecb2813
+SHA1: 863dd5a29c12436474113c9877006c0230da8c82
+MD5sum: 62bd55cd09099ca6c745cca264edef21
+Description: generic font configuration library - development
+ Fontconfig is a font configuration and customization library, which
+ does not depend on the X Window System. It is designed to locate
+ fonts within the system and select them according to requirements
+ specified by applications.
+ .
+ This package contains the static libraries and headers needed for the
+ development of applications using fontconfig.
+
+Package: libfreetype6-dev
+Source: freetype
+Version: 2.3.9-4.1
+Architecture: i386
+Maintainer: Steve Langasek <vorlon@debian.org>
+Installed-Size: 3304
+Depends: libfreetype6 (= 2.3.9-4.1), libc6-dev | libc-dev, zlib1g-dev | libz-dev
+Conflicts: freetype0-dev, freetype1 (<= 1.0.0.1998-03-22-1), freetype1-dev
+Replaces: freetype0-dev, freetype1-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/f/freetype/libfreetype6-dev_2.3.9-4.1_i386.deb
+Size: 695938
+SHA256: 2b3f5212571e8118a6322656c6a7d25b80913ecce902b2b0cac797a0d8602382
+SHA1: 5d431fd85cb8510b42414c6bcb18d4ea832854b4
+MD5sum: d5ff6845049cd6639c5db037d17cb668
+Description: FreeType 2 font engine, development files
+ The FreeType project is a team of volunteers who develop free,
+ portable and high-quality software solutions for digital typography.
+ They specifically target embedded systems and focus on bringing small,
+ efficient and ubiquitous products.
+ .
+ This package contains all supplementary files (static library, headers
+ and documentation) you need to develop your own programs using the
+ FreeType 2 library.
+
+Package: libgail-common
+Source: gtk+2.0
+Version: 2.16.1-2
+Architecture: i386
+Maintainer: Sebastien Bacher <seb128@debian.org>
+Installed-Size: 404
+Depends: libatk1.0-0 (>= 1.20.0), libc6 (>= 2.3.6-6~), libcairo2 (>= 1.6.4-6.1), libfontconfig1 (>= 2.4.0), libfreetype6 (>= 2.2.1), libgail18 (= 2.16.1-2), libglib2.0-0 (>= 2.19.7), libgtk2.0-0 (>= 2.14.0), libpango1.0-0 (>= 1.20), libx11-6, libxcomposite1 (>= 1:0.3-1), libxdamage1 (>= 1:1.1), libxfixes3 (>= 1:4.0.1)
+Priority: optional
+Section: libs
+Filename: pool/main/g/gtk+2.0/libgail-common_2.16.1-2_i386.deb
+Size: 170462
+SHA256: 3acbe053643f4cf00b784e2a14a38e06340c80ce183a20fe549fed26693f6acf
+SHA1: a265a7af752aea1e5fb1d31f0d93247298265de3
+MD5sum: 9356a0b3f5b55a5fc73771366befa870
+Description: GNOME Accessibility Implementation Library -- common modules
+ Gail implements ATK interfaces for GTK+ widgets which are dynamically
+ loadable at runtime by a GTK+ application. Once loaded, those parts of
+ an application that use standard GTK+ widgets will have a basic level
+ of accessibility, without the need to modify the application at all.
+ .
+ This package contains core shared libraries.
+
+Package: libgail-dev
+Source: gtk+2.0
+Version: 2.16.1-2
+Architecture: i386
+Maintainer: Sebastien Bacher <seb128@debian.org>
+Installed-Size: 156
+Depends: libgail18 (= 2.16.1-2), libgail-common (= 2.16.1-2), libgtk2.0-dev (= 2.16.1-2), pkg-config, libatk1.0-dev (>= 1.13.0)
+Suggests: libgail-doc
+Replaces: libgtk2.0-dev (<< 2.14.5)
+Priority: optional
+Section: libdevel
+Filename: pool/main/g/gtk+2.0/libgail-dev_2.16.1-2_i386.deb
+Size: 58718
+SHA256: 5561a3cb72553fd3372286612fac9fff9d705380a1c1561c6bdf9e69d6c24fcc
+SHA1: 16dc835049fe654be9143d5a0610e15f8f6a6113
+MD5sum: 6a774795b44709f53df280bf5a60f7b7
+Description: GNOME Accessibility Implementation Library -- development files
+ Gail implements ATK interfaces for GTK+ widgets which are dynamically
+ loadable at runtime by a GTK+ application. Once loaded, those parts of
+ an application that use standard GTK+ widgets will have a basic level
+ of accessibility, without the need to modify the application at all.
+ .
+ This package contains the development files for Gail.
+
+Package: libgail-gnome-module
+Source: libgail-gnome
+Version: 1.20.1-1
+Architecture: i386
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 40
+Depends: libatk1.0-0 (>= 1.20.0), libatspi1.0-0 (>= 1.22.1), libbonobo2-0 (>= 2.15.0), libbonoboui2-0 (>= 2.15.1), libc6 (>= 2.7-1), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.12.0), liborbit2 (>= 1:2.14.10), libpanel-applet2-0 (>= 2.19.3)
+Conflicts: libgail-gnome0 (<< 1.0.2)
+Replaces: libgail-gnome0 (<< 1.0.2)
+Priority: optional
+Section: libs
+Filename: pool/main/libg/libgail-gnome/libgail-gnome-module_1.20.1-1_i386.deb
+Size: 18520
+SHA256: 199953e5334675a8ac1d7289053dce101231b06ea8893b57dd278da78d51233c
+SHA1: f8c281c47e0c4c8f5218b0c26bef41174ac80f9b
+MD5sum: 09b1320eb1582f13247efe1cbb6bc5b3
+Description: GNOME Accessibility Implementation Module for GnomeUI/BonoboUI
+ This module is GNOME Accessibility Implementation Library additions which
+ implement ATK interfaces for libbonoboui and libgnomeui widgets.
+ .
+ This package contains the GTK+ module.
+
+Package: libglib2.0-dev
+Source: glib2.0
+Version: 2.20.1-2
+Architecture: i386
+Maintainer: Loic Minier <lool@dooz.org>
+Installed-Size: 3652
+Depends: libc6 (>= 2.1), libglib2.0-0 (= 2.20.1-2), libpcre3 (>= 7.7), pkg-config (>= 0.14.0)
+Recommends: python
+Suggests: libglib2.0-doc
+Conflicts: libglib1.3-dev
+Replaces: libglib1.3-dev
+Homepage: http://www.gtk.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/g/glib2.0/libglib2.0-dev_2.20.1-2_i386.deb
+Size: 926140
+SHA256: a001828012a1aa218fed6a865bffc8383d600c660163c8cac6f5cd62c9f87c0b
+SHA1: acac20df52823a4f78a20ea6dae91e668c3aefe0
+MD5sum: 026f9200cebd2b122e68266daf47fcc1
+Description: Development files for the GLib library
+ GLib is a library containing many useful C routines for things such
+ as trees, hashes, lists, and strings.  It is a useful general-purpose
+ C library used by projects such as GTK+, GIMP, and GNOME.
+ .
+ This package is needed to compile programs against libglib2.0-0,
+ as only it includes the header files and static libraries (optionally)
+ needed for compiling.
+
+Package: libgnome-mag2
+Source: gnome-mag (1:0.15.4-1)
+Version: 1:0.15.4-1+b2
+Architecture: i386
+Maintainer: Daniel Ruoso <daniel@ruoso.com>
+Installed-Size: 164
+Depends: libc6 (>= 2.3.6-6~), libglib2.0-0 (>= 2.12.0), liborbit2 (>= 1:2.14.10)
+Conflicts: libgnome-mag1 (= 0.11.10-1)
+Priority: optional
+Section: libs
+Filename: pool/main/g/gnome-mag/libgnome-mag2_0.15.4-1+b2_i386.deb
+Size: 60522
+SHA256: ff2a11b22c39ece61e97c40cf37621c77661f35b3a7ecdf2e47ec4e555aa955e
+SHA1: c70f1ddb60f4a064637a5c4f9cd753a6119bcb8a
+MD5sum: cb2ee445122bcbf2979647684c290bbe
+Description: screen magnification library for the GNOME desktop (shared library)
+ The GNOME magnification library provides an API for creating and
+ controlling a screen magnifier.
+ .
+ This package provides the shared libraries.
+
+Package: libgnome-speech7
+Source: gnome-speech
+Version: 1:0.4.23-1
+Architecture: i386
+Maintainer: Mario Lang <mlang@debian.org>
+Installed-Size: 184
+Depends: libbonobo2-0 (>= 2.15.0), libc6 (>= 2.7-1), libespeak1 (>= 1.30), libglib2.0-0 (>= 2.16.0), liborbit2 (>= 1:2.14.10)
+Recommends: festival
+Conflicts: libgnome-speech3
+Priority: optional
+Section: libs
+Filename: pool/main/g/gnome-speech/libgnome-speech7_0.4.23-1_i386.deb
+Size: 55176
+SHA256: 89a388968e20f8075d91612530db2c011545de152bf3cd9b1005a2db7478162b
+SHA1: 42a18569b711964e23a8971159c2ad9cbca1d281
+MD5sum: f5f8dda584f911d23b9f57fee5fffd52
+Description: GNOME text-to-speech library
+ The GNOME Speech library gives a simple yet general API for programs
+ to convert text into speech, as well as speech input.
+ .
+ Multiple backends are supported by the GNOME Speech library.
+ The Festival and Espeak backends are provided by default in this package;
+ other backends that require prorietary software are available via separate
+ packages (gnome-speech-dectalk, gnome-speech-ibmtts and gnome-speech-swift).
+
+Package: libgomp1
+Source: gcc-4.4
+Version: 4.4.0-5
+Architecture: i386
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 96
+Depends: gcc-4.4-base (= 4.4.0-5), libc6 (>= 2.6)
+Priority: optional
+Section: libs
+Filename: pool/main/g/gcc-4.4/libgomp1_4.4.0-5_i386.deb
+Size: 26940
+SHA256: d1608f343ae366b8e7607dcb7faecf1fa477fb1e2f3094e17a0bdcfac00de512
+SHA1: 43a9266910bb8808715ff1a873508bba7f0a99ad
+MD5sum: d5040684ad5a857c0483f6222e008c39
+Description: GCC OpenMP (GOMP) support library
+ GOMP is an implementation of OpenMP for the C, C++, and Fortran 95 compilers
+ in the GNU Compiler Collection.
+
+Package: libgtk2.0-dev
+Source: gtk+2.0
+Version: 2.16.1-2
+Architecture: i386
+Maintainer: Sebastien Bacher <seb128@debian.org>
+Installed-Size: 9564
+Depends: libgtk2.0-0 (= 2.16.1-2), libgtk2.0-common, libc6 (>= 2.0), libglib2.0-0 (>= 2.19.7), libglib2.0-dev (>= 2.19.7), libpango1.0-dev (>= 1.20), libatk1.0-dev (>= 1.13.0), libcairo2-dev (>= 1.6.4-6.1), libx11-dev (>= 2:1.0.0-6), libxext-dev (>= 1:1.0.1-2), libxinerama-dev (>= 1:1.0.1-4.1), libxi-dev (>= 1:1.0.1-4), libxrandr-dev (>= 1:1.2.99), libxcursor-dev, libxfixes-dev (>= 1:3.0.0-3), libxcomposite-dev (>= 1:0.2.0-3), libxdamage-dev (>= 1:1.0.1-3), pkg-config, libxml2-utils
+Recommends: python (>= 2.4), debhelper
+Suggests: libgtk2.0-doc
+Conflicts: libgtk1.3-dev
+Replaces: gtk2-engines-pixbuf (<< 2.8.18-5), libgtk1.3-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/g/gtk+2.0/libgtk2.0-dev_2.16.1-2_i386.deb
+Size: 2828966
+SHA256: f0fc2cfebf6c72b6ba860540db9cde0f4701ee947a74ad1bb8367f69b5ed8748
+SHA1: d90c88c52bb4d9bb50e9c6681d566b5b57b62167
+MD5sum: b9b052a46a9b4eb4f51bd8c650f7d5e5
+Description: Development files for the GTK+ library
+ The GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, the GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the header files and static libraries which is
+ needed for developing the GTK+ applications.
+
+Package: libice-dev
+Source: libice
+Version: 2:1.0.5-1
+Architecture: i386
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 228
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libice6 (= 2:1.0.5-1), x11proto-core-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/libi/libice/libice-dev_1.0.5-1_i386.deb
+Size: 58658
+SHA256: bdabf43de152b057fd0b3002bcab7bdbfc15be7e32af2eb13487233df0ebffb6
+SHA1: c9be26fc0ff3aef62a1cbd7c36f2a9ad7d784e4b
+MD5sum: 2a9797b4762a1a6a3dcfb988f832d2b0
+Description: X11 Inter-Client Exchange library (development headers)
+ This package provides the main interface to the X11 Inter-Client Exchange
+ library, which allows for communication of data between X clients.
+ .
+ This package contains the development headers for the library found in libice6.
+ Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libICE
+
+Package: libidl-dev
+Source: libidl
+Version: 0.8.13-0.1
+Architecture: i386
+Maintainer: Sebastian Rittau <srittau@debian.org>
+Installed-Size: 356
+Depends: libidl0 (= 0.8.13-0.1), libglib2.0-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/libi/libidl/libidl-dev_0.8.13-0.1_i386.deb
+Size: 106506
+SHA256: 34574c2e7972c259bf9636639a21d70239c3d77b239269be7bf2cc3b80f1e408
+SHA1: 2f1eb6850ae95b8ca7ed4fc927629c885314196d
+MD5sum: f324518998818c0c45103897cdc5ce48
+Description: development files for programs that use libIDL
+ This package contains the header files and libraries needed for developing
+ programs which use libIDL.
+
+Package: libjpeg62-dev
+Source: libjpeg6b
+Version: 6b-14
+Architecture: i386
+Maintainer: Bill Allombert <ballombe@debian.org>
+Installed-Size: 376
+Depends: libjpeg62 (= 6b-14), libc-dev
+Provides: libjpeg-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/libj/libjpeg6b/libjpeg62-dev_6b-14_i386.deb
+Size: 186476
+SHA256: b4bfccaee4e68fc10d364849bad68029ca2535bc2f2139fac05e63164078f082
+SHA1: 3ff41f13bf140e0fa96d32481e87d0885986a97d
+MD5sum: f0b0a6cc7183ecba576a5a12cc9afdb2
+Description: Development files for the IJG JPEG library
+ The Independent JPEG Group's JPEG library is a library for handling
+ JPEG files.
+ .
+ This package contains the static library, headers and documentation.
+
+Package: liblouis-bin
+Source: liblouis
+Version: 1.6.1-1
+Architecture: i386
+Maintainer: Debian Accessibility Team <debian-accessibility@lists.debian.org>
+Installed-Size: 100
+Depends: libc6 (>= 2.0), liblouis0
+Homepage: http://code.google.com/p/liblouis/
+Priority: extra
+Section: text
+Filename: pool/main/libl/liblouis/liblouis-bin_1.6.1-1_i386.deb
+Size: 18648
+SHA256: a362063d21165e7e2b1307454aae54e65aa3decfbfa0e115809136867aba7fdd
+SHA1: 35f67780031b1958d7baaafbb106c0f6ae75c336
+MD5sum: f0025c5ffc05cbe2310b62c47711989f
+Description: Braille translation library - utilities
+ Liblouis is a braille translator and back-translator.  It features support for
+ computer and literary braille, supports contracted and uncontracted translation
+ for many languages and has support for hyphenation.  Liblouis also supports
+ math braille (Nemeth and Marburg).  New languages can easily be added through
+ tables that support a rule- or dictionary based approach. Included are also
+ tools for testing and debugging tables.
+ .
+ This package contains a few tools to test tables and translate text.
+
+Package: liblouis-data
+Source: liblouis
+Version: 1.6.1-1
+Architecture: all
+Maintainer: Debian Accessibility Team <debian-accessibility@lists.debian.org>
+Installed-Size: 3436
+Homepage: http://code.google.com/p/liblouis/
+Priority: extra
+Section: text
+Filename: pool/main/libl/liblouis/liblouis-data_1.6.1-1_all.deb
+Size: 778620
+SHA256: 384e9ec2521f291a8fa4f025fa3032886922605e62bda9319983ec47d4864f1f
+SHA1: 047474992fa4e662f521205d52db9a57b4f12f61
+MD5sum: b00f2052879d1e7f64ae37c36f2138b2
+Description: Braille translation library - data
+ Liblouis is a braille translator and back-translator.  It features support for
+ computer and literary braille, supports contracted and uncontracted translation
+ for many languages and has support for hyphenation.  Liblouis also supports
+ math braille (Nemeth and Marburg).  New languages can easily be added through
+ tables that support a rule- or dictionary based approach. Included are also
+ tools for testing and debugging tables.
+ .
+ This package contains runtime data.
+
+Package: liblouis0
+Source: liblouis
+Version: 1.6.1-1
+Architecture: i386
+Maintainer: Debian Accessibility Team <debian-accessibility@lists.debian.org>
+Installed-Size: 132
+Depends: libc6 (>= 2.1.3), liblouis-data
+Homepage: http://code.google.com/p/liblouis/
+Priority: extra
+Section: libs
+Filename: pool/main/libl/liblouis/liblouis0_1.6.1-1_i386.deb
+Size: 45030
+SHA256: 040d8c753bb96e7263b04a5adf8a31a03fd5f927bf993513b1b7815a5f267fcc
+SHA1: 83ebd94134ecd6d3e73fdd236f3c687a5ffeba85
+MD5sum: 4d16a3ab4aa6370a017d718a69abca8e
+Description: Braille translation library - shared libs
+ Liblouis is a braille translator and back-translator.  It features support for
+ computer and literary braille, supports contracted and uncontracted translation
+ for many languages and has support for hyphenation.  Liblouis also supports
+ math braille (Nemeth and Marburg).
+ .
+ This package contains shared libraries.
+
+Package: liblouisxml-bin
+Source: liblouisxml
+Version: 1.9.1-1
+Architecture: i386
+Maintainer: Debian Accessibility Team <debian-accessibility@lists.debian.org>
+Installed-Size: 68
+Depends: libc6 (>= 2.1), liblouis0, liblouisxml1, libxml2 (>= 2.6.27), antiword
+Recommends: ooo2dbk
+Homepage: http://code.google.com/p/liblouisxml/
+Priority: extra
+Section: text
+Filename: pool/main/libl/liblouisxml/liblouisxml-bin_1.9.1-1_i386.deb
+Size: 13436
+SHA256: ae8a6bcf5003ebc7289f19e1446fc9487b7043af1e7918dcd986844b248bbfd5
+SHA1: 289e6f72b4e2683cbcb62c3cee8db9e3b3af600d
+MD5sum: 5cca412176edaf9e75897fe7b7aa181a
+Description: Braille XML translation utilities
+ Liblouisxml translates files in the computer lingua franca xml format
+ into properly transcribed braille. This includes translation into grade
+ two, if desired, mathematical codes, etc. It also includes formatting
+ according to a built-in style sheet which can be modified by the user.
+ .
+ This package contains xml2brl which translates an xml or text file into an
+ embosser-ready braille file, and msword2brl which translates an ms-word file
+ into an embosser-ready braille file.
+ .
+ In combination with ooo2dbk, it can also translate OpenOffice.org 1 documents.
+
+Package: liblouisxml-data
+Source: liblouisxml
+Version: 1.9.1-1
+Architecture: all
+Maintainer: Debian Accessibility Team <debian-accessibility@lists.debian.org>
+Installed-Size: 188
+Homepage: http://code.google.com/p/liblouisxml/
+Priority: extra
+Section: text
+Filename: pool/main/libl/liblouisxml/liblouisxml-data_1.9.1-1_all.deb
+Size: 32188
+SHA256: 5c39720567fcca731b8223943d6d5764feaa6c9bf5961e63d1e593fc93871efd
+SHA1: 6a82f34cf41361ad2fc4a3ebf520b180fe27024a
+MD5sum: 069fae82cd3ed0db3b239d8bdacc593a
+Description: Braille XML translation library - data
+ Liblouisxml translates files in the computer lingua franca xml format
+ into properly transcribed braille. This includes translation into grade
+ two, if desired, mathematical codes, etc. It also includes formatting
+ according to a built-in style sheet which can be modified by the user.
+ .
+ This package contains runtime data.
+
+Package: liblouisxml1
+Source: liblouisxml
+Version: 1.9.1-1
+Architecture: i386
+Maintainer: Debian Accessibility Team <debian-accessibility@lists.debian.org>
+Installed-Size: 124
+Depends: libc6 (>= 2.1.3), liblouis0, libxml2 (>= 2.6.27), liblouisxml-data
+Homepage: http://code.google.com/p/liblouisxml/
+Priority: extra
+Section: libs
+Filename: pool/main/libl/liblouisxml/liblouisxml1_1.9.1-1_i386.deb
+Size: 38142
+SHA256: 5be22e94c9369c09f4a3863300058cd13d1723c7267c83bd732ac7d8d8c3ca07
+SHA1: 684abe7b3c4ab4420ec3633f424d427fab0a5cb4
+MD5sum: ee750ca53c2854faea6c3446244e6848
+Description: Braille XML translation library - shared libs
+ Liblouisxml translates files in the computer lingua franca xml format
+ into properly transcribed braille. This includes translation into grade
+ two, if desired, mathematical codes, etc. It also includes formatting
+ according to a built-in style sheet which can be modified by the user.
+ .
+ This package contains shared libraries.
+
+Package: libmail-sendmail-perl
+Version: 0.79.16-1
+Architecture: all
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 100
+Depends: perl (>= 5.6.0-16), libsys-hostname-long-perl
+Homepage: http://search.cpan.org/dist/Mail-Sendmail/
+Priority: optional
+Section: perl
+Filename: pool/main/libm/libmail-sendmail-perl/libmail-sendmail-perl_0.79.16-1_all.deb
+Size: 26612
+SHA256: 8d9d0b462679ac3621cbf745602b6532a6bbce50228e5bd38061c4df3e5194a1
+SHA1: d54026433abf8762b1712da9a7a2dccc3281cbc4
+MD5sum: 2ef171a1a7cbdda648f14f48a3563133
+Description: Send email from a perl script
+ Simple platform independent e-mail from your perl script. Only requires
+ Perl 5, Sys::Hostname::Long, and a network connection.
+
+Package: libmpeg3-1
+Version: 1.5.4-5
+Architecture: i386
+Depends: liba52-0.7.4, libc6 (>= 2.3.5-1)
+Installed-Size: 216
+Maintainer: David Martínez Moreno <ender@debian.org>
+Source: libmpeg3
+Priority: optional
+Section: libs
+Filename: pool/main/libm/libmpeg3/libmpeg3-1_1.5.4-5_i386.deb
+Size: 82844
+SHA256: 9fa670f8c7edec96c3bac07fec127a5f6ad8befbafa3c6cfb79b35d83dcf4fbe
+SHA1: 08d785acbbd10040422a650468bd221ed1f5dd93
+MD5sum: 6a8a9908100e66c5d2f60218d2caf992
+Description: MPEG streams decoding library
+ LibMPEG3 is a versatile and high-performance library capable
+ of decoding both audio and video from many different MPEG formats.
+ .
+ LibMPEG3 decodes several MPEG standards into uncompressed
+ data suitable for editing and playback. It currently decodes:
+ .
+  - MPEG-2 video
+  - MPEG-1 video
+  - mp3 audio
+  - mp2 audio
+  - ac3 audio
+  - MPEG-2 transport streams
+  - MPEG-2 program streams
+  - MPEG-1 program streams
+  - IFO files
+
+Package: libmpeg3-dev
+Version: 1.5.4-5
+Architecture: i386
+Depends: libmpeg3-1 (= 1.5.4-5)
+Installed-Size: 404
+Maintainer: David Martínez Moreno <ender@debian.org>
+Source: libmpeg3
+Priority: optional
+Section: libdevel
+Filename: pool/main/libm/libmpeg3/libmpeg3-dev_1.5.4-5_i386.deb
+Size: 106888
+SHA256: 7a4e8a45d35013c32affbbd27c2b886ab455b752b6354a79b8c0b4449d7ef39c
+SHA1: b78b4124bf2f700a715ac67266d311dca725b3e5
+MD5sum: a6d60e5f1f4588aaf714f544e453b55a
+Description: Headers and static libraries for libMPEG3
+ Headers and static libraries for the libMPEG3 decoding
+ library. Refer to libmpeg3-1 package for description.
+
+Package: liborbit2-dev
+Source: orbit2
+Version: 1:2.14.17-0.1
+Architecture: i386
+Maintainer: Sebastian Rittau <srittau@debian.org>
+Installed-Size: 2336
+Depends: liborbit2 (= 1:2.14.17-0.1), libidl-dev (>= 0.8.6-1), libglib2.0-dev, pkg-config, libc6 (>= 2.3), libglib2.0-0 (>= 2.16.0), libidl0
+Recommends: orbit2
+Conflicts: liblinc-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/o/orbit2/liborbit2-dev_2.14.17-0.1_i386.deb
+Size: 470908
+SHA256: 5db7590b9c714dd142a45fa455e6e594aa348d3e35dc39173a1212474713d0f7
+SHA1: 820aa46e55eea103716dd3762f0bc772e8a82a55
+MD5sum: db9794600c8bdf3646818d01114e8e76
+Description: development files for ORBit2 - a CORBA ORB
+ ORBit2 is a high-performance CORBA (Common Object Request Broker
+ Architecture) ORB (Object Request Broker). It allows programs to send
+ requests and receive replies from other programs, regardless of the
+ locations of the two programs. CORBA is an architecture that enables
+ communication between program objects, regardless of the programming
+ language they're written in or the operating system they run on.
+ .
+ This package contains the header files and static libraries used for
+ developing ORBit2-based applications. It also contains the IDL compiler
+ needed to import object definitions into your C programs.
+
+Package: libpango1.0-dev
+Source: pango1.0 (1.24.0-3)
+Version: 1.24.0-3+b1
+Architecture: i386
+Maintainer: Sebastien Bacher <seb128@debian.org>
+Installed-Size: 1256
+Depends: libc6 (>= 2.1), libcairo2 (>= 1.8.2-2), libfontconfig1 (>= 2.4.0), libfreetype6 (>= 2.2.1), libglib2.0-0 (>= 2.17.3), libpango1.0-0 (= 1.24.0-3+b1), libx11-6, libxft2 (>> 2.1.1), libxrender1, zlib1g (>= 1:1.1.4), libglib2.0-dev (>= 2.12.0), libfreetype6-dev (>= 2.1.3), libx11-dev, libxrender-dev, pkg-config, libxft-dev, libfontconfig1-dev (>= 2.1.91), libcairo2-dev (>= 1.8.2-2)
+Recommends: debhelper
+Suggests: libpango1.0-doc, imagemagick
+Conflicts: libpango-dev, libpango1.0-common (<< 1.14.5-1)
+Replaces: libpango-dev, libpango1.0-common (<< 1.14.5-1)
+Priority: optional
+Section: libdevel
+Filename: pool/main/p/pango1.0/libpango1.0-dev_1.24.0-3+b1_i386.deb
+Size: 366966
+SHA256: 61d894f489c0ae63ed27e0fd927aa9093a327763c63987fa073c1fd5b6ef5fed
+SHA1: 5021f26d5a583525759c4b43081fd74df7c3fb4e
+MD5sum: aa9f59e963005692a5fd9d0b52470846
+Description: Development files for the Pango
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. however, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+-2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends
+ .
+ This package contains the header files and some files needed for development
+ with Pango.
+
+Package: libpixman-1-dev
+Source: pixman
+Version: 0.14.0-1
+Architecture: i386
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 460
+Depends: libpixman-1-0 (= 0.14.0-1)
+Conflicts: libpixman1-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/p/pixman/libpixman-1-dev_0.14.0-1_i386.deb
+Size: 168386
+SHA256: bad01546dbcd1b1cfe864f4733145c69ce26ba0e9f47df9dbd2d619f9515d03e
+SHA1: 0125b0f40595b94d647b96c43fce268f94dd829d
+MD5sum: 22997a84bd3d8a491f5015d9d9a6cdfd
+Description: pixel-manipulation library for X and cairo (development files)
+ Development libraries, header files and documentation needed by
+ programs that want to compile with the Cairo/X pixman library.
+
+Package: libpng12-dev
+Source: libpng
+Version: 1.2.37-1
+Architecture: i386
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 608
+Depends: libpng12-0 (= 1.2.37-1), zlib1g-dev
+Conflicts: libpng-dev, libpng12-0-dev, libpng2 (<< 1.0.12-3), libpng2-dev
+Replaces: libpng12-0-dev, libpng3-dev (<= 1.2.5)
+Provides: libpng-dev, libpng12-0-dev, libpng3-dev
+Homepage: http://www.libpng.org/pub/png/libpng.html
+Priority: optional
+Section: libdevel
+Filename: pool/main/libp/libpng/libpng12-dev_1.2.37-1_i386.deb
+Size: 253564
+SHA256: d84b3083cad23e50ee19069f33e238737b41ffd37f81a7ff80af62d8eb835d3f
+SHA1: bb9856049dd7c3ab9203c3bfaa002566c7c9bf13
+MD5sum: 17428a5f9f8c0c8f8d333db7a556a88f
+Description: PNG library - development
+ libpng is a library implementing an interface for reading and writing
+ PNG (Portable Network Graphics) format files.
+ .
+ This package contains the header and development files needed to build
+ programs and packages using libpng.
+
+Package: libpopt-dev
+Source: popt
+Version: 1.14-4
+Architecture: i386
+Maintainer: Paul Martin <pm@debian.org>
+Installed-Size: 96
+Depends: libc6-dev | libc-dev, libpopt0 (= 1.14-4)
+Conflicts: popt
+Replaces: popt
+Homepage: http://rpm5.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/p/popt/libpopt-dev_1.14-4_i386.deb
+Size: 43876
+SHA256: f66acc3ca822c00bff80cce170a4d985c3f59f7eddca62b2aa293dec8a42eedd
+SHA1: 63a19148e9d7faad79cb1375180a81fe45540cec
+MD5sum: 187248de7f26be13533b8f18b9e1ab08
+Description: lib for parsing cmdline parameters - development files
+ Popt was heavily influenced by the getopt() and getopt_long() functions,
+ but it allows more powerful argument expansion. It can parse arbitrary
+ argv[] style arrays and automatically set variables based on command
+ line arguments. It also allows command line arguments to be aliased via
+ configuration files and includes utility functions for parsing arbitrary
+ strings into argv[] arrays using shell-like rules.
+ .
+ This package contains the popt static library and header file.
+
+Package: libportaudio2
+Source: portaudio19
+Version: 19+svn20071022-3
+Architecture: i386
+Maintainer: Debian VoIP Team <pkg-voip-maintainers@lists.alioth.debian.org>
+Installed-Size: 208
+Depends: libasound2 (>> 1.0.16), libc6 (>= 2.7-1), libjack0 (>= 0.109.2)
+Homepage: http://www.portaudio.com/
+Priority: optional
+Section: libs
+Filename: pool/main/p/portaudio19/libportaudio2_19+svn20071022-3_i386.deb
+Size: 63214
+SHA256: 28535c39b1dc1b2863c0cfa23585d3073b14422d8c03de6d39ffcd2be8d291ca
+SHA1: 0e89224504d9606b458be53ad595f29ed90bcba0
+MD5sum: f2ab417a004e68a7d9a28eb03c9902cf
+Description: Portable audio I/O - shared library
+ PortAudio is a portable audio I/O library designed for cross-platform
+ support of audio. It uses a callback mechanism to request audio
+ processing.  Audio can be generated in various formats, including 32
+ bit floating point, and will be converted to the native format
+ internally.
+ .
+ This package contains the shared library.
+
+Package: libpthread-stubs0
+Source: libpthread-stubs
+Version: 0.1-2
+Architecture: i386
+Maintainer: XCB Developers <xcb@lists.freedesktop.org>
+Installed-Size: 36
+Priority: optional
+Section: libs
+Filename: pool/main/libp/libpthread-stubs/libpthread-stubs0_0.1-2_i386.deb
+Size: 2770
+SHA256: 6b137bffd8b29b236f15227ade320570d629251876d509919eb48e4ba50abc9d
+SHA1: 18c03e383346936ef79c8a4e6f9ae530414f41e7
+MD5sum: 3247fc7666b0b198dfb0a9b59c3f908b
+Description: pthread stubs not provided by native libc
+ This library provides weak aliases for pthread functions not provided
+ in libc or otherwise available by default.  Libraries like libxcb rely
+ on pthread stubs to use pthreads optionally, becoming thread-safe when
+ linked to libpthread, while avoiding any performance hit when running
+ single-threaded. libpthread-stubs supports this behavior even on
+ platforms which do not supply all the necessary pthread stubs.  On
+ platforms which already supply all the necessary pthread stubs, this
+ package has no content.
+
+Package: libpthread-stubs0-dev
+Source: libpthread-stubs
+Version: 0.1-2
+Architecture: i386
+Maintainer: XCB Developers <xcb@lists.freedesktop.org>
+Installed-Size: 44
+Depends: libpthread-stubs0 (= 0.1-2)
+Priority: optional
+Section: libdevel
+Filename: pool/main/libp/libpthread-stubs/libpthread-stubs0-dev_0.1-2_i386.deb
+Size: 3048
+SHA256: 6a85227b217be7107f47ed75bb62a8c2a0fc264ea23cba89512fd943de58ae99
+SHA1: 5d5efb19b70de5ac7809b101d53b4c05f7239375
+MD5sum: 6c8daff5394cb3a68568acfa868e18c3
+Description: pthread stubs not provided by native libc, development files
+ This library provides weak aliases for pthread functions not provided
+ in libc or otherwise available by default.  Libraries like libxcb rely
+ on pthread stubs to use pthreads optionally, becoming thread-safe when
+ linked to libpthread, while avoiding any performance hit when running
+ single-threaded. libpthread-stubs supports this behavior even on
+ platforms which do not supply all the necessary pthread stubs.
+ .
+ On platforms which already supply all the necessary pthread stubs, this
+ package ships only the pkg-config file pthread-stubs.pc, to allow
+ libraries to unconditionally express a dependency on pthread-stubs and
+ still obtain correct behavior.
+
+Package: libsm-dev
+Source: libsm
+Version: 2:1.1.0-2
+Architecture: i386
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 120
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libsm6 (= 2:1.1.0-2), x11proto-core-dev, libice-dev (>= 1:1.0.0-1)
+Priority: optional
+Section: libdevel
+Filename: pool/main/libs/libsm/libsm-dev_1.1.0-2_i386.deb
+Size: 24870
+SHA256: 53ab0fc8308cfa179e9d27813fbf83b47b417dc1ab7567c47cdb09dfe4a4ab64
+SHA1: bf8fb0fee0d88ad1686246d6d70ef29fd6fcc08d
+MD5sum: 40d18ab3ceca00bac7060b1c7a13c22b
+Description: X11 Session Management library (development headers)
+ This package provides the main interface to the X11 Session Management
+ library, which allows for applications to both manage sessions, and make use
+ of session managers to save and restore their state for later use.
+ .
+ This package contains the development headers for the library found in libsm6.
+ Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libSM
+
+Package: libspeechd2
+Source: speech-dispatcher
+Version: 0.6.7-4
+Architecture: i386
+Maintainer: Milan Zamazal <pdm@debian.org>
+Installed-Size: 116
+Depends: libc6 (>= 2.3.6-6~), libglib2.0-0 (>= 2.12.0)
+Conflicts: libspeechd0 (>= 0.3)
+Homepage: http://www.freebsoft.org/speechd
+Priority: extra
+Section: libs
+Filename: pool/main/s/speech-dispatcher/libspeechd2_0.6.7-4_i386.deb
+Size: 58922
+SHA256: a626edc5655ffe86c079aadda0e7030ca2da16f58cb2021d74befd9928fe6380
+SHA1: 542649af6285830d238a931fb28c1dc26d9d516d
+MD5sum: 957eccc6d9c2c64ace00d6621a465eb6
+Description: Speech Dispatcher: Shared libraries
+ Speech Dispatcher provides a device independent layer for speech synthesis.
+ This package contains a shared library needed for C programs linked with it.
+
+Package: libsphinx2g0
+Source: sphinx2
+Version: 0.6-2.1
+Architecture: i386
+Maintainer: Isaac Clerencia <isaac@debian.org>
+Installed-Size: 868
+Depends: libc6 (>= 2.7-1)
+Priority: optional
+Section: libs
+Filename: pool/main/s/sphinx2/libsphinx2g0_0.6-2.1_i386.deb
+Size: 263982
+SHA256: 719bf9550ba2c19ae75ec1bd3db3cb7deb8a7d5114d63fab445818c7e7b1480d
+SHA1: fb5121edca2fadf79e9773d9ac9c778c26672b7d
+MD5sum: 765641950e4262192013768a02b93118
+Description: speech recognition library
+ Sphinx 2 is a real-time, speaker-independent speech recognition system.
+ .
+ This package contains the Sphinx library.
+
+Package: libstdc++6-4.3-dev
+Source: gcc-4.3
+Version: 4.3.3-10
+Architecture: i386
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 9704
+Depends: gcc-4.3-base (= 4.3.3-10), g++-4.3 (= 4.3.3-10), libstdc++6 (>= 4.3.3-10), libc6-dev (>= 2.5)
+Suggests: libstdc++6-4.3-doc
+Conflicts: libg++2.8-dev, libg++27-dev, libg++272-dev (<< 2.7.2.8-1), libstdc++2.10-dev (<< 1:2.95.3-2), libstdc++2.8-dev, libstdc++2.9-dev, libstdc++2.9-glibc2.1-dev, libstdc++3.0-dev
+Provides: libstdc++-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/g/gcc-4.3/libstdc++6-4.3-dev_4.3.3-10_i386.deb
+Size: 1384014
+SHA256: 01e13c6840d879a61b650879096de0e169058395facc865448269af251bc2b5c
+SHA1: 34d1985e59c8bcd75ccc33c76d599ec46e48b3c5
+MD5sum: 5c16edf82b94a834aac682de589fbde7
+Description: The GNU Standard C++ Library v3 (development files)
+ This package contains the headers and static library files necessary for
+ building C++ programs which use libstdc++.
+ .
+ libstdc++-v3 is a complete rewrite from the previous libstdc++-v2, which
+ was included up to g++-2.95. The first version of libstdc++-v3 appeared
+ in g++-3.0.
+
+Package: libsys-hostname-long-perl
+Version: 1.4-2
+Architecture: all
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 84
+Depends: perl (>= 5.6.0-16)
+Homepage: http://search.cpan.org/dist/Sys-Hostname-Long/
+Priority: optional
+Section: perl
+Filename: pool/main/libs/libsys-hostname-long-perl/libsys-hostname-long-perl_1.4-2_all.deb
+Size: 11272
+SHA256: e7364bc9813223ee10f1b7b9b6a289d9429969d2ab8db559f663da148c5f06f8
+SHA1: cd35ae9098c2f7de364c9586150dc2dc4a08b1c2
+MD5sum: dc6e7a8499f9b1073820a0e2f389f284
+Description: Figure out the long (fully-qualified) hostname
+ This module determines the host full name on multiple operating
+ systems (MacOS, Windows, Unix-like systems; more later.)
+ .
+ The Sys::Hostname class is the best and standard way to get the basic
+ hostname, but that may not be fully qualified.  This module tries to
+ determine the host's fully qualified name.
+
+Package: libsysfs-dev
+Source: sysfsutils
+Version: 2.1.0-5
+Architecture: i386
+Maintainer: Martin Pitt <mpitt@debian.org>
+Installed-Size: 196
+Depends: libsysfs2 (= 2.1.0-5)
+Priority: optional
+Section: libdevel
+Filename: pool/main/s/sysfsutils/libsysfs-dev_2.1.0-5_i386.deb
+Size: 43888
+SHA256: 2282105b94c01034232d5baba9ac17cc8677a0129b6bf6ad5605a847197268ed
+SHA1: 4c1d56f9e66d7e729c2b7dd2bb47e69d1081a218
+MD5sum: cf6c05b8b1b58f608997fbe622f8772d
+Description: interface library to sysfs - development files
+ Sysfs is a virtual file system in Linux kernel 2.5+ that provides a
+ tree of system devices. libsysfs provides a stable programming
+ interface to sysfs and eases querying system devices and their
+ attributes.
+ .
+ This package provides everything that is needed for developing own
+ programs using libsysfs: C headers, a static library, documentation
+ and example programs.
+
+Package: libtimedate-perl
+Source: timedate
+Version: 1.1600-9
+Architecture: all
+Maintainer: Christian Hammers <ch@debian.org>
+Installed-Size: 212
+Depends: perl (>= 5.6.0-16)
+Conflicts: timedate
+Replaces: timedate
+Provides: timedate
+Priority: optional
+Section: perl
+Filename: pool/main/t/timedate/libtimedate-perl_1.1600-9_all.deb
+Size: 32912
+SHA256: 1cd300a16df579ed98a6957467fed78371867df9cf85e9b510e6fe4bd4ceda8e
+SHA1: fc1b999c208f80765d4be5d5160f16c8cd476f1b
+MD5sum: d8c174c5afe06cde981a4e4c66c4e087
+Description: Time and date functions for Perl
+ The Date::Parse module can parse dates in a wide variety of input
+ formats, and many languages, though it is limited to only parsing
+ absolute dates. To parse relative dates, try Time::ParseDate.
+ .
+ This package also includes Date::Format, which can format dates into
+ strings, and Time::Zone, which can contains miscellaneous timezone
+ functions.
+
+Package: libwxbase2.8-0
+Source: wxwidgets2.8
+Version: 2.8.7.1-1.1
+Architecture: i386
+Maintainer: Adeodato Simó <dato@net.com.org.es>
+Installed-Size: 1684
+Depends: libc6 (>= 2.7-1), libexpat1 (>= 1.95.8), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.2.1), zlib1g (>= 1:1.1.4)
+Priority: optional
+Section: libs
+Filename: pool/main/w/wxwidgets2.8/libwxbase2.8-0_2.8.7.1-1.1_i386.deb
+Size: 676972
+SHA256: 9d3709c05bb8cf7d29f8d15c7b23b7ed6fafcd6158fd2e04eacaae4dfca22ecf
+SHA1: 2f921d9e6c84f45fb784e5755717868439dce16d
+MD5sum: 42351c951ef85b53a44c6cfb09100f35
+Description: wxBase library (runtime) - non-GUI support classes of wxWidgets toolkit
+ wxBase is a collection of C++ classes providing basic data structures
+ (strings, lists, arrays), powerful wxDateTime class for date manipulations,
+ portable wrappers around many OS-specific functions allowing to build the
+ same program under all supported folders, wxThread class for writing
+ multithreaded programs using either Win32 or POSIX threads and much more.
+ wxBase currently supports the following platforms: Generic Unix (Linux,
+ FreeBSD, Solaris, HP-UX, ...), win32, and BeOS.
+ .
+ This package is only useful for non-GUI apps.  It offers a subset of the
+ classes in libwx_gtk2.8 for use in console apps and daemons.  You do not need
+ this package to build or use wxWidgets GUI apps.
+
+Package: libwxgtk2.8-0
+Source: wxwidgets2.8
+Version: 2.8.7.1-1.1
+Architecture: i386
+Maintainer: Adeodato Simó <dato@net.com.org.es>
+Installed-Size: 9208
+Depends: libatk1.0-0 (>= 1.20.0), libc6 (>= 2.7-1), libexpat1 (>= 1.95.8), libgcc1 (>= 1:4.1.1), libgconf2-4 (>= 2.13.5), libgl1-mesa-glx | libgl1, libglib2.0-0 (>= 2.16.0), libglu1-mesa | libglu1, libgstreamer-plugins-base0.10-0 (>= 0.10.0), libgstreamer0.10-0 (>= 0.10.0), libgtk2.0-0 (>= 2.12.0), libjpeg62, libpango1.0-0 (>= 1.20.3), libpng12-0 (>= 1.2.13-4), libsm6, libstdc++6 (>= 4.1.1), libtiff4, libwxbase2.8-0 (>= 2.8.7.1), libxinerama1, libxml2 (>= 2.6.27), zlib1g (>= 1:1.1.4)
+Suggests: libgnomeprintui2.2-0
+Priority: optional
+Section: libs
+Filename: pool/main/w/wxwidgets2.8/libwxgtk2.8-0_2.8.7.1-1.1_i386.deb
+Size: 3415580
+SHA256: 165f00898c5d96a20ebeb03aea8a23caff508e57ef336d37a804071ffa46763c
+SHA1: f7ce73b8161ace12299a5b89d4466751ed68ad62
+MD5sum: 3af99ca5b51d13fdda30e25bff4129f5
+Description: wxWidgets Cross-platform C++ GUI toolkit (GTK+ runtime)
+ wxWidgets (formerly known as wxWindows) is a class library for C++ providing
+ GUI components and other facilities on several popular platforms (and some
+ unpopular ones as well).  For more information see http://wxwidgets.org
+ .
+ This package provides the shared libraries needed to run programs linked
+ against wxWidgets.  To use the (optional) glcanvas library you will need
+ to have Mesa or OpenGL installed.
+
+Package: libx11-dev
+Source: libx11
+Version: 2:1.2.1-1
+Architecture: i386
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 3740
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libx11-6 (= 2:1.2.1-1), libxau-dev (>= 1:1.0.0-1), libxdmcp-dev (>= 1:1.0.0-1), x11proto-core-dev (>= 6.8.99.8-1), x11proto-input-dev, x11proto-kb-dev, xtrans-dev, libxcb1-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/libx/libx11/libx11-dev_1.2.1-1_i386.deb
+Size: 1897196
+SHA256: 9cd30581e216e4c6728d1b3a749d2fe650e67b220b72d36ef56703bb9ba664e6
+SHA1: e96b5d67bacf5e4c48151263572cd80e2983b890
+MD5sum: d90f9e64ad1b4517674357dae2c650c6
+Description: X11 client-side library (development headers)
+ This package provides a client interface to the X Window System, otherwise
+ known as 'Xlib'.  It provides a complete API for the basic functions of the
+ window system.
+ .
+ This package contains the development headers for the library found in
+ libx11-6. Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libX11
+
+Package: libxau-dev
+Source: libxau
+Version: 1:1.0.4-2
+Architecture: i386
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 120
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libxau6 (= 1:1.0.4-2), x11proto-core-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/libx/libxau/libxau-dev_1.0.4-2_i386.deb
+Size: 16162
+SHA256: a4f135a72c4538330d18be1a854f7e3da978ad72a5f1c4fc21b871644ee7687d
+SHA1: 21bf585891ac2612bc3dace79aee773a162f7ade
+MD5sum: 74d1e372f20165f6a36faa16f436adf3
+Description: X11 authorisation library (development headers)
+ This package provides the main interface to the X11 authorisation handling,
+ which controls authorisation for X connections, both client-side and
+ server-side.
+ .
+ This package contains the development headers for the library found in libxau6.
+ Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXau
+
+Package: libxcb-render-util0-dev
+Source: xcb-util
+Version: 0.3.3-2
+Architecture: i386
+Maintainer: Julien Danjou <acid@debian.org>
+Installed-Size: 76
+Depends: libxcb-render-util0 (= 0.3.3-2), libxcb1-dev, libxcb-render0-dev
+Homepage: http://xcb.freedesktop.org
+Priority: extra
+Section: libdevel
+Filename: pool/main/x/xcb-util/libxcb-render-util0-dev_0.3.3-2_i386.deb
+Size: 9060
+SHA256: 2162db8859ee6de06f522c1b34abca72df9c18bc27b50ab0eb650da9405d75bd
+SHA1: 0210c7ce96dbb1c839de53b069bbcbb84e57e95f
+MD5sum: a062e00f536045d28d6837b60eb7dbbe
+Description: utility libraries for X C Binding -- render-util
+ This package contains the header and library files needed to build software
+ using libxcb-render-util, providing convenience functions for the Render
+ extension.
+ .
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension
+ libraries. These experimental libraries provide convenience functions
+ and interfaces which make the raw X protocol more usable. Some of the
+ libraries also provide client-side code which is not strictly part of
+ the X protocol but which have traditionally been provided by Xlib.
+
+Package: libxcb-render0-dev
+Source: libxcb
+Version: 1.3-2
+Architecture: i386
+Maintainer: XCB Developers <xcb@lists.freedesktop.org>
+Installed-Size: 232
+Depends: libxcb-render0 (= 1.3-2), libxcb1-dev
+Homepage: http://xcb.freedesktop.org
+Priority: optional
+Section: libdevel
+Filename: pool/main/libx/libxcb/libxcb-render0-dev_1.3-2_i386.deb
+Size: 21524
+SHA256: cdd6e6573061c0c22f51f132b9cea6ae04a480761a7018f1ae2739e4f38482b3
+SHA1: 427afb8c193245e63804cb14c71c40142354ddad
+MD5sum: fd324b07e0d8ae4a2bb631b3c4024993
+Description: X C Binding, render extension, development files
+ This package contains the header and library files needed to build software
+ using libxcb-render, the render extension for the X C Binding.
+ .
+ The XCB library provides an interface to the X Window System protocol,
+ designed to replace the Xlib interface.  XCB provides several advantages over
+ Xlib:
+ .
+  * Size: small library and lower memory footprint
+  * Latency hiding: batch several requests and wait for the replies later
+  * Direct protocol access: one-to-one mapping between interface and protocol
+  * Thread support: access XCB from multiple threads, with no explicit locking
+  * Easy creation of new extensions: automatically generates interface from
+    machine-parsable protocol descriptions
+
+Package: libxcb1-dev
+Source: libxcb
+Version: 1.3-2
+Architecture: i386
+Maintainer: XCB Developers <xcb@lists.freedesktop.org>
+Installed-Size: 660
+Depends: libxcb1 (= 1.3-2), libpthread-stubs0-dev, libxau-dev (>= 1:1.0.0-1), libxdmcp-dev (>= 1:1.0.0-1)
+Conflicts: libxcb0-dev
+Replaces: libxcb0-dev
+Homepage: http://xcb.freedesktop.org
+Priority: optional
+Section: libdevel
+Filename: pool/main/libx/libxcb/libxcb1-dev_1.3-2_i386.deb
+Size: 73408
+SHA256: c74a6c0fff572bea0e233294d8465c8d3c86bd863244d552577504daccd28bb9
+SHA1: e91bea0371631acdfc5ca9b1415ebbbab18b28dc
+MD5sum: 040ddf122ef03b5f8faff7e360b35094
+Description: X C Binding, development files
+ This package contains the header and library files needed to build software
+ using libxcb, the X C Binding.
+ .
+ The XCB library provides an interface to the X Window System protocol,
+ designed to replace the Xlib interface.  XCB provides several advantages over
+ Xlib:
+ .
+  * Size: small library and lower memory footprint
+  * Latency hiding: batch several requests and wait for the replies later
+  * Direct protocol access: one-to-one mapping between interface and protocol
+  * Thread support: access XCB from multiple threads, with no explicit locking
+  * Easy creation of new extensions: automatically generates interface from
+    machine-parsable protocol descriptions
+
+Package: libxcomposite-dev
+Source: libxcomposite
+Version: 1:0.4.0-3
+Architecture: i386
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 84
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libxcomposite1 (= 1:0.4.0-3), libx11-dev, libxfixes-dev, x11proto-composite-dev (>= 1:0.4), x11proto-core-dev, libxext-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/libx/libxcomposite/libxcomposite-dev_0.4.0-3_i386.deb
+Size: 14578
+SHA256: fac1759c24831f741a6b0a18a136b981bf7b2136e4f493870b327d77d3067035
+SHA1: 845e4922141124976be10fed2c9f0e831fa49358
+MD5sum: 5e32778562578698e39ce40c974503a3
+Description: X11 Composite extension library (development headers)
+ libXcomposite provides an X Window System client interface to the Composite
+ extension to the X protocol.
+ .
+ The Composite extension allows clients called compositing managers to control
+ the final drawing of the screen.  Rendering is done into an off-screen buffer.
+ .
+ This package contains the development headers for the library found in
+ libxcomposite1.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXcomposite
+
+Package: libxcursor-dev
+Source: libxcursor
+Version: 1:1.1.9-1
+Architecture: i386
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 124
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libxcursor1 (= 1:1.1.9-1), x11proto-core-dev, libx11-dev, libxrender-dev, libxfixes-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/libx/libxcursor/libxcursor-dev_1.1.9-1_i386.deb
+Size: 30802
+SHA256: 301dbccd88936a3f6b264a296cbe4b48cbc49de1c1e88ef1173e6e93a29ebd4b
+SHA1: 38037230a55fd65bb513b573192031b04eddc412
+MD5sum: 15ba7d6a2e16a9fa0b0f8871ffbf5745
+Description: X cursor management library (development files)
+ Header files and a static version of the X cursor management library are
+ provided by this package.
+ .
+ See the libxcursor1 package for further information.
+
+Package: libxdamage-dev
+Source: libxdamage
+Version: 1:1.1.1-4
+Architecture: i386
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 72
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libxdamage1 (= 1:1.1.1-4), libx11-dev, libxfixes-dev, x11proto-damage-dev (>= 1.1)
+Priority: optional
+Section: libdevel
+Filename: pool/main/libx/libxdamage/libxdamage-dev_1.1.1-4_i386.deb
+Size: 9794
+SHA256: 3be0d9d01c7c58dd7102605006d8c9cbcd83e3937f0de5a2c76d9cdb5e82299d
+SHA1: a4329d0b91d716f7992d636f68fda5b5bd2361c7
+MD5sum: 55b7c02da6194550f12877efe9eacc25
+Description: X11 damaged region extension library (development headers)
+ libXdamage provides an X Window System client interface to the DAMAGE
+ extension to the X protocol.
+ .
+ The Damage extension provides for notification of when on-screen regions have
+ been 'damaged' (altered).
+ .
+ This package contains the development headers for the library found in
+ libxdamage1.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXdamage
+
+Package: libxdmcp-dev
+Source: libxdmcp
+Version: 1:1.0.2-3
+Architecture: i386
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 116
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libxdmcp6 (= 1:1.0.2-3), x11proto-core-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/libx/libxdmcp/libxdmcp-dev_1.0.2-3_i386.deb
+Size: 19916
+SHA256: 02f50d015d38a71e87e34cdb0d072d5a860c96d869b7bc805c604071fbf65258
+SHA1: b86550ed93b9462dde711e9768d04a7e28071d39
+MD5sum: 027f32612a6e727a26301ffbff98f684
+Description: X11 authorisation library (development headers)
+ This package provides the main interface to the X11 display manager control
+ protocol library, which allows for remote logins to display managers.
+ .
+ This package contains the development headers for the library found in
+ libxdmcp6. Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+
+Package: libxext-dev
+Source: libxext
+Version: 2:1.0.4-1
+Architecture: i386
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 256
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libx11-dev, libxext6 (= 2:1.0.4-1), x11proto-core-dev, x11proto-xext-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/libx/libxext/libxext-dev_1.0.4-1_i386.deb
+Size: 84180
+SHA256: 8bcd808e53d19c71bb8370b5ec8deebffc0a3dfb3a72b4e65fdca2d4c4e169db
+SHA1: d04069ee1a1381a88b5642260f31a0714678e115
+MD5sum: 3768422f0946b261b5c1bc2a04c4fdce
+Description: X11 miscellaneous extensions library (development headers)
+ libXext provides an X Window System client interface to several extensions to
+ the X protocol.
+ .
+ The supported protocol extensions are:
+  - DOUBLE-BUFFER (DBE), the Double Buffer extension;
+  - DPMS, the VESA Display Power Management System extension;
+  - Extended-Visual-Information (EVI), an extension for gathering extra
+    information about the X server's visuals;
+  - LBX, the Low Bandwidth X extension;
+  - MIT-SHM, the MIT X client/server shared memory extension;
+  - MIT-SUNDRY-NONSTANDARD, a miscellaneous extension by MIT;
+  - Multi-Buffering, the multi-buffering and stereo display extension;
+  - SECURITY, the X security extension;
+  - SHAPE, the non-rectangular shaped window extension;
+  - SYNC, the X synchronization extension;
+  - TOG-CUP, the Open Group's Colormap Utilization extension;
+  - XC-APPGROUP, the X Consortium's Application Group extension;
+  - XC-MISC, the X Consortium's resource ID querying extension;
+  - XTEST, the X test extension (this is one of two client-side
+    implementations; the other is in the libXtst library, provided by the
+    libxtst6 package);
+ .
+ libXext also provides a small set of utility functions to aid authors of
+ client APIs for X protocol extensions.
+ .
+ This package contains the development headers for the library found in
+ libxext6. Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+
+Package: libxfixes-dev
+Version: 1:4.0.3-2
+Architecture: i386
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libxfixes3 (= 1:4.0.3-2), libx11-dev, x11proto-fixes-dev (>= 4.0-1)
+Installed-Size: 96
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: libxfixes
+Priority: optional
+Section: libdevel
+Filename: pool/main/libx/libxfixes/libxfixes-dev_4.0.3-2_i386.deb
+Size: 12090
+SHA256: ea3eba9450629408d23dc405c43669ff0fdb3bbc7d6ea011d7709eea4c5240f5
+SHA1: 6f807f38f93a314c7a920b02eadb307c7d3f3abe
+MD5sum: 939be9f0c4ae8ecb2461b3d4e41e4954
+Description: X11 miscellaneous 'fixes' extension library (development headers)
+ libXfixes provides an X Window System client interface to the 'XFIXES'
+ extension to the X protocol.
+ .
+ It provides support for Region types, and some cursor functions.
+ .
+ This package contains the development headers for the library found in
+ libxfixes3.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXfixes
+
+Package: libxft-dev
+Source: xft
+Version: 2.1.13-3
+Architecture: i386
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 216
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libxft2 (= 2.1.13-3), libc6-dev | libc-dev, libfontconfig1-dev, libfreetype6-dev, libx11-dev (>= 2:1.0.0), libxrender-dev, zlib1g-dev | libz-dev
+Conflicts: libxft2-dev, xlibs-dev (<< 4.3.0)
+Provides: libxft2-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/x/xft/libxft-dev_2.1.13-3_i386.deb
+Size: 64070
+SHA256: e893b3929c059867042bea4db274261611cd14e7d5f9b6d2fb1d6d0f111392fc
+SHA1: 3fd2cd885bc4eda34c165bd5cc70a7007dfb8f4a
+MD5sum: 0b343f415c2f37f557f1045bfde5ea62
+Description: FreeType-based font drawing library for X (development files)
+ Xft provides a client-side font API for X applications, making the FreeType
+ font rasterizer available to X clients.  Fontconfig is used for font
+ specification resolution.  Where available, the RENDER extension handles
+ glyph drawing; otherwise, the core X protocol is used.
+ .
+ This package provides a static library and C header files.
+
+Package: libxi-dev
+Source: libxi
+Version: 2:1.1.4-1
+Architecture: i386
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 428
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libxi6 (= 2:1.1.4-1), libx11-dev, libxext-dev, x11proto-input-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/libx/libxi/libxi-dev_1.1.4-1_i386.deb
+Size: 69836
+SHA256: c8d4de89157f37b08ec22627f44e84e2fe02ad692af42b8764ff495a82387c1c
+SHA1: 21983768a4007cc564e8e79d798b7c41bce6b6dd
+MD5sum: 7904623728eaf4f6cc1bbca67b02befa
+Description: X11 Input extension library (development headers)
+ libXi provides an X Window System client interface to the XINPUT
+ extension to the X protocol.
+ .
+ The Input extension allows setup and configuration of multiple input devices,
+ and will soon allow hotplugging of input devices; to be added and removed on
+ the fly.
+ .
+ This package contains the development headers for the library found in
+ libxi6.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXi
+
+Package: libxinerama-dev
+Source: libxinerama
+Version: 2:1.0.3-2
+Architecture: i386
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 68
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libxinerama1 (= 2:1.0.3-2), libx11-dev, libxext-dev, x11proto-xinerama-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/libx/libxinerama/libxinerama-dev_1.0.3-2_i386.deb
+Size: 11620
+SHA256: 64177e1eb1466c61ba0dcf48af22efba9cd93040dae4a580ed22ee3346bf159a
+SHA1: 4f672ca4a0a3068847002ced5e4d2776fa62c05f
+MD5sum: 5e4ef3aef5c87471004a668d3077aeda
+Description: X11 Xinerama extension library (development headers)
+ libXinerama provides an X Window System client interface to the XINERAMA
+ extension to the X protocol.
+ .
+ The Xinerama (also known as panoramiX) extension allows for multiple screens
+ attached to a single display to be treated as belonging together, and to give
+ desktop applications a better idea of the monitor layout.
+ .
+ This package contains the development headers for the library found in
+ libxinerama1.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+
+Package: libxml2-dev
+Source: libxml2
+Version: 2.7.3.dfsg-1
+Architecture: i386
+Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+Installed-Size: 2104
+Depends: libxml2 (= 2.7.3.dfsg-1)
+Conflicts: libxml2 (<= 2.6.6-1), libxml2-headers (= 2.6.7-1)
+Replaces: libxml2 (<= 2.6.6-1), libxml2-headers (= 2.6.7-1)
+Priority: optional
+Section: libdevel
+Filename: pool/main/libx/libxml2/libxml2-dev_2.7.3.dfsg-1_i386.deb
+Size: 704130
+SHA256: edc2b1f56d520f8b8d4a5e053015902b44174649229037cb596681386c6a0676
+SHA1: e41f83ad4cc18c709569ad792d46af45ab87cccf
+MD5sum: 44e02cf384a191e7bc82222a29cee422
+Description: Development files for the GNOME XML library
+ XML is a metalanguage to let you design your own markup language.
+ A regular markup language defines a way to describe information in
+ a certain class of documents (eg HTML). XML lets you define your
+ own customized markup languages for many classes of document. It
+ can do this because it's written in SGML, the international standard
+ metalanguage for markup languages.
+ .
+ Install this package if you wish to develop your own programs using
+ the GNOME XML library.
+
+Package: libxrandr-dev
+Source: libxrandr
+Version: 2:1.3.0-2
+Architecture: i386
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 132
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libxrandr2 (= 2:1.3.0-2), libx11-dev, libxext-dev, x11proto-randr-dev (>= 1.3), libxrender-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/libx/libxrandr/libxrandr-dev_1.3.0-2_i386.deb
+Size: 34564
+SHA256: 41d0c00fac4c3d00446b5e6a3ede054be883ee8ada9b4a736e5414926599a445
+SHA1: 36cd77e2ae175fb7aaa55e4ab7810d88885b12fa
+MD5sum: ec24489c11a159fe159e93833c1fdbd2
+Description: X11 RandR extension library (development headers)
+ libXrandr provides an X Window System client interface to the RandR
+ extension to the X protocol.
+ .
+ The RandR extension allows for run-time configuration of display attributes
+ such as resolution, rotation, and reflection.
+ .
+ This package contains the development headers for the library found in
+ libxrandr2.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXrandr
+
+Package: libxrender-dev
+Source: libxrender
+Version: 1:0.9.4-2
+Architecture: i386
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 120
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libxrender1 (= 1:0.9.4-2), libx11-dev (>= 2:1.0.0), x11proto-render-dev, x11proto-core-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/libx/libxrender/libxrender-dev_0.9.4-2_i386.deb
+Size: 29110
+SHA256: 8fbde69f32c3741585e0aade9f17d4fe85229b4735d226fd1826824434bca758
+SHA1: 6b27f88d46985247823473863f349d8b9f64a943
+MD5sum: a82bc601aa0ad622ed5fc9a5352e3748
+Description: X Rendering Extension client library (development files)
+ The X Rendering Extension (Render) introduces digital image composition as
+ the foundation of a new rendering model within the X Window System.
+ Rendering geometric figures is accomplished by client-side tessellation into
+ either triangles or trapezoids.  Text is drawn by loading glyphs into the
+ server and rendering sets of them.  The Xrender library exposes this
+ extension to X clients.
+ .
+ This package provides a static library and C header files.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXrender
+
+Package: libxtst-dev
+Source: libxtst
+Version: 2:1.0.3-1
+Architecture: i386
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 76
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: libxtst6 (= 2:1.0.3-1), libx11-dev, libxext-dev, x11proto-record-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/libx/libxtst/libxtst-dev_1.0.3-1_i386.deb
+Size: 14620
+SHA256: fb6926d254e9a3b1bf618fc7f33ad642e3e4e0424bbfe9561af7c47dc5b94c67
+SHA1: d7316958ea92443fd37492cccebe61bcd6dedc61
+MD5sum: 887ef996ff0f829f6ffc1bf93a787373
+Description: X11 Record extension library (development headers)
+ libXtst provides an X Window System client interface to the Record
+ extension to the X protocol.
+ .
+ The Record extension allows X clients to synthesise input events, which
+ is useful for automated testing.
+ .
+ This package contains the development headers for the library found in
+ libxtst6.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+
+Package: linux-libc-dev
+Source: linux-2.6
+Version: 2.6.26-17
+Architecture: i386
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 3868
+Conflicts: linux-kernel-headers
+Replaces: linux-kernel-headers
+Provides: linux-kernel-headers
+Priority: optional
+Section: devel
+Filename: pool/main/l/linux-2.6/linux-libc-dev_2.6.26-17_i386.deb
+Size: 761366
+SHA256: 0b226fe7f0ff81c26ea334a0ea0ccc937e746b14a41043c070022ee7921bc3bb
+SHA1: 788869471519af93d0504d0dbd4c91bdb467220f
+MD5sum: 4bdc429b17f91842d062707ecc539ee5
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These
+ headers are used by the installed headers for GNU glibc and other system
+ libraries.
+
+Package: mousetweaks
+Version: 2.24.3-1
+Architecture: i386
+Maintainer: Josselin Mouette <joss@debian.org>
+Installed-Size: 2836
+Depends: libatk1.0-0 (>= 1.20.0), libatspi1.0-0 (>= 1.24.1), libc6 (>= 2.3.6-6~), libcairo2 (>= 1.2.4), libdbus-glib-1-2 (>= 0.78), libgconf2-4 (>= 2.23.2), libglade2-0 (>= 1:2.6.1), libglib2.0-0 (>= 2.14.0), libgnome2-0 (>= 2.17.3), libgnomeui-0 (>= 2.22.0), libgtk2.0-0 (>= 2.14.0), libpanel-applet2-0 (>= 2.19.3), libpango1.0-0 (>= 1.22.0), libx11-6, libxcursor1 (>> 1.1.2), libxfixes3 (>= 1:4.0.1), libxtst6, gconf2 (>= 2.10.1-2)
+Recommends: gnome-control-center
+Priority: optional
+Section: gnome
+Filename: pool/main/m/mousetweaks/mousetweaks_2.24.3-1_i386.deb
+Size: 1199596
+SHA256: f3e6753c498b5807371ba4b786cea3f006d7d0479433a63b0dda380405224b8a
+SHA1: 9589f1b8a011403c0ea3ea98319da72671068700
+MD5sum: 6ad55bd1fae814d5ebcc70ce146ee4aa
+Description: mouse accessibility enhancements for the GNOME desktop
+ This package contains a daemon and some panel applets to improve mouse
+ usability on the GNOME desktop. These enhancements are:
+ .
+    * The possibility to click without a button
+    * The ability to bring the context menu with a one-button mouse
+      (like MacOS does)
+    * An area to capture the mouse pointer until it is released with a
+      pre-defined key combination.
+
+Package: ooo2dbk
+Version: 2.1.0-1
+Architecture: all
+Maintainer: Mohammed Adnène Trojette <adn+deb@diwi.org>
+Installed-Size: 941
+Depends: python (>= 2.3), python-support (>= 0.2), xsltproc | libsaxon-java
+Recommends: python-uno
+Suggests: docbook-xsl
+Priority: optional
+Section: text
+Filename: pool/main/o/ooo2dbk/ooo2dbk_2.1.0-1_all.deb
+Size: 427940
+SHA256: 7d9f0a3afef014fc6cf16d83d0f238eb3b09bb33ac02688f2549b684ba14fcd6
+SHA1: 08dd4310f80844d7b864737cc493b0e8a88d2edc
+MD5sum: f0edf33abbd2e5c2ad0869308a2cc52b
+Description: converts OpenOffice.org SXW documents to DocBook XML
+ OOo2Dbk allows to convert documents from OpenOffice-Writer SXW format to
+ a simplified DocBook XML format.
+ .
+ OOo2Dbk is made of an XSLT stylesheet and a set of Python scripts that
+ permit direct processing of SXW documents and extraction of the pictures
+ included in the document.
+ .
+ It can also be used autonomously in order to convert OpenOffice-Writer
+ XML documents produced with a FlatXML filter.
+ .
+ The original version of ooo2dbk is ooo2sdbk, written
+ by Eric Bellot. This version can still be found at
+ http://www.chez.com/ebellot/ooo2sdbk/
+ .
+ OOo2Dbk can at the moment only process files generated by the
+ OpenOffice.org 1.1.x series.
+ .
+ Future versions of OOo2Dbk will process files generated by the
+ OpenOffice.org 2.x series.
+
+Package: openoffice.org-gnome
+Source: openoffice.org
+Version: 1:3.0.1-9
+Architecture: i386
+Maintainer: Debian OpenOffice Team <debian-openoffice@lists.debian.org>
+Installed-Size: 600
+Depends: openoffice.org-core (= 1:3.0.1-9), openoffice.org-gtk, gconf2, libc6 (>= 2.1.3), libgcc1 (>= 1:4.1.1), libgconf2-4 (>= 2.23.2), libglib2.0-0 (>= 2.16.0), libgnomevfs2-0 (>= 1:2.17.90), liborbit2 (>= 1:2.14.10), libstdc++6 (>= 4.1.1), libstlport4.6ldbl, ure (>= 1.4.1)
+Suggests: openoffice.org-evolution
+Enhances: openoffice.org
+Conflicts: openoffice.org2-gnome (<< 1:3.0.1-9)
+Replaces: openoffice.org-common (<< 2.0.4~rc1-0), openoffice.org-gtk-gnome, openoffice.org-kde (= 2.0.1-1), openoffice.org2-gnome (<< 1:3.0.1-9)
+Provides: openoffice.org-gtk-gnome, openoffice.org2-gnome
+Homepage: http://www.go-oo.org
+Priority: optional
+Section: gnome
+Filename: pool/main/o/openoffice.org/openoffice.org-gnome_3.0.1-9_i386.deb
+Size: 268624
+SHA256: cbfc614d55e1f99caa8f4e5d3a430d2e1ea63da2b25cdccc3154a01fa5c83e13
+SHA1: dab3eca21d3ebee6f567593542baa5c5476c7522
+MD5sum: 863b3909b6cf4481fce6899e81fa9160
+Description: full-featured office productivity suite -- GNOME integration
+ OpenOffice.org is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the GNOME VFS support and a GConf backend.
+ .
+ You can extend the functionality of this by installing these packages:
+ .
+  * openoffice.org-evolution: Evolution addressbook support
+  * evolution
+
+Package: openoffice.org-gtk
+Source: openoffice.org
+Version: 1:3.0.1-9
+Architecture: i386
+Maintainer: Debian OpenOffice Team <debian-openoffice@lists.debian.org>
+Installed-Size: 880
+Depends: openoffice.org-core (= 1:3.0.1-9), openoffice.org-style-tango, libatk1.0-0 (>= 1.20.0), libc6 (>= 2.1.3), libdbus-glib-1-2 (>= 0.78), libgcc1 (>= 1:4.1.1), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.14.0), libpango1.0-0 (>= 1.14.0), libstdc++6 (>= 4.1.1), libstlport4.6ldbl, libx11-6, ure (>= 1.4.1)
+Enhances: openoffice.org
+Conflicts: oooqs-kde, ooqstart-gnome
+Replaces: openoffice.org-common (<< 2.0.4~rc1-0), openoffice.org-gnome (<< 2.0.4~rc1-0)
+Homepage: http://www.go-oo.org
+Priority: optional
+Section: gnome
+Filename: pool/main/o/openoffice.org/openoffice.org-gtk_3.0.1-9_i386.deb
+Size: 388802
+SHA256: 28d40597175a031bbd6f6e55d148a05900f7f62519bdff853223c918b1649f85
+SHA1: c3e333bccfde24bf6379c463e4de4da99092bb04
+MD5sum: 91d29c78ee6a593c7a1fdc4e257482a8
+Description: full-featured office productivity suite -- GTK+ integration
+ OpenOffice.org is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Gtk plugin for drawing OOo's widgets with
+ Gtk+ and a Gtk/GNOMEish File Picker when running under GNOME. It also
+ contains a QuickStarter for the "notification area".
+
+Package: orbit2
+Version: 1:2.14.17-0.1
+Architecture: i386
+Maintainer: Sebastian Rittau <srittau@debian.org>
+Installed-Size: 184
+Depends: libc6 (>= 2.3.6-6~), libglib2.0-0 (>= 2.16.0), liborbit2 (>= 1:2.14.10)
+Priority: optional
+Section: devel
+Filename: pool/main/o/orbit2/orbit2_2.14.17-0.1_i386.deb
+Size: 104188
+SHA256: 9474ccd24f6652d342b046d3da57b872d02eac6ed553807a594358c507f0cf53
+SHA1: 6f86480acd7d45f902cd492803a59ebeb1be2f5f
+MD5sum: ed7ec01cf70328848371b715dbcb5e5b
+Description: a CORBA ORB
+ ORBit2 is a high-performance CORBA (Common Object Request Broker
+ Architecture) ORB (Object Request Broker). It allows programs to send
+ requests and receive replies from other programs, regardless of the
+ locations of the two programs. CORBA is an architecture that enables
+ communication between program objects, regardless of the programming
+ language they're written in or the operating system they run on.
+ .
+ This package contains the command-line utilities ior-decode-2 and
+ typelib-dump.
+
+Package: po-debconf
+Version: 1.0.16
+Architecture: all
+Maintainer: Nicolas FRANCOIS (Nekral) <nicolas.francois@centraliens.net>
+Installed-Size: 452
+Depends: perl, gettext (>= 0.16), intltool-debian (>= 0.34.2+20060512)
+Recommends: libmail-sendmail-perl, libcompress-zlib-perl
+Suggests: libmail-box-perl
+Priority: optional
+Section: devel
+Filename: pool/main/p/po-debconf/po-debconf_1.0.16_all.deb
+Size: 224324
+SHA256: 98af144a451728bbfbb7eb4f4cb05603a19d9e70db7559c7fc9a3a84cf741164
+SHA1: 77b8d24b3373bfcf04ecf498f26ddc0187ef4c75
+MD5sum: 59ec0dbf9b2e93f0a6d8204724a8bf87
+Description: tool for managing templates file translations with gettext
+ This package is an alternative to debconf-utils, and provides tools
+ for managing translated debconf templates files with common gettext
+ utilities.
+
+Package: python-brlapi
+Source: brltty
+Version: 3.10~r3724-1.1
+Architecture: i386
+Maintainer: Mario Lang <mlang@debian.org>
+Installed-Size: 208
+Depends: libbrlapi0.5, libc6 (>= 2.3.6-6~), python (<< 2.6), python (>= 2.5), python-support (>= 0.7.1)
+Priority: extra
+Section: python
+Filename: pool/main/b/brltty/python-brlapi_3.10~r3724-1.1_i386.deb
+Size: 76050
+SHA256: 4e719d805061b715f3f31242de7e30cb8435c57ffa436373c26c3eef607fb1e8
+SHA1: dbecaf7df1df0dc8412f93757a9e408dc33876f3
+MD5sum: 65e456b8eeb601ef654af8a00b74bc03
+Description: Python bindings for BrlAPI
+ This package provides a Python module to access a braille display.
+
+Package: python-foolscap
+Source: foolscap
+Version: 0.3.2.dfsg-2
+Architecture: all
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Installed-Size: 1708
+Depends: python, python-central (>= 0.6.7), python-twisted-core, python-twisted-web, python-zopeinterface
+Recommends: python-twisted-names, python-openssl (>= 0.6)
+Homepage: http://foolscap.lothar.com/
+Priority: optional
+Section: python
+Filename: pool/main/f/foolscap/python-foolscap_0.3.2.dfsg-2_all.deb
+Size: 383504
+SHA256: 4b1c89664e82f780574cfebd29e23fc2aa7854c46c915a1990b94b19c985a742
+SHA1: 8441cae57f87ac26f2e2e1fb25744fadef8d4e10
+MD5sum: cd2aa44747aef464107cb3e606cd3308
+Description: object-capability-based RPC system for Twisted Python
+ Foolscap (also known as "newpb") contains a new RPC system for Twisted Python,
+ combining capability-based security, secure references, flexible
+ serialization, and technology to mitigate resource-consumption attacks.
+Python-Version: all
+
+Package: python-openssl
+Source: pyopenssl
+Version: 0.9-1
+Architecture: i386
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Installed-Size: 400
+Depends: python (<< 2.6), python (>= 2.4), python-support (>= 0.90.0), libc6 (>= 2.3.6-6~), libssl0.9.8 (>= 0.9.8f-5)
+Suggests: python-openssl-doc, python-openssl-dbg
+Conflicts: python-pyopenssl (<< 0.6-3), python2-pyopenssl, python2.3-pyopenssl (<< 0.6-2.3), python2.4-pyopenssl (<< 0.6-2.3)
+Replaces: python-pyopenssl, python2-pyopenssl, python2.3-pyopenssl (<< 0.6-2.3), python2.4-pyopenssl (<< 0.6-2.3)
+Provides: python-pyopenssl, python2.4-openssl, python2.5-openssl
+Homepage: http://pyopenssl.sourceforge.net/
+Priority: optional
+Section: python
+Filename: pool/main/p/pyopenssl/python-openssl_0.9-1_i386.deb
+Size: 97010
+SHA256: 497e37d1ba1d934389358f5b00c202218719efc3b86b3a67fff262e09bf39f92
+SHA1: 5b203017dbdbfb2bfd5b7e3261ef4b0826f94fcd
+MD5sum: 74cb0b2478260c3d070cb4a02f362344
+Description: Python wrapper around the OpenSSL library
+ High-level wrapper around a subset of the OpenSSL library, includes
+ .
+   * SSL.Connection objects, wrapping the methods of Python's portable
+     sockets
+   * Callbacks written in Python
+   * Extensive error-handling mechanism, mirroring OpenSSL's error
+     codes
+ .
+ A lot of the object methods do nothing more than calling a
+ corresponding function in the OpenSSL library.
+Python-Version: 2.4, 2.5
+
+Package: python-pam
+Version: 0.4.2-12
+Architecture: i386
+Depends: libc6 (>= 2.3.6-6), libpam0g (>= 0.76)
+Conflicts: python2.3-pam, python2.4-pam
+Replaces: python2.3-pam, python2.4-pam
+Installed-Size: 116
+Maintainer: Dima Barsky <dima@debian.org>
+Priority: optional
+Section: python
+Filename: pool/main/p/python-pam/python-pam_0.4.2-12_i386.deb
+Size: 12850
+SHA256: 6c909f66703e72bc392838dbd1d8076b34bbfde847009ae37c31c9c4ee0287de
+SHA1: 003b00143ee194c8098a4cd438d043de091ea7dd
+MD5sum: ee8120719f00c052b6885e17b379820b
+Description: A Python interface to the PAM library
+ This module makes the PAM (Pluggable Authentication Modules) functions
+ available in Python. With this module you can write Python applications
+ that implement authentication services using PAM.
+
+Package: python-pexpect
+Source: pexpect
+Version: 2.3-1
+Architecture: all
+Maintainer: Ganesan Rajagopal <rganesan@debian.org>
+Installed-Size: 680
+Depends: python, python-central (>= 0.6.7)
+Conflicts: python2.3-pexpect, python2.4-pexpect
+Replaces: python2.3-pexpect, python2.4-pexpect
+Provides: python2.4-pexpect, python2.5-pexpect
+Priority: optional
+Section: python
+Filename: pool/main/p/pexpect/python-pexpect_2.3-1_all.deb
+Size: 164894
+SHA256: 26abc9518a90f93199f35dca1ac9f2f6564bb262a042858eb450620d3b05f805
+SHA1: 9b59dede946b3eeaf01e2097d65c591a3c6b582f
+MD5sum: 601f67601b0aaafaf46eb0327a90fb3d
+Description: Python module for automating interactive applications
+ Pexpect is a pure Python module for spawning child applications;
+ controlling them; and responding to expected patterns in their
+ output. Pexpect works like Don Libes' Expect. Pexpect allows your
+ script to spawn a child application and control it as if a human were
+ typing commands.
+Python-Version: all
+
+Package: python-pyatspi
+Source: at-spi
+Version: 1.26.0-1
+Architecture: all
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 264
+Depends: python (>= 2.4), python-central (>= 0.6.11), at-spi (>= 1.26.0-1), at-spi (<< 1.26.0-1.1~), python-pyorbit, python-gnome2
+Provides: python2.4-pyatspi, python2.5-pyatspi
+Priority: optional
+Section: python
+Filename: pool/main/a/at-spi/python-pyatspi_1.26.0-1_all.deb
+Size: 123184
+SHA256: 08028bf6010215a99bb8ac1d63611b634d2f59206ce351c92c40043e76b08eaf
+SHA1: 14140c743e436c6ff7f7576b09efb5caed95bd8c
+MD5sum: be059262e125f29b0f4598e06a2338c8
+Description: Assistive Technology Service Provider Interface - Python bindings
+ at-spi is the "Assistive Technology Service Provider Interface".
+ .
+ Accessibility is enabling people with disabilities to participate in
+ substantial life activities that include work and the use of
+ services, products and information.
+ .
+ This package contains Python bindings for the core components of
+ GNOME Accessibility.
+Python-Version: >= 2.4
+
+Package: python-serial
+Source: pyserial
+Version: 2.3-1
+Architecture: all
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 264
+Depends: python, python-central (>= 0.6.7)
+Suggests: python-wxgtk2.8 | python-wxgtk2.6 | python-wxgtk
+Priority: optional
+Section: python
+Filename: pool/main/p/pyserial/python-serial_2.3-1_all.deb
+Size: 44980
+SHA256: f5282138435c246180d574e3dfb2bb6c909d5cefb3d9e4840c545a0072c19557
+SHA1: cdc5141e2fbca3ceb5650e07075316106f9c06ce
+MD5sum: a351dd755e8aeb859fd84fa990958737
+Description: pyserial - module encapsulating access for the serial port
+ This module capsulates the access for the serial port. It provides
+ backends for standard Python running on Windows, Linux, BSD (possibly
+ any POSIX compilant system). The module named "serial" automaticaly
+ selects the appropriate backend.
+Python-Version: all
+
+Package: python-twisted-bin
+Source: twisted
+Version: 8.2.0-2
+Architecture: i386
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 164
+Depends: python (<< 2.6), python (>= 2.4), libc6 (>= 2.3.6-6~)
+Suggests: python-twisted-bin-dbg
+Conflicts: python2.3-twisted-bin, python2.4-twisted-bin
+Replaces: python2.3-twisted-bin, python2.4-twisted-bin
+Provides: python2.4-twisted-bin, python2.5-twisted-bin
+Priority: optional
+Section: python
+Filename: pool/main/t/twisted/python-twisted-bin_8.2.0-2_i386.deb
+Size: 30388
+SHA256: 7c9a42242fa39c0a28af606a4d22f6bba7398e939904678a53555e0d888fae03
+SHA1: b443602dbc86d319aeb4c37443b47e194c5e9ee8
+MD5sum: 601d2869293365d6d880d286432547d1
+Description: Event-based framework for internet applications
+ It includes a web server, a telnet server, a multiplayer RPG engine, a
+ generic client and server for remote object access, and APIs for creating
+ new protocols.
+Python-Version: 2.4, 2.5
+
+Package: python-twisted-core
+Source: twisted
+Version: 8.2.0-2
+Architecture: all
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 5472
+Depends: python (>= 2.3.5-9), python-central (>= 0.6.10), python-twisted-bin (>= 8.2.0-2), python-zopeinterface (>= 3.2.1-3)
+Recommends: python-pyopenssl, python-pam, python-serial
+Suggests: python-tk, python-gtk2, python-glade2, python-qt3, python-wxgtk2.8 | python-wxgtk2.6, python-profiler
+Conflicts: python-twisted (<< 2.1.0-4), python2.3-twisted (<< 2.1.0-4), python2.3-twisted-core, python2.4-twisted (<< 2.1.0-4), python2.4-twisted-core
+Replaces: python-twisted (<< 2.1.0-4), python2.3-twisted (<< 2.1.0-4), python2.3-twisted-core, python2.4-twisted (<< 2.1.0-4), python2.4-twisted-core
+Priority: optional
+Section: python
+Filename: pool/main/t/twisted/python-twisted-core_8.2.0-2_all.deb
+Size: 974520
+SHA256: aa009ad4d529e486e9ee5801e03f04eef9632b8c77082301e68d1979212ae87e
+SHA1: 6bec2475f92f6d074490b53a74d0cd3c4c058a42
+MD5sum: 346ce5194ca9bccf9d110340a2ed37ae
+Description: Event-based framework for internet applications
+ It includes a web server, a telnet server, a multiplayer RPG engine, a
+ generic client and server for remote object access, and APIs for creating
+ new protocols.
+Python-Version: all
+
+Package: python-twisted-names
+Source: twisted-names
+Version: 8.2.0-1
+Architecture: all
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 416
+Depends: python, python-central (>= 0.6.10), python-twisted-core (>= 8.2)
+Conflicts: python2.3-twisted-names, python2.4-twisted-names
+Replaces: python2.3-twisted-names, python2.4-twisted-names
+Priority: optional
+Section: python
+Filename: pool/main/t/twisted-names/python-twisted-names_8.2.0-1_all.deb
+Size: 61460
+SHA256: aa81395b9979bd3dac7a1fd36c6731d3ba927c1136c311d9dc75c97157754a2f
+SHA1: c20b1ebff7f60255df618162c6e1ef7047b438c8
+MD5sum: f1bdf03fac76dac4d76d2a2b7f6fdbeb
+Description: A DNS protocol implementation with client and server
+ Twisted Names is both a domain name server as well as a client
+ resolver library. Twisted Names comes with an "out of the box"
+ nameserver which can read most BIND-syntax zone files as well as a
+ simple Python-based configuration format. Twisted Names can act as an
+ authoritative server, perform zone transfers from a master to act as
+ a secondary, act as a caching nameserver, or any combination of
+ these. Twisted Names' client resolver library provides functions to
+ query for all commonly used record types as well as a replacement for
+ the blocking gethostbyname() function provided by the Python stdlib
+ socket module.
+Python-Version: all
+
+Package: python-twisted-web
+Source: twisted-web
+Version: 8.2.0-2
+Architecture: all
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 1764
+Depends: python, python-central (>= 0.6.10), python-twisted-core (>= 8.2.0-2)
+Conflicts: python-twisted (<< 2.1), python2.3-twisted-web, python2.4-twisted-web
+Replaces: python-twisted (<< 2.1), python2.3-twisted-web, python2.4-twisted-web
+Priority: optional
+Section: python
+Filename: pool/main/t/twisted-web/python-twisted-web_8.2.0-2_all.deb
+Size: 389972
+SHA256: 3f26373fc2027c9b69f79b98e6ba03908168bee7d1c583686bd13034a3b00436
+SHA1: c77b63d40ce1e910242444ae8125d17cceb67b26
+MD5sum: eb4dd74dc905c4e00dd7dbea72434e01
+Description: An HTTP protocol implementation together with clients and servers
+ Twisted web is a web server, and also provides basic HTTP client
+ support. You may want to check out Nevow, a templating toolkit
+ designed for twisted.web, and Twisted Web2, the next generation
+ Twisted web server.
+Python-Version: all
+
+Package: python-wxgtk2.8
+Source: wxwidgets2.8
+Version: 2.8.7.1-1.1
+Architecture: i386
+Maintainer: Adeodato Simó <dato@net.com.org.es>
+Installed-Size: 41212
+Depends: python-wxversion (>= 2.6.3.2.2-2), python (<< 2.6), python (>= 2.4), python-central (>= 0.6.7), libc6 (>= 2.7-1), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1), libwxbase2.8-0 (>= 2.8.7.1), libwxgtk2.8-0 (>= 2.8.7.1)
+Suggests: wx2.8-doc, wx2.8-examples, python-xml
+Conflicts: libwxgtk2.6-0-python, wxpython2.6-0
+Replaces: libwxgtk2.6-0-python, wxpython2.6-0
+Provides: python2.4-wxgtk2.8, python2.5-wxgtk2.8
+Priority: optional
+Section: python
+Filename: pool/main/w/wxwidgets2.8/python-wxgtk2.8_2.8.7.1-1.1_i386.deb
+Size: 9413302
+SHA256: f7c376e7f5dae999e889f8de4a4cce97a34ff9d003eece3091ad1de380f34419
+SHA1: 0d7fa6991a202c9fa45e19a563296127343e0573
+MD5sum: 1c7713bdff007940481e5ad537a0d4db
+Description: wxWidgets Cross-platform C++ GUI toolkit (wxPython binding)
+ wxWidgets (formerly known as wxWindows) is a class library for C++ providing
+ GUI components and other facilities on several popular platforms (and some
+ unpopular ones as well).  For more information see http://wxwidgets.org
+ .
+ This package provides a Python binding to the wxGTK library and the
+ wxPython runtime support libraries.  If you wish to use xrc you'll also
+ need the python-xml package installed.
+Python-Version: 2.4, 2.5
+
+Package: python-wxversion
+Source: wxwidgets2.6
+Version: 2.6.3.2.2-3
+Architecture: all
+Maintainer: Ron Lee <ron@debian.org>
+Installed-Size: 124
+Depends: python (<< 2.6), python (>= 2.4), python-central (>= 0.6.7), python-wxgtk2.6 (>= 2.6.3.2.2-2) | python-wxgtk2.8 (>= 2.8.6.1-0.1)
+Conflicts: python-wxgtk2.4 (<< 2.4.5.1.2), python-wxgtk2.6 (<< 2.6.3.2.2-2), python-wxgtk2.8 (<< 2.8.6.1-0.1), wxpython2.6-0
+Replaces: wxpython2.6-0
+Priority: optional
+Section: python
+Filename: pool/main/w/wxwidgets2.6/python-wxversion_2.6.3.2.2-3_all.deb
+Size: 23446
+SHA256: 21d2c4fb88e2c4e4d3b517c21b01a16324672495be4be18856b0b01001bf76d1
+SHA1: 3490e2ed76cd5507e3c694c14315691fa98a3220
+MD5sum: bc8f5ee9df49d4731293b1eb6947a1e3
+Description: wxWidgets Cross-platform C++ GUI toolkit (wxPython version selector)
+ wxWidgets (formerly known as wxWindows) is a class library for C++ providing
+ GUI components and other facilities on several popular platforms (and some
+ unpopular ones as well).  For more information see http://wxwidgets.org
+ .
+ This package provides the wxPython version selector.
+Python-Version: 2.4, 2.5
+
+Package: python-zopeinterface
+Source: zope3
+Version: 3.4.0-1
+Architecture: i386
+Maintainer: Debian/Ubuntu Zope Team <pkg-zope-developers@lists.alioth.debian.org>
+Installed-Size: 660
+Depends: python (<< 2.6), python (>= 2.4), python-central (>= 0.6.10), libc6 (>= 2.3.6-6~)
+Suggests: python-zopeinterface-dbg
+Conflicts: python-zope-interface, python2.3-zopeinterface, python2.4-zopeinterface
+Replaces: python-zope-interface, python2.3-zopeinterface, python2.4-zopeinterface
+Provides: python-zope-interface, python2.4-zopeinterface, python2.5-zopeinterface
+Priority: optional
+Section: python
+Filename: pool/main/z/zope3/python-zopeinterface_3.4.0-1_i386.deb
+Size: 145446
+SHA256: 19b1747a0dacb80e6afd3af26c5721728a74c46f800798031d10c09e119d02d8
+SHA1: 64389bc150cd90d9536b8a5b03dbc26a3a542b7f
+MD5sum: f30d481f3702fe536e3702c3bd4fc0da
+Description: The implementation of interface definitions for Zope 3
+ Zope interfaces are objects that specify (document) the external behavior
+ of objects that "provide" them.
+Python-Version: 2.4, 2.5
+
+Package: speakup-tools
+Source: speakup
+Version: 3.0.4.dfsg.1-2
+Architecture: all
+Maintainer: Debian Accessibility Team <debian-accessibility@lists.debian.org>
+Installed-Size: 76
+Suggests: speechd-up, espeakup
+Homepage: http://linux-speakup.org/
+Priority: extra
+Section: admin
+Filename: pool/main/s/speakup/speakup-tools_3.0.4.dfsg.1-2_all.deb
+Size: 7380
+SHA256: fc8eabc3c5872afc71bbfe4d8f59944826fe33234a96df53d003ac29f2af2cc8
+SHA1: 89251534d62c0f97bfa1cc3b9bc35f8bd971216c
+MD5sum: 07809eafd60cd6159e6d3be43089749b
+Description: Tools to manage speakup configuration and synths
+ This package contains tools to manage speakup's configuration and synths.
+ .
+ speakupconf allows to save and restore speakup's customizable variables.
+ .
+ speakwith and talkwith allows to easily switch between speech synthesizers. The
+ difference between them is that speakwith uses speech dispatcher for software
+ speech, and talkwith uses espeakup.
+
+Package: speech-dispatcher
+Version: 0.6.7-4
+Architecture: i386
+Maintainer: Milan Zamazal <pdm@debian.org>
+Installed-Size: 1464
+Depends: adduser, lsb-base (>= 3.0-10), libasound2 (>> 1.0.18), libaudio2, libc6 (>= 2.3.6-6~), libdotconf1.0, libespeak1 (>= 1.30), libflite1, libglib2.0-0 (>= 2.12.0), libpulse0 (>= 0.9.14), libspeechd2
+Suggests: speech-dispatcher-festival (= 0.6.7-4), speech-dispatcher-doc-cs (= 0.6.7-4)
+Conflicts: libspeechd1 (<< 0.5)
+Homepage: http://www.freebsoft.org/speechd
+Priority: extra
+Section: sound
+Filename: pool/main/s/speech-dispatcher/speech-dispatcher_0.6.7-4_i386.deb
+Size: 514354
+SHA256: 01e5e890c443f675cf17b66433ebc144bfb641c3110673d8cff3beb0909ea6ac
+SHA1: b3f37b39a31d7f8ef9458ddc1c73eb4f9b964f15
+MD5sum: 969d9a63987b4aa35c134b72a485d334
+Description: Common interface to speech synthesizers
+ Speech Dispatcher provides a device independent layer for speech synthesis.
+ This package contains Speech Dispatcher itself.
+
+Package: sphinx2-bin
+Source: sphinx2
+Version: 0.6-2.1
+Architecture: i386
+Maintainer: Isaac Clerencia <isaac@debian.org>
+Installed-Size: 480
+Depends: sphinx2-hmm-6k, libc6 (>= 2.7-1), libsphinx2g0 (>= 0.6)
+Priority: optional
+Section: sound
+Filename: pool/main/s/sphinx2/sphinx2-bin_0.6-2.1_i386.deb
+Size: 144430
+SHA256: b4975444e08a70ae32ef1b896fd6ef354b5e01bb98b37c774031d5731c3982dc
+SHA1: 38dbe00eb35ee2399fd1e12cc5542a321d055cae
+MD5sum: 6df8e29a364380dd7cc8f3d7e3742e45
+Description: speech recognition utilities
+ Sphinx 2 is a real-time, speaker-independent speech recognition system.
+ .
+ This package contains examples and utilities that use Sphinx. It also
+ includes a sample language model that is capable of recognizing simple
+ commands like "go forward ten meters" and other commands one might use to
+ tell a robot where to move.
+
+Package: sphinx2-hmm-6k
+Source: sphinx2
+Version: 0.6-2.1
+Architecture: all
+Maintainer: Isaac Clerencia <isaac@debian.org>
+Installed-Size: 22228
+Suggests: libsphinx2g0
+Conflicts: sphinx2-language
+Replaces: sphinx2-language
+Priority: optional
+Section: sound
+Filename: pool/main/s/sphinx2/sphinx2-hmm-6k_0.6-2.1_all.deb
+Size: 5972164
+SHA256: cd009d7187db6e5cd54aa40297f02fc9bdbc95eccae5e9784e37a849cb11ee69
+SHA1: b800b61e995d3a89d32b38e5c5f4aab815da75a8
+MD5sum: 65ed25c73df22c60c01251d589eb1249
+Description: speech recognition library - default acoustic model
+ Sphinx 2 is a real-time, speaker-independent speech recognition system.
+ .
+ This package contains an acoustic model for Sphinx-II trained for
+ close-talking microphones.  It is the default acoustic model used by
+ the demos, and should provide adequate performance for most desktop
+ applications.
+
+Package: tesseract-ocr
+Source: tesseract
+Version: 2.03-2
+Architecture: i386
+Maintainer: Jeffrey Ratcliffe <Jeffrey.Ratcliffe@gmail.com>
+Installed-Size: 1992
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1-21), libstdc++6 (>= 4.2.1-4), libtiff4, tesseract-ocr-language
+Replaces: tesseract-ocr-data
+Homepage: http://code.google.com/p/tesseract-ocr/
+Priority: optional
+Section: graphics
+Filename: pool/main/t/tesseract/tesseract-ocr_2.03-2_i386.deb
+Size: 837710
+SHA256: 359d174d026269e52880c2a413f39d07ea3034a1825e555788172af4f8f4f541
+SHA1: 8c8facdf52110fa877ff0b92569b41c8d7e2f605
+MD5sum: 553d67a504ed4cb28d0017ce12727a30
+Description: Command line OCR tool
+ The Tesseract OCR engine was originally developed at HP between 1985 and 1995.
+ It was open-sourced by HP and UNLV in 2005 and Google has lead further
+ development.
+ .
+ The Tesseract OCR engine was one of the top 3 engines in the 1995 UNLV
+ Accuracy test.  Between 1995 and 2006 it had little work done on it, but it
+ is probably one of the most accurate open source OCR engines available.  It
+ will read a binary, grey or color image and output text.
+
+Package: tesseract-ocr-deu
+Source: tesseract-deu
+Version: 2.00-1
+Architecture: all
+Maintainer: Jeffrey Ratcliffe <Jeffrey.Ratcliffe@gmail.com>
+Installed-Size: 2144
+Depends: tesseract-ocr (>= 2.00)
+Replaces: tesseract-ocr-data (<< 2)
+Provides: tesseract-ocr-language
+Priority: optional
+Section: graphics
+Filename: pool/main/t/tesseract-deu/tesseract-ocr-deu_2.00-1_all.deb
+Size: 1374982
+SHA256: bec84df9cde44c6c58ed69ba6fb456bd33e637c157d722c0f930291bb805997e
+SHA1: 41e4a714671693b43d743de4d9dd0d56e22859ae
+MD5sum: 9fd89e32ddb2ade30a9f83d7db564c14
+Description: tesseract-ocr language files for German text
+ A commercial quality OCR engine originally developed at HP between 1985
+ and 1995. In 1995, this engine was among the top 3 evaluated by UNLV. It
+ was open-sourced by HP and UNLV in 2005. This package contains the data
+ needed for the processing images in German.
+ .
+ Homepage: http://code.google.com/p/tesseract-ocr/
+
+Package: tesseract-ocr-eng
+Source: tesseract-eng
+Version: 2.00-1
+Architecture: all
+Maintainer: Jeffrey Ratcliffe <Jeffrey.Ratcliffe@gmail.com>
+Installed-Size: 1760
+Depends: tesseract-ocr (>= 2.00)
+Replaces: tesseract-ocr-data (<< 2)
+Provides: tesseract-ocr-language
+Priority: optional
+Section: graphics
+Filename: pool/main/t/tesseract-eng/tesseract-ocr-eng_2.00-1_all.deb
+Size: 1014242
+SHA256: 4aba8986e85366000fffe250c0e94eb675406f135755b579620d4b907fd1ab8a
+SHA1: 5452f77beeb73558f03357f61815385945e9be9f
+MD5sum: d5c93366fc5acab05da39d47ae37cfa3
+Description: tesseract-ocr language files for English text
+ A commercial quality OCR engine originally developed at HP between 1985
+ and 1995. In 1995, this engine was among the top 3 evaluated by UNLV. It
+ was open-sourced by HP and UNLV in 2005. This package contains the data
+ needed for the processing images in English.
+ .
+ Homepage: http://code.google.com/p/tesseract-ocr/
+
+Package: wayv
+Version: 0.3-5
+Architecture: i386
+Maintainer: Nick Rusnov <nickrusnov@debian.org>
+Installed-Size: 212
+Depends: libc6 (>= 2.7-1), libx11-6, libxtst6
+Priority: optional
+Section: x11
+Filename: pool/main/w/wayv/wayv_0.3-5_i386.deb
+Size: 68746
+SHA256: ed082f38a292c620dcaa5d03ae33c5fc906930807362d57d149bf73ad832be84
+SHA1: 53ea3acb1446c08898ae35203041e4ee4e89b594
+MD5sum: cdc7087340969bcc73f23a7a154a89ed
+Description: Experimental hand writing/gesture recognition program
+ Enables human computer interaction, especially using gestures inputed via
+ the mouse.
+
+Package: x11proto-composite-dev
+Source: x11proto-composite
+Version: 1:0.4-2
+Architecture: all
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 80
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: x11proto-core-dev, x11proto-fixes-dev
+Conflicts: libxcomposite-dev (<< 6.8.2-16)
+Replaces: libxcomposite-dev (<< 6.8.2-16)
+Priority: optional
+Section: x11
+Filename: pool/main/x/x11proto-composite/x11proto-composite-dev_0.4-2_all.deb
+Size: 12318
+SHA256: 3ed3dc026357ee301b0b9a6e9a40b6576273e4be864b89ad594fa924a66f673f
+SHA1: 88e6fbf8bbfde63a3a502f842bf7d0ab103e7cfc
+MD5sum: 02404e3a9b674cabd20fb1c58503edab
+Description: X11 Composite extension wire protocol
+ This package provides development headers describing the wire protocol
+ for the Composite extension, used to let arbitrary client programs control
+ drawing of the final image.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This package is built from the X.org compositeproto proto module.
+
+Package: x11proto-core-dev
+Source: x11proto-core
+Version: 7.0.15-1
+Architecture: all
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 488
+Pre-Depends: x11-common (>= 1:7.0.0)
+Conflicts: x-dev (<< 6.8.99.7-1)
+Replaces: x-dev (<< 6.8.99.7-1)
+Priority: optional
+Section: x11
+Filename: pool/main/x/x11proto-core/x11proto-core-dev_7.0.15-1_all.deb
+Size: 94818
+SHA256: 6f03c31b947bb87e7eab46e247814298b27af21fd92eb5670a6671860fd9582e
+SHA1: 8ad42cd720c0084d621849ddeae457742805ba6b
+MD5sum: c0db82dd56a10e40c480dcc04dd9de3d
+Description: X11 core wire protocol and auxiliary headers
+ This package provides development headers describing the wire protocol
+ for the core X11 protocol, and also provides a number of utility headers,
+ used to abstract OS-specific functions.
+ .
+ This package deprecates 'x-dev', a package from the monolithic builds of
+ XFree86 and X.Org.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This package is built from the X.org xproto proto module.
+
+Package: x11proto-damage-dev
+Version: 1.1.0-2
+Architecture: all
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: x11proto-fixes-dev, x11proto-core-dev
+Conflicts: libxdamage-dev (<< 6.8.2-16)
+Replaces: libxdamage-dev (<< 6.8.2-16)
+Installed-Size: 72
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Source: x11proto-damage
+Priority: optional
+Section: x11
+Filename: pool/main/x/x11proto-damage/x11proto-damage-dev_1.1.0-2_all.deb
+Size: 9090
+SHA256: 0519181a9f2b8273f8d76f8266d2dcf276c19eb2b9f07c29eaf741bfd6f07ca4
+SHA1: 679afad718c7dca72249bb443beb9fb7488ada73
+MD5sum: ddf961f6a2b8e59efd71c1350689333c
+Description: X11 Damage extension wire protocol
+ This package provides the wire protocol for the Damage extension, used to
+ notify clients of changes made to particular areas.
+ .
+ More information about X.Org can be found at:
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+
+Package: x11proto-fixes-dev
+Source: x11proto-fixes
+Version: 1:4.0-3
+Architecture: all
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 92
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: x11proto-core-dev, x11proto-xext-dev
+Conflicts: libxfixes-dev (<< 6.8.2-16)
+Replaces: libxfixes-dev (<< 6.8.2-16)
+Priority: optional
+Section: x11
+Filename: pool/main/x/x11proto-fixes/x11proto-fixes-dev_4.0-3_all.deb
+Size: 13846
+SHA256: 4366534b6ed38fa93ad80ebc014de69eb1d66603dc7ac5537c6e89d5aa7bc3ec
+SHA1: 0c734a2b8ae0d325ec7f81514d097407cfd7cb89
+MD5sum: 485ebc261dfbb5923f638070f77118fc
+Description: X11 Fixes extension wire protocol
+ This package provides development headers describing the wire protocol
+ for the Fixes extension, which contains a few small extensions to the
+ X protocol, including a Region type.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This package is built from the X.org fixesproto proto module.
+
+Package: x11proto-input-dev
+Source: x11proto-input
+Version: 1.5.0-2
+Architecture: all
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 148
+Pre-Depends: x11-common (>= 1:7.0.0)
+Conflicts: libxi-dev (<< 6.8.2-16)
+Replaces: libxi-dev (<< 6.8.2-16)
+Priority: optional
+Section: x11
+Filename: pool/main/x/x11proto-input/x11proto-input-dev_1.5.0-2_all.deb
+Size: 17516
+SHA256: 074e24cb74044cee060b1de86c89b9e17117b3cc558ce5454d7fcb73ef61e111
+SHA1: f39ff1fe2776843d9b6067b7bb380dff9d52f7ff
+MD5sum: fa003a025a481c382349fb92ae3ecab2
+Description: X11 Input extension wire protocol
+ This package provides development headers describing the wire protocol
+ for the Input extension, used to control all manner of options related
+ to input device handling.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This package is built from the X.org inputproto proto module.
+
+Package: x11proto-kb-dev
+Source: x11proto-kb
+Version: 1.0.3-3
+Architecture: all
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 180
+Pre-Depends: x11-common (>= 1:7.0.0)
+Conflicts: libxkbfile-dev (<< 6.8.2-20)
+Replaces: libxkbfile-dev (<< 6.8.2-20)
+Priority: optional
+Section: x11
+Filename: pool/main/x/x11proto-kb/x11proto-kb-dev_1.0.3-3_all.deb
+Size: 27050
+SHA256: 039bccb2f2120b7eced9670c22cf57783d1cc0387d8350fc16306e0908287a9c
+SHA1: 917ce4d790485447a3d362c808a9813012d9d825
+MD5sum: 465def1308f72bfe5c7f9cb5ba542066
+Description: X11 XKB extension wire protocol
+ This package provides development headers describing the wire protocol
+ for the XKEYBOARD extension, used to control all manner of options
+ related to keyboard handling and layout in particular.
+ It does not control the addition/enabling/disabling of keyboards;
+ this is done with the XINPUT extension.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This package is built from the X.org kbproto proto module.
+
+Package: x11proto-randr-dev
+Source: x11proto-randr
+Version: 1.3.0-1
+Architecture: all
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 120
+Pre-Depends: x11-common (>= 1:7.0.0)
+Conflicts: libxrandr-dev (<< 6.8.2-21)
+Replaces: libxrandr-dev (<< 6.8.2-21)
+Priority: optional
+Section: x11
+Filename: pool/main/x/x11proto-randr/x11proto-randr-dev_1.3.0-1_all.deb
+Size: 38148
+SHA256: 9deaeee8645a1f70fd6bbcce43c68889c243d1c8fb539e473961c52947249130
+SHA1: 4233ba1ca9027454a8093ac58ca5feb1463f8b42
+MD5sum: 786b8b56eb5739a035db4d188bf69efe
+Description: X11 RandR extension wire protocol
+ This package provides development headers describing the wire protocol
+ for the RandR extension, used to change display properties such as
+ resolution, rotation, reflection, et al, on the fly.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This package is built from the X.org randrproto proto module.
+
+Package: x11proto-record-dev
+Source: x11proto-record
+Version: 1.13.2-5
+Architecture: all
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 76
+Pre-Depends: x11-common (>= 1:7.0.0)
+Conflicts: libxtst-dev (<< 6.8.2-21)
+Replaces: libxtst-dev (<< 6.8.2-21)
+Priority: optional
+Section: x11
+Filename: pool/main/x/x11proto-record/x11proto-record-dev_1.13.2-5_all.deb
+Size: 5970
+SHA256: a1a7f5ea6c0536f30e083d9c8be2007d42b495c3be7f6cbe6a4cee5f77476b52
+SHA1: 000c18affd0f9e9c4a6c8f5faa2f8905d9922ba4
+MD5sum: 42db5069ec8257f6a5d916282b7679f3
+Description: X11 Record extension wire protocol
+ This package provides development headers describing the wire protocol
+ for the Record extension, used to record and play back event sequences.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This package is built from the X.org recordproto proto module.
+
+Package: x11proto-render-dev
+Source: x11proto-render
+Version: 2:0.9.3-2
+Architecture: all
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 80
+Pre-Depends: x11-common (>= 1:7.0.0)
+Conflicts: render-dev (<= 1:0.9.2-1)
+Replaces: render-dev (<= 1:0.9.2-1)
+Priority: optional
+Section: x11
+Filename: pool/main/x/x11proto-render/x11proto-render-dev_0.9.3-2_all.deb
+Size: 7062
+SHA256: 827588562a2e232080476ea57e7e03b88eab4b1edfe2af8d288e6ca6698e4c9e
+SHA1: c705869169ae0368e52329fae141d5284704ea8f
+MD5sum: 925653f49001f482b113284adadd015a
+Description: X11 Render extension wire protocol
+ This package provides development headers describing the wire protocol for
+ the Render extension, used to implement Porter-Duff operations within X.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This package is built from the X.org renderproto proto module.
+
+Package: x11proto-xext-dev
+Source: x11proto-xext
+Version: 7.0.4-2
+Architecture: all
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 332
+Pre-Depends: x11-common (>= 1:7.0.0)
+Depends: x11proto-input-dev, libxau-dev
+Conflicts: libxext-dev (<< 6.8.2-25), libxtst-dev (<< 6.8.2-25)
+Replaces: libxext-dev (<< 6.8.2-25), libxtst-dev (<< 6.8.2-25)
+Priority: optional
+Section: x11
+Filename: pool/main/x/x11proto-xext/x11proto-xext-dev_7.0.4-2_all.deb
+Size: 44592
+SHA256: fa73022206e5b795cfa47a2006b90c5950e96a93a22ea20813408850628317ce
+SHA1: d2e2bef4d332ea03ababbcde5552dd98ccda2350
+MD5sum: 9fc366fcddc3b01ffc62caa939512f88
+Description: X11 various extension wire protocol
+ This package provides development headers describing the wire protocol
+ for various extensions, the client-side libraries of which are provided
+ in the Xext library.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This package is built from the X.org xextproto proto module.
+
+Package: x11proto-xinerama-dev
+Source: x11proto-xinerama
+Version: 1.1.2-5
+Architecture: all
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 72
+Pre-Depends: x11-common (>= 1:7.0.0)
+Conflicts: libxinerama-dev (<< 6.8.2-21), x11proto-panoramix-dev
+Replaces: libxinerama-dev (<< 6.8.2-21), x11proto-panoramix-dev
+Priority: optional
+Section: x11
+Filename: pool/main/x/x11proto-xinerama/x11proto-xinerama-dev_1.1.2-5_all.deb
+Size: 5334
+SHA256: e0f34faa3d6c9152ec04fd8d6724c186b99c80e65c7d565501711da5c62050c8
+SHA1: cdc75a0d16b2448b8fcbe9880a91c795fc0e571a
+MD5sum: 2a7483ecacbf489978d08125c60b67c8
+Description: X11 Xinerama extension wire protocol
+ This package provides development headers describing the wire protocol
+ for the XINERAMA extension, used to use and manage a multiple-screen
+ display.
+ The terms 'Xinerama' and 'PanoramiX' are generally interchangeable;
+ this package used to be named x11proto-panoramix-dev.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This package is built from the X.org xineramaproto proto module.
+
+Package: xtrans-dev
+Source: xtrans
+Version: 1.2.3-3
+Architecture: all
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 328
+Pre-Depends: x11-common (>= 1:7.0.0)
+Priority: optional
+Section: x11
+Filename: pool/main/x/xtrans/xtrans-dev_1.2.3-3_all.deb
+Size: 66132
+SHA256: c2f43c82094aaeb5dbf29aaff1574538be5264c116439aed6cc345e51ad25ec2
+SHA1: ac0064d9fb9e74e285b8dd1322ba370c5e9c4e25
+MD5sum: 67c59e1d71115735852060b07fecc43e
+Description: X transport library (development files)
+ xtrans includes a number of routines to make X implementations
+ transport-independent; at time of writing, it includes support for UNIX
+ sockets, IPv4, IPv6, and DECnet.
+ .
+ xtrans is not actually a library in itself; it includes .c files which are
+ then used in the compilation of X servers, libraries, et al.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libxtrans
+
+Package: yasr
+Version: 0.6.9-1
+Architecture: i386
+Maintainer: Debian Accessibility Team <debian-accessibility@lists.debian.org>
+Installed-Size: 208
+Depends: libc6 (>= 2.3)
+Recommends: eflite
+Homepage: http://yasr.sourceforge.net/
+Priority: extra
+Section: admin
+Filename: pool/main/y/yasr/yasr_0.6.9-1_i386.deb
+Size: 56842
+SHA256: b24daeab0e6063324bc3803f9947a398f8b45c4393c77c55412e5ec5e41845e4
+SHA1: cfe1059a75fdbffcdcb0a2215a44b8d1716d27c0
+MD5sum: 48dfa6dad3421c4617c8b81dc2b8dc62
+Description: General-purpose console screen reader
+ Yasr is a general-purpose console screen reader for GNU/Linux and
+ other Unix-like operating systems.  The name "yasr" is an acronym that
+ can stand for either "Yet Another Screen Reader" or "Your All-purpose
+ Screen Reader".
+ .
+ Currently, yasr attempts to support the Speak-out, DEC-talk, BNS, Apollo,
+ and DoubleTalk synthesizers.  It is also able to communicate with
+ Emacspeak servers and can thus be used with synthesizers not directly
+ supported, such as Festival Lite (via eflite) or FreeTTS.
+ .
+ Yasr is written in C and works by opening a pseudo-terminal and running a
+ shell, intercepting all input and output.  It looks at the escape
+ sequences being sent and maintains a virtual "window" containing what
+ it believes to be on the screen.  It thus does not use any features
+ specific to Linux and can be ported to other Unix-like operating
+ systems without too much trouble.
+
+Package: zlib1g-dev
+Source: zlib
+Version: 1:1.2.3.3.dfsg-13
+Architecture: i386
+Maintainer: Mark Brown <broonie@debian.org>
+Installed-Size: 372
+Depends: zlib1g (= 1:1.2.3.3.dfsg-13), libc6-dev | libc-dev
+Conflicts: zlib1-dev
+Provides: libz-dev
+Priority: optional
+Section: libdevel
+Filename: pool/main/z/zlib/zlib1g-dev_1.2.3.3.dfsg-13_i386.deb
+Size: 158846
+SHA256: 62e5828b8f4b302d3cce642945012b435ece70fe3527da1ab47adbf042bec492
+SHA1: f19af9e7411418f661a1b6192e37049a505206ce
+MD5sum: d8635bf87d693e4e011a2b911fc16f9b
+Description: compression library - development
+ zlib is a library implementing the deflate compression method found
+ in gzip and PKZIP.  This package includes the development support
+ files.
 

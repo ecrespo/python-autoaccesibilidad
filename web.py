@@ -10,7 +10,9 @@ Copyright: Copyright (C) 2009 Proyecto Libre Accesibilidad - Distrito Socialista
 Author: Ernesto Nadir Crespo Avila
 Email: ernesto@libreaccesibilidad.org
 """
-
+#import SimpleHTTPServer
+#SimpleHTTPServer.test()
+#python -m SimpleHTTPServer
 import pdb
 import BaseHTTPServer, SimpleHTTPServer
 import sys

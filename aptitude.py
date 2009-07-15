@@ -21,7 +21,7 @@ import pdb
 class Aptitude:
 	
 	def __init__(self):
-		self.__url = "deb http://127.0.0.1/debian"
+		self.__url = "deb http://127.0.0.1:8000/debian"
 		self.__versiones = ("testing","squeeze","sid","unstable")
 
 		

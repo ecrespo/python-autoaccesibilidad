@@ -17,22 +17,32 @@ import privilegios
 import users 
 import sincronizar
 from commands import getstatusoutput
-import BaseHTTPServer, SimpleHTTPServer
 import sys
+import getpass
+import time    
 
 def Inicio():
-    apt = aptitude.Aptitude()
-    print "Actualiza el repositorio local con respecto al repositorio principal"
-    sincronizar.actualizar()
-    print "Inicia el servidor web"
     try:
-        httpd = BaseHTTPServer.HTTPServer( ( '', 80),SimpleHTTPServer.SimpleHTTPRequestHandler)
-        httpd.serve_forever()
-        print "Instala aplicaciones necesarias para darle accesibilidad al escritorio"
-        apt.main("aqualung audacity")
-        print "Configuración de los escritorios de los usuarios"
-        config.conf_escritorio()
-        sys.exit()
+        apt = aptitude.Aptitude()
+        sincronizar.actualizar()
+        getstatusoutput("sudo python -m SimpleHTTPServer")
+        print "Ejecutando el servidor web"
+        apt.main("accessibility-es speech-dispatcher")
+        while 1:
+            #r = getstatusoutput("./reproducir.py btreathe.ogg")
+            idioma = raw_input("Escriba el idioma que desea usar en el lector de pantalla:[Ingles/Español]:")
+            if idioma == "Ingles":
+                lang = "english"
+                break
+            elif idioma =="Español":
+                lang = "spanish"
+                break
+            else:
+                print "Error colocando el idioma"
+                #r = getstatusoutput("./reproducir.py btreathe.ogg")
+                continue
+        config.conf_escritorio("lang")
+        #sys.exit()
     except KeyboardInterrupt:
         pass
     else:

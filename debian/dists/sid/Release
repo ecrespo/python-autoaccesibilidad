@@ -2,19 +2,19 @@ Origin: Paquetes accesibilidad
 Label: Paquetes accesibilidad
 Suite: unstable
 Codename: sid
-Date: Mon, 06 Jul 2009 18:21:08 +0000
+Date: Tue, 07 Jul 2009 18:11:43 +0000
 Architectures: i386
 Components: main
 Description: Paquetes que dan accesibilidad a gnome para sid
 MD5Sum:
- fe260ec3278668fb6e5f1c78d731080e 1056 main/binary-i386/Packages
- a4bcb909302ebe76f403ca3f33f4bc42 599 main/binary-i386/Packages.gz
+ 60ab9de338be8394fcfb1abfb944cf77 161132 main/binary-i386/Packages
+ faaf83a10aef59a0002ffabf371645bb 48690 main/binary-i386/Packages.gz
  d6d7d0159730e6300aeb9ef59b58aee5 175 main/binary-i386/Release
 SHA1:
- bb4d6a4264a693747b80c4c39f24f3b3ee220fc3 1056 main/binary-i386/Packages
- 23b3ffca20cf55870d349a585aeff30d9d0f147d 599 main/binary-i386/Packages.gz
+ 0eac470cb1f22abe898a2d6cc962e63ed6f5544b 161132 main/binary-i386/Packages
+ cea83ca8edb8f9c1c3a47178bad45d949db35999 48690 main/binary-i386/Packages.gz
  abc59c4cec96bcfc667c58ae1c843dc49c6089d1 175 main/binary-i386/Release
 SHA256:
- f5879792bb531f824a34684602239e39b5fe58cd9055031ea614352e7ca35b1d 1056 main/binary-i386/Packages
- b90f288168e493f694136df4959edc92d3c281dafdfd96f918f89e41ceddcac9 599 main/binary-i386/Packages.gz
+ dd10bee2e472eb60cf061ca3e658e552bee0ddfe715fd5a082bee37b6f7cccd1 161132 main/binary-i386/Packages
+ 89bd2c21f8cce1eec031a9b1a9885f9b61c95de07a042b040434806453684385 48690 main/binary-i386/Packages.gz
  88b1f502dda26caac6d6910437a3b29cb6a1df7236b1e958eccf065dbbfc5840 175 main/binary-i386/Release

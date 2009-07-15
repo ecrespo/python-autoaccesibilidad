@@ -10,7 +10,7 @@ Copyright: Copyright (C) 2009 Proyecto Libre Accesibilidad - Distrito Socialista
 Author: Ernesto Nadir Crespo Avila
 Email: ernesto@libreaccesibilidad.org
 """
-
+import pdb
 from pwd import getpwall 
 from commands import getstatusoutput
 from string import splitfields

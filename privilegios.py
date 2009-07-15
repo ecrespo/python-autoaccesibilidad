@@ -35,7 +35,9 @@ def ejecutar(comando):
     ctx.set_command(comando)
     gksu.su_full(ctx, ask_pass=ask_pass_func)
     
-
+def AgregarUsuarioSudo(usuario):
+    ejecutar("echo \"%s ALL=(ALL) ALL\" >>  /etc/sudoers " %usuario)
+    
 
     
     

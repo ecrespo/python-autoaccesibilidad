@@ -1,34 +1,14 @@
-#!/usr/bin/env python
-
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
-#
-"""Copyright (C) DST-Merida AIT-PDVSA- Accesibilidad para tod@s
-
- this program is free software: you can redistribute it and/or modify it
- under the terms of the GNU General Public License as published by the
- Free Software Foundation, either version 3 of the License, or
- (at your option) any later version.
-
- this program is distributed in the hope that it will be useful, but
- WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- See the GNU General Public License for more details.
-
- You should have received a copy of the GNU General Public License along
- with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-
-Team developer:
-Ernesto Crespo
-julio Hernandez
-Niriana Blasco
-Jorge Ortega
-Joel Gomez
-Johan Trujillo
-
-Module to Audio player 
 
 """
+Name: reproducir
+Description: Programa principal que permite instalar aplicaciones accesibles de un repositorio local
+Version:0.1
+License: GPLv3
+Copyright: Copyright (C) 2009 Proyecto Libre Accesibilidad - Distrito Socialista Tecnologico AIT PDVSA  <moderador@libreaccesibilidad.org>
+Author: Ernesto Nadir Crespo Avila
+Email: ernesto@libreaccesibilidad.org"""
 
 
 import pygst
