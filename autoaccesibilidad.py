@@ -18,16 +18,23 @@ import users
 import sincronizar
 from commands import getstatusoutput
 import sys
-import getpass
-import time    
+from string import splitfields
 
-def Inicio():
-    try:
-        apt = aptitude.Aptitude()
-        sincronizar.actualizar()
-        getstatusoutput("sudo python -m SimpleHTTPServer")
-        print "Ejecutando el servidor web"
-        apt.main("accessibility-es speech-dispatcher")
+import threading
+
+def ServidorWeb():
+    getstatusoutput("python -m SimpleHTTPServer &")
+
+class Accesibilidad():
+    def __init__(self):
+        self.apt = aptitude.Aptitude()
+        
+    def instalar_paquetes(self):
+        print "sincronizando repositorio"
+        sincronizar.actualizar
+        print "instalando paquetes accesibles"
+        self.apt.main("accessibility-es speech-dispatcher")
+        
         while 1:
             #r = getstatusoutput("./reproducir.py btreathe.ogg")
             idioma = raw_input("Escriba el idioma que desea usar en el lector de pantalla:[Ingles/Español]:")
@@ -42,16 +49,29 @@ def Inicio():
                 #r = getstatusoutput("./reproducir.py btreathe.ogg")
                 continue
         config.conf_escritorio("lang")
-        #sys.exit()
-    except KeyboardInterrupt:
-        pass
-    else:
+        self.__fin_web()
+        print "Finalizando autoaccesibilidad"
         sys.exit()
+        
+    def __fin_web(self):
+        r = getstatusoutput("ps -aux | grep python | grep web.py")
+        if r[0] == 0:
+            s = splitfields(r[1]," ")
+            t = getstatusoutput("kill -9 %s" %s[12])
+            if t[0] <> 0:
+                print "no se pudo apagar el servidor web local"
+            else:
+                print "se apago el servidor web"
+        
         
     
     
     
 if __name__ == "__main__":
-    Inicio()
+    accesibilidad = Accesibilidad()
+    accesibilidad.instalar_paquetes()
+    
+    
+        
     
     
