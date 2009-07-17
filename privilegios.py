@@ -22,7 +22,7 @@ from commands import getstatusoutput
 
 def ask_pass_func(context, prompt):
     try:
-        return getpass.getpass("Enter root password: ")
+        return getpass.getpass("Escriba la clave de administrador (root): ")
     except KeyboardInterrupt:
         print
         err = gobject.GError("keyboard interrupt")

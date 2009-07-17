@@ -13,24 +13,10 @@ Email: ernesto@libreaccesibilidad.org
 #import SimpleHTTPServer
 #SimpleHTTPServer.test()
 #python -m SimpleHTTPServer
-import pdb
+
 import BaseHTTPServer, SimpleHTTPServer
 import sys
-try:
-    httpd = BaseHTTPServer.HTTPServer( ( '', 80),SimpleHTTPServer.SimpleHTTPRequestHandler)
-    httpd.serve_forever()
+print "probando"
+httpd = BaseHTTPServer.HTTPServer( ( '', 8000),SimpleHTTPServer.SimpleHTTPRequestHandler)
+httpd.serve_forever()
     
-except KeyboardInterrupt:
-    pass
-else:
-    sys.exit()
-    
-    
-    
-    
-
-
-
-
-	
-	

@@ -26,7 +26,7 @@ class Aptitude:
 
 		
 	def __change_config(self):
-		print "pasando por aca"
+		print "respaldando el sources.list"
 		privilegios.ejecutar("cp /etc/apt/sources.list /etc/apt/sources.list.bak")
 		self.__version = self.__search_debian_version()
 		if self.__version <> "":
@@ -37,6 +37,7 @@ class Aptitude:
 		return 0
 	
 	def __sources_orig(self):
+		print "Devolviendo la configuracion de las fuentes a su estado original"
 		privilegios.ejecutar("cp /etc/apt/sources.list.bak /etc/apt/sources.list")
         
 	def __search_debian_version(self):
@@ -56,6 +57,7 @@ class Aptitude:
         
         
 	def __update(self):
+		print "Actualizando la lista de paquetes de la fuente local"
 		privilegios.ejecutar("aptitude update")
 
 
@@ -65,7 +67,6 @@ class Aptitude:
 				print "La lista de paquetes no esta separada por espacios"
 			else:
        				r = privilegios.ejecutar("aptitude install %s" %paquetes)
-				print r
 		else:
 			print "Error, no es una lista de paquetes separadas por espacio"
 	
