@@ -32,14 +32,13 @@ def conf_escritorio(idioma):
     comandos = ("gconftool-2 --set --type string /apps/metacity/keybinding_commands/command_",
                 "gconftool-2 --set --type string /apps/metacity/global_keybindings/run_command_" )
     aplicaciones = ("orca","gnome-terminal","oowriter","iceweasel","nautilus","ooimpress","pidgin")
-    #print "Agregando privilegios al usuario"
     r = getstatusoutput("echo $USER")
-    #print "usuario",r[1]
-    #privilegios.AgregarUsuarioSudo(r[1])
     usuarios = users.get_users()
     print "Copiando los archivos de configuración a /etc/skel"
+    r = getstatusoutput("mpg123 voces/05.mp3")
     privilegios.ejecutar("cp -R  %s /etc/skel/.%s" %(archivos_configuracion,archivos_home))
     print "Copiando los archivos de configuración a /etc/"
+    r = getstatusoutput("mpg123 voces/05.mp3")
     privilegios.ejecutar("cp -R %s%s /etc/"  %(archivos_etc,archetc))
     usuarios.append("root")
     for usuario in usuarios:
@@ -47,14 +46,18 @@ def conf_escritorio(idioma):
             home = "/root"
         else:
             home = "/home/%s" %usuario
+        r = getstatusoutput("mpg123 voces/03.mp3")
         print "Configurando el lector de pantalla al usuario: %s" %usuario
         privilegios.ejecutar("cp -R %s%s  %s" %(archivos_configuracion,archivos_home,home))
         privilegios.ejecutar("chown -R %s.%s %s/.%s" %(usuario,usuario,home,archivos_home))
         for aplicacion in aplicaciones:
             print "Configurando la aplicación: %s" %aplicacion
+            r = getstatusoutput("mpg123 voces/04.mp3")
             r = getstatusoutput("sudo -u %s %s%s \"%s\"  " %(usuario,comandos[0],cont,aplicacion))
             s = getstatusoutput("sudo -u %s %s%s \"%s\"" %(usuario,comandos[1],cont,teclas[aplicacion]))
-            if r[0] <> 0 or s[0] <> 0: print "Error al cambiar los accesos rápidos de  %s" %aplicacion
+            if r[0] <> 0 or s[0] <> 0:
+                print "Error al cambiar los accesos rápidos de  %s" %aplicacion
+                r = getstatusoutput("mpg123 voces/07.mp3")
             cont = cont + 1
         
 if __name__ == "__main__":

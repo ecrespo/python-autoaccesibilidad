@@ -23,22 +23,27 @@ class Aptitude:
 	def __init__(self):
 		self.__url = "deb http://127.0.0.1:8000/debian"
 		self.__versiones = ("testing","squeeze","sid","unstable")
+	
+
 
 		
 	def __change_config(self):
 		print "respaldando el sources.list"
+		r = getstatusoutput("mpg123 voces/17.mp3")
 		privilegios.ejecutar("cp /etc/apt/sources.list /etc/apt/sources.list.bak")
 		self.__version = self.__search_debian_version()
 		if self.__version <> "":
 			mirror = self.__url + " " + self.__version + " main"
 		else:
-			return -1
+			mirror = self.__url + " " + "squeeze" + " main"
 		privilegios.ejecutar(" echo %s > /etc/apt/sources.list" %mirror)
 		return 0
 	
 	def __sources_orig(self):
 		print "Devolviendo la configuracion de las fuentes a su estado original"
+		r = getstatusoutput("mpg123 voces/06.mp3")
 		privilegios.ejecutar("cp /etc/apt/sources.list.bak /etc/apt/sources.list")
+		privilegios.ejecutar("rm /etc/apt/sources.list.bak")
         
 	def __search_debian_version(self):
 		lista = []
@@ -57,6 +62,7 @@ class Aptitude:
         
         
 	def __update(self):
+		r = getstatusoutput("mpg123 voces/01.mp3")
 		print "Actualizando la lista de paquetes de la fuente local"
 		privilegios.ejecutar("aptitude update")
 
@@ -64,23 +70,32 @@ class Aptitude:
 	def __install(self,paquetes):
 		if type(paquetes) is StringType:
 			if string.find(paquetes,",") <> -1:
+				u = getstatusoutput("mpg123 voces/09.mp3")
 				print "La lista de paquetes no esta separada por espacios"
 			else:
        				r = privilegios.ejecutar("aptitude install %s" %paquetes)
 		else:
+			u = getstatusoutput("mpg123 voces/09.mp3")
 			print "Error, no es una lista de paquetes separadas por espacio"
 	
 	
 		
 	def main(self,paquetes):
-		if self.__change_config()  == 0:
+		resultado = self.__change_config()
+		print resultado
+		if resultado  == 0:
+			print "actualizando"
 			self.__update()
+			print "instalando paquetes"
 			self.__install(paquetes)
+			print "devolviendo los cambios"
 			self.__sources_orig()
 			print "Fin de instalacion de paquetes"
+			u = getstatusoutput("mpg123 voces/13.mp3")
 		else:
 			print "Problemas con el archivo sources.list"
         
+		
 
 
 

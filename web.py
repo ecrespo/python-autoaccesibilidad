@@ -16,7 +16,7 @@ Email: ernesto@libreaccesibilidad.org
 
 import BaseHTTPServer, SimpleHTTPServer
 import sys
-print "probando"
+
 httpd = BaseHTTPServer.HTTPServer( ( '', 8000),SimpleHTTPServer.SimpleHTTPRequestHandler)
 httpd.serve_forever()
     

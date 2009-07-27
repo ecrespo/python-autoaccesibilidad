@@ -22,6 +22,7 @@ from commands import getstatusoutput
 
 def ask_pass_func(context, prompt):
     try:
+        r = getstatusoutput("mpg123 voces/11.mp3")
         return getpass.getpass("Escriba la clave de administrador (root): ")
     except KeyboardInterrupt:
         print
