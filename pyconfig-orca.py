@@ -43,33 +43,26 @@ class Conf:
 
 
 if __name__ == "__main__":
-    import sys
-    config = Conf()
-    if len(sys.argv) == 1 :
+    def mensaje():
         print "pyconfig-orca options " 
         print "option : --help    : Print this help"
         print "option : --list    : List gconf for gnome-orca"
         print "option : --change  : Change gconf for gnome-orca"
+    import sys
+    config = Conf()
+    if len(sys.argv) == 1 :
+        mensaje()
     elif len(sys.argv) == 2:
         if sys.argv[1] == "--list" :
             config.listar()
         elif sys.argv[1] == "--change":
             config.modificar()
         elif sys.argv[1] == "--help" :
-            print "pyconfig-orca options "
-            print "option : --help    : Print this help"
-            print "option : --list    : List gconf  for gnome-orca"
-            print "option : --change  : Change gconf for gnome-orca"
+            mensaje()
         else:
-            print "pyconfig-orca options "
-            print "option : --help    : Print this help"
-            print "option : --list    : List gconf  for gnome-orca"
-            print "option : --change  : Change gconf for gnome-orca"
+            mensaje()
     else:
-        print "pyconfig-orca options " 
-        print "option : --help    : Print this help"
-        print "option : --list    : List gconf for gnome-orca"
-        print "option : --change  : Change gconf for gnome-orca"
+        mensaje()
         
 
 
