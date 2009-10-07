@@ -3,7 +3,7 @@
 
 
 """
-Name: pyconfig
+Name: pyconfig-orca
 Description: Programa que permite modificar la configuracion de gnome por medio del modulo gconf de python
 Version:0.1
 License: GPLv3
@@ -18,10 +18,10 @@ import gconf
 class Conf:
     def __init__(self):
         self.gconfClient = gconf.client_get_default()
-        self.aplicaciones = ("orca", "gnome-terminal","oowriter","iceweasel","nautilus","ooimpress","pidgin","oocalc","gedit","gnome-calculator")
+        self.aplicaciones = ("orca", "gnome-terminal","oowriter","iceweasel","nautilus","ooimpress","pidgin","oocalc","gedit","gnome-calculator","rhythmbox")
         self.comando = "/apps/metacity/keybinding_commands/command_"
         self.asignacion_teclado = "/apps/metacity/global_keybindings/run_command_"
-        self.teclas = {"orca":"<Super>o","gnome-terminal":"<Super>t","oowriter":"<Super>w","iceweasel":"<Super>n","nautilus":"<Super>h","ooimpress":"<Super>i","pidgin":"<Super>p","oocalc":"<Super>x","gedit":"<Super>e","gnome-calculator":"<Super>c"}
+        self.teclas = {"orca":"<Super>o","gnome-terminal":"<Super>t","oowriter":"<Super>w","iceweasel":"<Super>n","nautilus":"<Super>h","ooimpress":"<Super>i","pidgin":"<Super>p","oocalc":"<Super>x","gedit":"<Super>e","gnome-calculator":"<Super>c","rhythmbox":"<Super>m"}
 
         
     def modificar(self):
