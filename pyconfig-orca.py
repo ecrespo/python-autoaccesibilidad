@@ -13,7 +13,7 @@ Email: ernesto@libreaccesibilidad.org
 """
 
 import gconf
-
+import pyttsx
 
 class Conf:
     def __init__(self):
@@ -48,6 +48,14 @@ if __name__ == "__main__":
         print "option : --help    : Print this help"
         print "option : --list    : List gconf for gnome-orca"
         print "option : --change  : Change gconf for gnome-orca"
+        engine = pyttsx.init()
+        engine.setProperty('voice', "spanish-latin-american")
+        engine.say("pyconfig-orca options")
+        engine.say("option: --help : Print this help")
+        engine.say("option: --list : List gconf for gnome-orca")
+        engine.say("option : --change : Change gconf for gnome-orca")
+        engine.setProperty
+        
     import sys
     config = Conf()
     if len(sys.argv) == 1 :

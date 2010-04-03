@@ -16,20 +16,23 @@ from types import *
 import string
 import privilegios
 
-import pdb
+import pyttsx
 
 class Aptitude:
 	
 	def __init__(self):
 		self.__url = "deb http://127.0.0.1:8000/debian"
 		self.__versiones = ("testing","squeeze","sid","unstable")
+        self.engine = pyttsx.init()
+        self.engine.setProperty('voice', "spanish-latin-american")
 	
 
 
 		
 	def __change_config(self):
 		print "respaldando el sources.list"
-		r = getstatusoutput("mpg123 voces/17.mp3")
+        self.engine.say("respaldando el sources.list")
+        self.engine.runAndWait()
 		privilegios.ejecutar("cp /etc/apt/sources.list /etc/apt/sources.list.bak")
 		self.__version = self.__search_debian_version()
 		if self.__version <> "":
@@ -41,7 +44,8 @@ class Aptitude:
 	
 	def __sources_orig(self):
 		print "Devolviendo la configuracion de las fuentes a su estado original"
-		r = getstatusoutput("mpg123 voces/06.mp3")
+		self.engine.say("Devolviendo la configuracion de las fuentes a su estado original")
+        self.engine.runAndWait()
 		privilegios.ejecutar("cp /etc/apt/sources.list.bak /etc/apt/sources.list")
 		privilegios.ejecutar("rm /etc/apt/sources.list.bak")
         
@@ -62,7 +66,8 @@ class Aptitude:
         
         
 	def __update(self):
-		r = getstatusoutput("mpg123 voces/01.mp3")
+		self.engine.say("Actualizando la lista de paquetes de la fuente local")
+        self.engine.runAndWait()
 		print "Actualizando la lista de paquetes de la fuente local"
 		privilegios.ejecutar("aptitude update")
 
@@ -70,12 +75,14 @@ class Aptitude:
 	def __install(self,paquetes):
 		if type(paquetes) is StringType:
 			if string.find(paquetes,",") <> -1:
-				u = getstatusoutput("mpg123 voces/09.mp3")
+				self.engine.say("La lista de paquetes no esta separada por espacios")
+                self.engine.runAndWait()
 				print "La lista de paquetes no esta separada por espacios"
 			else:
        				r = privilegios.ejecutar("aptitude install %s" %paquetes)
 		else:
-			u = getstatusoutput("mpg123 voces/09.mp3")
+			self.engine.say("Error, no es una lista de paquetes separadas por espacio")
+            self.engine.runAndWait()
 			print "Error, no es una lista de paquetes separadas por espacio"
 	
 	
@@ -85,16 +92,24 @@ class Aptitude:
 		print resultado
 		if resultado  == 0:
 			print "actualizando"
+            self.engine.say("actualizando")
+            self.engine.runAndWait()
 			self.__update()
 			print "instalando paquetes"
+            self.engine.say("instalando paquetes")
+            self.engine.runAndWait()
 			self.__install(paquetes)
 			print "devolviendo los cambios"
+            self.engine.say("devolviendo los cambios")
+            self.engine.runAndWait()
 			self.__sources_orig()
 			print "Fin de instalacion de paquetes"
-			u = getstatusoutput("mpg123 voces/13.mp3")
+			self.engine.say("Fin de instalacion de paquetes")
+            self.engine.runAndWait()
 		else:
 			print "Problemas con el archivo sources.list"
-        
+            self.engine.say("Problemas con el archivo sources.list")
+            self.engine.runAndWait()
 		
 
 

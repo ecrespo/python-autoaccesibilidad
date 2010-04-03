@@ -12,6 +12,7 @@ Email: ernesto@libreaccesibilidad.org
 """
 import pdb
 import privilegios
+
 def actualizar():
     privilegios.ejecutar("rsync -avz rsync://nevado.crespo.info.ve/accesibilidad debian/")
 
