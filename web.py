@@ -1,4 +1,4 @@
-nope,#!/usr/bin/python
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 
 """
@@ -6,17 +6,29 @@ Name: web
 Description: Modulo que inicia un servidor web
 Version:0.1
 License: GPLv3
-Copyright: Copyright (C) 2009 Proyecto Libre Accesibilidad - Distrito Socialista Tecnologico AIT PDVSA  <moderador@libreaccesibilidad.org>
+Copyright: Copyright (C) 2009 Proyecto Libre Accesibilidad - Distrito Socialista Tecnologico AIT PDVSA 
 Author: Ernesto Nadir Crespo Avila
-Email: ernesto@libreaccesibilidad.org
+Email: ecrespo@gmail.com
 """
-#import SimpleHTTPServer
-#SimpleHTTPServer.test()
-#python -m SimpleHTTPServer
 
-import BaseHTTPServer, SimpleHTTPServer
-import sys
+from twisted.internet import reactor
+from twisted.web import static, server
 
-httpd = BaseHTTPServer.HTTPServer( ( '', 8000),SimpleHTTPServer.SimpleHTTPRequestHandler)
-httpd.serve_forever()
-    
+class WebServer:
+	def __init__(self,ruta,puerto):
+		self.__ruta = ruta
+		self.__puerto = puerto
+		self.__servicio = static.File(self.__ruta)
+		
+	
+	def run(self):
+		reactor.listenTCP(self.__puerto,server.Site(self.__servicio))
+		reactor.run()
+	def stop(self):
+		reactor.stop()
+
+if __name__ == "__main__":
+	servidorweb = WebServer('/home/ernesto/googlecode/python-autoaccesibilidad/debian',8080)
+	servidorweb.run()
+		
+		
